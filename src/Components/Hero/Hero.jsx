@@ -5,9 +5,9 @@ import Rasm_6 from "../images/rasm6.png"
 import Rasm_7 from "../images/rasm7.png"
 const Hero = () => {
   return (
-    <div className=' bg-black'>
-      <div className='text-center  flex mx-auto max-w-[1200px]'>
-        <ul className=''>
+    <div className=''>
+      <div className=' bg-black text-center  flex mx-auto max-w-[1200px]'>
+        <ul className='ml-10'>
             <li className='flex items-center gap-5 mt-[30px]' >
                 <img className='w-[40] h-[40]' src={Rasm_5} alt="" />
                 <p className='font-poppins text-[16px] font-normal leading-[24px] text-center text-[#FAFAFA] w-[126px] h-[20px]'>iPhone 14 Series</p>

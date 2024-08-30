@@ -45,6 +45,7 @@ const Hover = () => {
               <p className='ml-[55px] mt-[10px]'>Gaming</p>
             </li>
         </ul>
+        <hr className='mb-[20px] h-0.5 bg-black' />
       </div>
     </div>
   )

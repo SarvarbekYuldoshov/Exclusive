@@ -1,6 +1,7 @@
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
 import Hover from './Components/Hover/Hover'
+import Navbar from './Components/Navbar/Navbar'
 import './index.css'
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <>
      <div className='App'> 
         <Header/>
-        <Hero/>
-        <Hover/>
+        {/* <Hero/> */}
+        {/* <Hover/> */}
+        {/* <Navbar/> */}
      </div>
     </>
   )
