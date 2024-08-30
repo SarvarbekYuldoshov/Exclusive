@@ -18,7 +18,7 @@ const Hero = () => {
                 <img className='w-[24px] h-[24px]' src={Rasm_6} alt="" />
             </button>
         </ul>
-        <img className='ml-[100px]' src={Rasm_7} alt="" />
+        <img className='ml-[100px] max-lg:mi-[40px]' src={Rasm_7} alt="" />
       </div>
     </div>
   )
