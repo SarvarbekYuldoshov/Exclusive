@@ -55,11 +55,11 @@ const Header = () => {
           </ul>
           <ul className='flex gap-5 max-sm:gap-5'>
             <div className='flex gap-20 border border-black max-lg:gap-2 max-sm:absolute top-[70px] right-[25px]'>
-                <input type="text" placeholder='        What are you looking for?' className='hover:border-white max-lg:w-70 max-md:w-60 max-sm:w-[285px] text-[14px]' />
+                <input type="text" placeholder='        What are you looking for?' className='hover:border-white max-lg:w-70 max-md:w-60 max-sm:w-[295px] text-[14px]' />
                 <button className=''><img className='w-6 h-15 ' src={Rasm_2} alt="" /></button>
             </div>
-            <img src={Rasm_3} alt="" />
-            <img src={Rasm_4} alt="" />
+            <img className='mb-[-5px]' src={Rasm_3} alt="" />
+            <img className='mb-[-5px]' src={Rasm_4} alt="" />
         </ul>
       </div>
     </div>
