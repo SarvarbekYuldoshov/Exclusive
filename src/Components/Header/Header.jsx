@@ -37,7 +37,7 @@ const Header = () => {
     <div>
       <div className='p-[20px] my-10 items-center flex justify-between mx-auto max-w-[1200px] max-sm:relative'>
       <img className="" src={Rasm_1} alt="" />
-      <Dropdown
+      <Dropdown className='header-drop'
         menu={{
           items,
         }}
