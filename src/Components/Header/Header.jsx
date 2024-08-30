@@ -44,7 +44,7 @@ const Header = () => {
         placement="bottom"
       >
        <button>
-           <img className='max-2xl:hidden max-md:block w-10 max-sm:absolute bottom-3 left-40' src={Rasm15} alt="" />
+           <img className='max-2xl:hidden max-md:block w-10 max-sm:absolute bottom-2 right-[25px]' src={Rasm15} alt="" />
       </button>
       </Dropdown>
           <ul className="flex gap-8 max-xl:gap-5 max-lg:gap-1 max-md:hidden">  
@@ -58,8 +58,8 @@ const Header = () => {
                 <input type="text" placeholder='        What are you looking for?' className='hover:border-white max-lg:w-70 max-md:w-60 max-sm:w-[295px] text-[14px]' />
                 <button className=''><img className='w-6 h-15 ' src={Rasm_2} alt="" /></button>
             </div>
-            <img className='mb-[-5px]' src={Rasm_3} alt="" />
-            <img className='mb-[-5px]' src={Rasm_4} alt="" />
+            <img className='max-sm:absolute bottom-3 left-[150px]' src={Rasm_3} alt="" />
+            <img className='max-sm:absolute bottom-3.5 left-[190px] w-7 h-7' src={Rasm_4} alt="" />
         </ul>
       </div>
     </div>
