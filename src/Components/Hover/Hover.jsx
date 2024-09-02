@@ -31,7 +31,7 @@ const Hover = () => {
             { src: Rasm_13, label: 'HeadPhones' },
             { src: Rasm_14, label: 'Gaming' }
           ].map((item, index) => (
-            <li key={index} className={`${item.bg || 'bg-white'} w-[170px] h-[145px] border border-black hover:scale-105 transition-transform duration-300 flex flex-col justify-center items-center max-sm:w-[125px]`}>
+            <li key={index} className={`${item.bg || 'bg-white'} w-[170px] h-[145px] border border-black hover:scale-105 transition-transform duration-300 flex flex-col justify-center items-center max-sm:w-[130px]`}>
               <img className='w-[50px] h-[50px]' src={item.src} alt={item.label} />
               <p className={`mt-[10px] font-poppins text-[16px] ${item.textColor || 'text-black'}`}>{item.label}</p>
             </li>
