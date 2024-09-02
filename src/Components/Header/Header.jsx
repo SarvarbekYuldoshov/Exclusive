@@ -55,7 +55,7 @@ const Header = () => {
           </ul>
           <ul className='flex gap-5 max-sm:gap-5'>
             <div className='flex gap-20 border border-black max-lg:gap-2 max-sm:absolute top-[70px] right-[25px]'>
-                <input type="text" placeholder='        What are you looking for?' className='hover:border-white max-lg:w-70 max-md:w-60 max-sm:w-[295px] text-[14px]' />
+                <input type="text" placeholder='        What are you looking for?' className='hover:border-white max-lg:w-70 max-md:w-60 max-sm:w-[230px] text-[14px]' />
                 <button className=''><img className='w-6 h-15 ' src={Rasm_2} alt="" /></button>
             </div>
             <img className='max-sm:absolute bottom-3 left-[150px]' src={Rasm_3} alt="" />
