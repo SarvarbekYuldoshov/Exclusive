@@ -3,7 +3,7 @@ import Hero from './Components/Hero/Hero'
 import Hover from './Components/Hover/Hover'
 import Navbar from './Components/Navbar/Navbar'
 import './index.css'
-
+import "./App.css"
 function App() {
 
   return (

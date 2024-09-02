@@ -44,7 +44,7 @@ const Header = () => {
         placement="bottom"
       >
        <button>
-           <img className='max-2xl:hidden max-md:block w-10 max-sm:absolute bottom-2 right-[25px]' src={Rasm15} alt="" />
+           <img className='headerImg max-md:block w-10 max-sm:absolute bottom-2 right-[25px]' src={Rasm15} alt="" />
       </button>
       </Dropdown>
           <ul className="flex gap-8 max-xl:gap-5 max-lg:gap-1 max-md:hidden">  
