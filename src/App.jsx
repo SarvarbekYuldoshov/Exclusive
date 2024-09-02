@@ -4,6 +4,7 @@ import Hover from './Components/Hover/Hover'
 import Navbar from './Components/Navbar/Navbar'
 import './index.css'
 import "./App.css"
+import Main from './Components/Main/Main'
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero/>
         <Hover/>
         <Navbar/>
+        <Main/>
      </div>
     </>
   )
