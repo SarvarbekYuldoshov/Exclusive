@@ -19,7 +19,7 @@ const Navbar = () => {
           <img className='' src={Rasm_8} alt="" />
           <p className='font-poppins text-[16px] font-semibold leading-[20px] text-left text-[#DB4444] w-[150px] h-[20px]'>Our Products</p>
         </ul>
-        <div className='flex flex-wrap gap-[20px]'>
+        <div className='flex flex-wrap gap-[20px] '>
         <div className='mt-20'>
           <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4 max-sm:w-[300px]'>
             <img className='w-[115px] h-[180px] mt-[20px]' src={Rasm_16} alt=" " />
@@ -28,10 +28,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
             Breed Dry Dog Food
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$100</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -47,10 +47,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
           CANON EOS DSLR Camera
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$360</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -66,10 +66,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
           ASUS FHD Gaming Laptop
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$700</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -85,10 +85,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
           Kids Electric Car
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$960</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -104,10 +104,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
           Jr. Zoom Soccer Cleats
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$1160</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -123,10 +123,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
           GP11 Shooter USB Gamepad
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$660</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -142,10 +142,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
           Quilted Satin Jacket
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$960</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -161,10 +161,10 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
             Breed Dry Dog Food
           </p>
-          <ul className='flex gap-2 items-center'>
+          <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
             <p>$100</p>
             <img src={Rasm_19} alt="" />
             <p className='w-[32px] h-[20px] font-poppins text-[14px] font-semibold leading-[21px] text-left bg-black-custom'>
@@ -174,7 +174,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='flex justify-center mt-[30px]'>
-          <button className='border border-black py-2 px-4 transition-all duration-300 hover:bg-black hover:text-white'>
+          <button className='border border-black py-2 px-4 transition-all duration-300 hover:bg-black hover:text-white max-sm:ml-[-35px]'>
             View All Products
           </button>
         </div>
