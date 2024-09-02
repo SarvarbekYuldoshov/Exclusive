@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
         <div className='flex flex-wrap gap-[20px]'>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[115px] h-[180px] mt-[20px]' src={Rasm_16} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
@@ -40,7 +40,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[146px] h-[163px] mt-[20px]' src={Rasm_20} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
@@ -59,7 +59,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[190px] h-[180px] mt-[20px]' src={Rasm_21} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
@@ -78,7 +78,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[180px] h-[133px] mt-[40px] mr-[25px]' src={Rasm_22} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
@@ -97,7 +97,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[186px] h-[164px] mt-[30px]' src={Rasm_23} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
@@ -116,14 +116,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[178px] h-[150px] mt-[20px]' src={Rasm_24} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
+          <p className='mt-5 w-[220px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom'>
           GP11 Shooter USB Gamepad
           </p>
           <ul className='flex gap-2 items-center'>
@@ -135,7 +135,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[183px] h-[176px] mt-[20px]' src={Rasm_25} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
@@ -154,7 +154,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='mt-20'>
-          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[270px] h-[250px] p-4'>
+          <div className='relative flex flex-col items-center bg-[#F5F5F5] w-[320px] h-[250px] p-4'>
             <img className='w-[115px] h-[180px] mt-[20px]' src={Rasm_16} alt=" " />
             <div className='absolute top-4 right-4 flex flex-col items-end space-y-2'>
               <img className='w-[30px] h-[30px]' src={Rasm_17} alt="" />
