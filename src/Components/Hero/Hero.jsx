@@ -10,13 +10,13 @@ const Hero = () => {
       <div className=' mt-20 flex flex-col md:flex-row items-center mx-auto max-w-[1200px] p-6 md:p-10'>
         <ul className='md:mr-10 text-white'>
           <li className='flex items-center gap-5'>
-            <img className='w-[40px] h-[45px] max-sm:ml-[-10px] w-[50px] h-[50px]' src={Rasm_5} alt="iPhone 14 Series" />
+            <img className='w-[40px] h-[45px] max-sm:ml-[-10px]' src={Rasm_5} alt="iPhone 14 Series" />
             <p className='font-poppins text-[16px] font-normal leading-[24px] max-sm:text-[20px]'>iPhone 14 Series</p>
           </li>
-          <h1 className='mt-[20px] font-inter w-[320px] h-[240px]  text-[36px] md:text-[48px]  font-semibold leading-[40px] md:leading-[60px] tracking-wide text-left max-sm:text-[40px] w-[140px] h-[140px]'>
+          <h1 className='mt-[20px] font-inter w-[320px] h-[140px]  text-[36px] md:text-[48px]  font-semibold leading-[40px] md:leading-[60px] tracking-wide text-left max-sm:text-[40px] max-w-[140px]'>
             Up to 10% off Voucher
            </h1>
-          <button className='flex items-center w-[150px] h-[40px] gap-5  border border-white hover:scale-105 transition-transform duration-300 max-sm:ml-7 mt-10'>
+          <button className='flex items-center w-[150px] h-[40px] gap-5  border border-white hover:scale-105 transition-transform duration-300 max-sm:ml-5 mt-10'>
             <p className='font-poppins text-[16px] font-medium leading-[24px] max-sm:ml-[10px]'>Shop Now</p>
             <img className='w-[24px] h-[24px] ' src={Rasm_6} alt="Shop Now" />
           </button>
