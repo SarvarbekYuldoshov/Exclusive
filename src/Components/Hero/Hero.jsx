@@ -17,7 +17,7 @@ const Hero = () => {
             Up to 10% off Voucher
            </h1>
           <button className='flex items-center mt-40  w-[150px] h-[40px] gap-5  border border-white hover:scale-105 transition-transform duration-300 max-sm:ml-5'>
-            <p className='font-poppins text-[16px] font-medium leading-[24px] max-sm:ml-[10px]'>Shop Now</p>
+            <p className=' ml-1 font-poppins text-[16px] font-medium leading-[24px] max-sm:ml-[10px]'>Shop Now</p>
             <img className='w-[24px] h-[24px] ' src={Rasm_6} alt="Shop Now" />
           </button>
         </ul>
