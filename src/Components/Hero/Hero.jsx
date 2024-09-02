@@ -16,7 +16,7 @@ const Hero = () => {
           <h1 className='mt-[20px] font-inter w-[320px] h-[140px]  text-[36px] md:text-[48px]  font-semibold leading-[40px] md:leading-[60px] tracking-wide text-left max-sm:text-[40px] max-w-[140px]'>
             Up to 10% off Voucher
            </h1>
-          <button className='flex items-center w-[150px] h-[40px] gap-5  border border-white hover:scale-105 transition-transform duration-300 max-sm:ml-5 mt-10'>
+          <button className='flex items-center mt-40  w-[150px] h-[40px] gap-5  border border-white hover:scale-105 transition-transform duration-300 max-sm:ml-5'>
             <p className='font-poppins text-[16px] font-medium leading-[24px] max-sm:ml-[10px]'>Shop Now</p>
             <img className='w-[24px] h-[24px] ' src={Rasm_6} alt="Shop Now" />
           </button>
