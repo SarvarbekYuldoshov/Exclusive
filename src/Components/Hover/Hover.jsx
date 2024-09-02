@@ -22,7 +22,7 @@ const Hover = () => {
             </h1>
           </li>   
         </ul>
-        <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-10 items-center mt-[30px] md:mt-[50px] mb-[40px] max-sm:gap-10'>
+        <ul className='hover-active grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-10 items-center mt-[30px] md:mt-[50px] mb-[40px] max-sm:gap-10'>
           {[
             { src: Rasm_9, label: 'Phones' },
             { src: Rasm_10, label: 'Computers' },

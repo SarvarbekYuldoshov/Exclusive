@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.svgsvg > svg  {
+    fill:  rgb(246, 235, 235) !important;  
+    display: none;
+  }
+  svg {
+    display: none !important;
+  }
