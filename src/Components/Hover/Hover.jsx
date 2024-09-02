@@ -22,7 +22,7 @@ const Hover = () => {
             </h1>
           </li>   
         </ul>
-        <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-10 items-center mt-[30px] md:mt-[50px] mb-[40px] max-sm:flex-wrap'>
+        <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-10 items-center mt-[30px] md:mt-[50px] mb-[40px] max-sm:gap-5'>
           {[
             { src: Rasm_9, label: 'Phones' },
             { src: Rasm_10, label: 'Computers' },
@@ -31,7 +31,7 @@ const Hover = () => {
             { src: Rasm_13, label: 'HeadPhones' },
             { src: Rasm_14, label: 'Gaming' }
           ].map((item, index) => (
-            <li key={index} className={`${item.bg || 'bg-white'} w-[170px] h-[145px] border border-black hover:scale-105 transition-transform duration-300 flex flex-col justify-center items-center`}>
+            <li key={index} className={`${item.bg || 'bg-white'} w-[170px] h-[145px] border border-black hover:scale-105 transition-transform duration-300 flex flex-col justify-center items-center max-sm:w-[120px] h-[100px] `}>
               <img className='w-[50px] h-[50px]' src={item.src} alt={item.label} />
               <p className={`mt-[10px] font-poppins text-[16px] ${item.textColor || 'text-black'}`}>{item.label}</p>
             </li>
