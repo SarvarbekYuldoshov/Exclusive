@@ -12,7 +12,7 @@ function App() {
         <Header/>
         <Hero/>
         <Hover/>
-        {/* <Navbar/> */}
+        <Navbar/>
      </div>
     </>
   )

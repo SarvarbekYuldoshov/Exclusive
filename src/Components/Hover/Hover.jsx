@@ -3,7 +3,7 @@ import Rasm_8 from "../images/rasm8.png";
 import Rasm_9 from "../images/rasm9.png";
 import Rasm_10 from "../images/rasm10.png";
 import Rasm_11 from "../images/rasm11.png";
-import Rasm_12 from "../images/rasm12.png";
+import Rasm_12 from "../images/rasm12.svg";
 import Rasm_13 from "../images/rasm13.png";
 import Rasm_14 from "../images/rasm14.png";
 
@@ -27,13 +27,16 @@ const Hover = () => {
             { src: Rasm_9, label: 'Phones' },
             { src: Rasm_10, label: 'Computers' },
             { src: Rasm_11, label: 'SmartWatch' },
-            { src: Rasm_12, label: 'Camera', bg: 'bg-red-700', textColor: 'text-white' },
+            { src: Rasm_12, label: 'Camera' },
             { src: Rasm_13, label: 'HeadPhones' },
             { src: Rasm_14, label: 'Gaming' }
           ].map((item, index) => (
-            <li key={index} className={`${item.bg || 'bg-white'} w-[170px] h-[145px] border border-black hover:scale-105 transition-transform duration-300 flex flex-col justify-center items-center max-sm:w-[140px]`}>
-              <img className='w-[50px] h-[50px]' src={item.src} alt={item.label} />
-              <p className={`mt-[10px] font-poppins text-[16px] ${item.textColor || 'text-black'}`}>{item.label}</p>
+            <li 
+              key={index}
+              className='w-[170px] h-[145px] border border-black flex flex-col justify-center items-center transition-transform duration-300 hover:bg-red-500 hover:scale-105 hover:text-white group max-sm:w-[140px]'
+            >
+              <img className='w-[50px] h-[50px] group-hover:filter group-hover:invert' src={item.src} alt={item.label} />
+              <p className='mt-[10px] font-poppins text-[16px] group-hover:text-white'>{item.label}</p>
             </li>
           ))}
         </ul>
