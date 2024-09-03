@@ -13,7 +13,7 @@ const Menu = () => {
           <li className='flex items-center gap-[10px]'>
             <img className='w-[20px] h-[40px]' src={Rasm_27} alt="" />
             <p className='w-[74px] h-[20px] font-poppins text-[16px] font-semibold leading-[20px] text-left text-[#DB4444]'>
-              Featured
+              Services
             </p>
           </li>
           <h1 className='mt-[20px] w-[216px] h-[48px] font-inter text-[36px] font-semibold leading-[48px] tracking-[0.04em] text-left text-black'>
