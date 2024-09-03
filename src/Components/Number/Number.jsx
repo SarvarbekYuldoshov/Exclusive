@@ -1,5 +1,8 @@
 import React from 'react'
 import Rasm_27 from "../images/rasm27.png";
+import Rasm_32 from "../images/rasm32.png";
+import Rasm_33 from "../images/rasm33.png";
+import Rasm_34 from "../images/rasm34.png";
 const Number = () => {
   return (
     <div className=''>
@@ -17,17 +20,17 @@ const Number = () => {
             </ul>
             <div className=''>
                 <ul className=''>
-                    <img className='' src="" alt="" />
+                    <img className='' src={Rasm_32} alt="" />
                     <h5 className=''></h5>
                     <p className=''></p>
                 </ul>
                 <ul className=''>
-                    <img className='' src="" alt="" />
+                    <img className='' src={Rasm_33} alt="" />
                     <h5 className=''></h5>
                     <p className=''></p>
                 </ul>
                 <ul className=''>
-                    <img className='' src="" alt="" />
+                    <img className='' src={Rasm_34} alt="" />
                     <h5 className=''></h5>
                     <p className=''></p>
                 </ul>
