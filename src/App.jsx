@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar'
 import './index.css'
 import "./App.css"
 import Main from './Components/Main/Main'
+import Menu from './Components/Menu/Menu'
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
         <Hover/>
         <Navbar/>
         <Main/>
+        <Menu/>
      </div>
     </>
   )
