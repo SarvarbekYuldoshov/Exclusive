@@ -31,7 +31,7 @@ const Number = () => {
           </div>
           <div className='flex flex-col items-center'>
             <img className='mb-[10px]' src={Rasm_33} alt="" />
-            <h5 className=' mt-[10px] w-[242px] h-[28px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
+            <h5 className=' mt-[10px] w-[242px] h-[35px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
               24/7 CUSTOMER SERVICE
             </h5>
             <p className='w-[220px] mt-[10px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
@@ -40,7 +40,7 @@ const Number = () => {
           </div>
           <div className='flex flex-col items-center'>
             <img className='mb-[10px]' src={Rasm_34} alt="" />
-            <h5 className=' mt-[10px] w-[252px] h-[28px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
+            <h5 className=' mt-[10px] w-[252px] h-[35px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
               MONEY BACK GUARANTEE
             </h5>
             <p className=' mt-[10px] w-[220px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
