@@ -6,6 +6,7 @@ import './index.css'
 import "./App.css"
 import Main from './Components/Main/Main'
 import Menu from './Components/Menu/Menu'
+import Number from './Components/Number/Number'
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
         <Navbar/>
         <Main/>
         <Menu/>
+        <Number/>
      </div>
     </>
   )
