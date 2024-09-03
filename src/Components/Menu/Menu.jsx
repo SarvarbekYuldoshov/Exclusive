@@ -2,6 +2,8 @@ import React from 'react';
 import "./Menu.css";
 import Rasm_27 from "../images/rasm27.png";
 import Rasm_29 from "../images/rasm29.png"
+import Rasm_30 from "../images/rasm30.png"
+import Rasm_31 from "../images/rasm31.png"
 const Menu = () => {
   return (
     <div className=''>
@@ -38,11 +40,23 @@ const Menu = () => {
               <img className='ml-[180px]' src={Rasm_29} alt="" />
           </div>
           <div className=''>
-            <div className='w-[280px] h-[212px] bg-black absolute top-[300px] left-[531px]'>
-              
+            <div className='w-[300px] h-[212px] bg-black absolute top-[300px] left-[530px] '>
+              <img className='w-[150px] h-[150px] absolute top-10 right-0' src={Rasm_30} alt="" />
+              <h3 className='w-[114px] h-[24px] font-inter text-[24px] font-semibold leading-[24px] tracking-[0.03em] text-left text-[#FAFAFA] absolute bottom-[80px] left-5'>Speakers</h3>
+              <p className='w-[191px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-left text-[#FAFAFA] absolute bottom-[50px] left-5'>Amazon wireless speakers</p>
+              <button className='w-[81px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left text-[#FFFFFF] absolute bottom-[20px] left-5'>
+              Shop Now
+                <hr />
+              </button>
             </div>
-            <div className='w-[280px] h-[212px] bg-black absolute top-[300px] right-4'>
-
+            <div className='w-[300px] h-[212px] bg-black absolute top-[300px] left-[845px]'>
+                <img className='w-[180px] h-[180px] absolute top-4 right-0' src={Rasm_31} alt="" />
+                <h4 className='w-[114px] h-[24px] font-inter text-[24px] font-semibold leading-[24px] tracking-[0.03em] text-left text-[#FAFAFA] absolute bottom-[80px] left-5'>Perfume</h4>
+                <p className='w-[191px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-left text-[#FAFAFA] absolute bottom-[50px] left-5'>GUCCI INTENSE OUD EDP</p>
+                <button className='w-[81px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left text-[#FFFFFF]  absolute bottom-[20px] left-5'> 
+                Shop Now
+                  <hr />
+                </button>
             </div>
           </div>
         </div>
