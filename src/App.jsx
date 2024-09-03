@@ -7,6 +7,7 @@ import "./App.css"
 import Main from './Components/Main/Main'
 import Menu from './Components/Menu/Menu'
 import Number from './Components/Number/Number'
+import Footer from './Components/Footer/Footer'
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Main/>
         <Menu/>
         <Number/>
+        <Footer/>
      </div>
     </>
   )
