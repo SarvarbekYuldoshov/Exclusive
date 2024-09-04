@@ -123,7 +123,7 @@ const Navbar = () => {
               <img className='w-[34px] h-[34px]' src={Rasm_18} alt="" />
             </div>
           </div>
-          <p className='mt-5 w-[208px] h-[24px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
+          <p className='mt-5 w-[208px] h-[35px] font-poppins text-[16px] font-medium leading-[24px] text-left bg-black-custom max-sm:ml-[55px]'>
           GP11 Shooter USB Gamepad
           </p>
           <ul className='flex gap-2 items-center max-sm:ml-[45px] mt-2'>
