@@ -24,17 +24,17 @@ const Footer = () => {
                 Subscribe
               </a>
             </li>
-            <p className='mt-[10px] ml-[24px] w-[206px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]'>
+            <p className='mt-[10px] w-[206px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]'>
               Get 10% off your first order
             </p>
-            <input className='w-[217px] h-[48px] ml-[24px] mt-[20px] bg-transparent border border-white' type="text" placeholder='Enter your email' />
+            <input className='w-[217px] h-[48px] mt-[20px] bg-transparent border border-white' type="text" placeholder='Enter your email' />
           </ul>
         </div>
 
         <div className=''>
           <ul>
             <li className='mt-[20px]'>
-              <a className='w-[81px] h-[28px] font-poppins text-[20px] font-medium leading-[28px] text-left text-[#FAFAFA]' href="">
+              <a className='w-[81px] h-[28px] ml-[24px] font-poppins text-[20px] font-medium leading-[28px] text-left text-[#FAFAFA]' href="">
                 Support
               </a>
             </li>
@@ -42,7 +42,7 @@ const Footer = () => {
               111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
             </p>
             <li className='mt-[10px] ml-[1px]'>
-              <a className='w-[100px] h-[30px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">
+              <a className='w-[100px] h-[30px] ml-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">
                 sarvarbekyuldoshov85@gmail.com
               </a>
             </li>
