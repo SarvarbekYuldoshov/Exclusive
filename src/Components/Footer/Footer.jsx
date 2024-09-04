@@ -23,6 +23,16 @@ const Footer = () => {
             </li>
             <p className='mt-[10px] ml-[20px] w-[165px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]'>+998 94 239 04 26</p>
         </div>
+        <div className=''>
+            <li className='mt-[20px]'>
+                <a className='w-[81px] h-[28px] font-poppins text-[20px] font-medium leading-[28px] text-left text-[#FAFAFA]' href="">Account</a>
+            </li>
+            <li className='mt-[10px]'><a className='w-[94px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">My Account</a></li>
+            <li className='mt-[10px]'><a className='w-[94px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">Login / Register</a></li>
+            <li className='mt-[10px]'><a className='w-[94px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">Cart</a></li>
+            <li className='mt-[10px]'><a className='w-[94px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">Wishlist</a></li>
+            <li className='mt-[10px]'><a className='w-[94px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">Shop</a></li>
+        </div>  
       </div>
     </div>
   )
