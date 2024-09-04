@@ -6,6 +6,7 @@ import Rasm_3 from "../images/rasm3.png"
 import Rasm_4 from "../images/rasm4.png"
 import Rasm15 from "../images/rasm15.png"
 import { Button, Dropdown, Space } from 'antd'
+import { Link } from 'react-router-dom'
 const Header = () => {
   const items = [
     {
@@ -59,7 +60,7 @@ const Header = () => {
                 <button className=''><img className='w-6 h-15 ' src={Rasm_2} alt="" /></button>
             </div>
             <img className='max-sm:absolute bottom-3 left-[150px]' src={Rasm_3} alt="" />
-            <img className='max-sm:absolute bottom-3.5 left-[190px] w-7 h-7' src={Rasm_4} alt="" />
+            <Link><img className='max-sm:absolute bottom-3.5 left-[190px] w-7 h-7' src={Rasm_4} alt="" /></Link>
         </ul>
       </div>
     </div>
