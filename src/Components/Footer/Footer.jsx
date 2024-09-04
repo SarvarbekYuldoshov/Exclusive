@@ -11,11 +11,11 @@ import Rasm_42 from "../images/rasm42.png";
 const Footer = () => {
   return (
     <div className=''>
-      <div className='mx-auto mt-[50px] gap-[20px] max-w-[1200px] p-[20px] bg-black relative flex flex-wrap'>
+      <div className='mx-auto mt-[50px] gap-[20px] max-w-[1200px] p-[20px] bg-black relative flex flex-wrap max-sm:justify-center items-center'>
         <div className=''>
           <ul>
             <li className='mt-[20px]'>
-              <a className='w-[118px] h-[24px] font-inter text-[24px] font-bold leading-[24px] tracking-[0.03em] text-left text-[#FAFAFA]' href="">
+              <a className='w-[118px] h-[24px] font-inter text-[24px] font-bold leading-[24px] tracking-[0.03em] text-left text-[#FAFAFA] ' href="">
                 Exclusive
               </a>
             </li>
@@ -120,28 +120,28 @@ const Footer = () => {
         <div className=''>
           <ul>
             <li className='mt-[20px]'>
-              <a className='w-[81px] h-[28px] font-poppins text-[20px] font-medium leading-[28px] text-left text-[#FAFAFA]' href="">
+              <a className='w-[81px] h-[28px] font-poppins text-[20px] font-medium leading-[28px] text-left text-[#FAFAFA] max-sm:ml-[70px]' href="">
                 Download App
               </a>
             </li>
             <li className='mt-[10px]'>
-              <a className='w-[94px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA]' href="">
+              <a className='w-[94px] h-[24px] font-poppins text-[16px] font-normal leading-[24px] text-left text-[#FAFAFA] max-sm:ml-[70px]' href="">
                 Save $3 with App New User Only
               </a>
             </li>
-            <ul className='flex'>
+            <ul className='flex flex-wrap'>
               <li>
-                <img className='ml-[20px] mt-[20px] w-[80px] h-[80px]' src={Rasm_36} alt="App Icon 1" />
+                <img className='ml-[20px] mt-[20px] w-[80px] h-[80px] max-sm:ml-[70px]' src={Rasm_36} alt="App Icon 1" />
               </li>
               <li>
                 <img className='ml-[20px] mt-[15px]' src={Rasm_37} alt="App Icon 2" />
               </li>
               <li>
-                <img className='ml-[20px] mt-[10px]' src={Rasm_38} alt="App Icon 3" />
+                <img className='ml-[20px] mt-[10px] max-sm:ml-[70px] ' src={Rasm_38} alt="App Icon 3" />
               </li>
             </ul>
             <ul className='flex gap-[30px] mt-[20px] ml-[10px]'>
-              <li>
+              <li className='max-sm:ml-[50px]'>
                 <img className='' src={Rasm_39} alt="Social Icon 1" />
               </li>
               <li>
