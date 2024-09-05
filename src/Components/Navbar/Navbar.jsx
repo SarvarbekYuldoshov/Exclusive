@@ -1,7 +1,13 @@
 import React from 'react'
 import Data from "../Data/Data"
+import useSharedStore from '../String/Store'
 
 const Navbar = () => {
+  const {setCards} = useSharedStore
+
+  const handleAdd = (item) =>{
+    setCards([...cards,item])
+  }
   return (
     <div className=''>
       <div className='max-w-[1200px] mx-auto p-[20px]'>
@@ -27,8 +33,8 @@ const Navbar = () => {
                 </ul>
                 
                 {/* Hover bo'lganda tugma ko'rinadi */}
-                <button className='mt-[20px] w-[250px] h-[60px] top-[220px]  bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>
-                  Buy Now
+                <button onClick={()=>handleAdd(item)} className='mt-[20px] w-[250px] h-[60px] top-[220px]  bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>
+                  Add 
                 </button>
               </div>
             ))
