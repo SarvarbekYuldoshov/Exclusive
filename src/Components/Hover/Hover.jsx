@@ -1,11 +1,11 @@
 import React from 'react';
-import Rasm_8 from "../images/rasm8.png";
-import Rasm_9 from "../images/rasm9.png";
-import Rasm_10 from "../images/rasm10.png";
-import Rasm_11 from "../images/rasm11.png";
-import Rasm_12 from "../images/rasm12.svg";
-import Rasm_13 from "../images/rasm13.png";
-import Rasm_14 from "../images/rasm14.png";
+import Rasm_8 from "../../images/rasm8.png";
+import Rasm_9 from "../../images/rasm9.png";
+import Rasm_10 from "../../images/rasm10.png";
+import Rasm_11 from "../../images/rasm11.png";
+import Rasm_12 from "../../images/rasm12.svg";
+import Rasm_13 from "../../images/rasm13.png";
+import Rasm_14 from "../../images/rasm14.png";
 
 const Hover = () => {
   return (

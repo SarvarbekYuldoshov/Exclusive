@@ -1,5 +1,5 @@
 import React from 'react';
-import Rasm_26 from '../images/rasm26.png';
+import Rasm_26 from '../../images/rasm26.png';
 
 const Main = () => {
   return (

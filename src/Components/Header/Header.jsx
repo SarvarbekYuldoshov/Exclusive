@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Header.css"
-import Rasm_1 from "../images/rasm1.png"
-import Rasm_2 from "../images/rasm2.png"
-import Rasm_3 from "../images/rasm3.png"
-import Rasm_4 from "../images/rasm4.png"
-import Rasm15 from "../images/rasm15.png"
+import Rasm_1 from "../../images/rasm1.png"
+import Rasm_2 from "../../images/rasm2.png"
+import Rasm_3 from "../../images/rasm3.png"
+import Rasm_4 from "../../images/rasm4.png"
+import Rasm15 from "../../images/rasm15.png"
 import { Button, Dropdown, Space } from 'antd'
 import { Link } from 'react-router-dom'
 const Header = () => {

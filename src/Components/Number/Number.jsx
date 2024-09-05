@@ -1,8 +1,8 @@
 import React from 'react';
-import Rasm_27 from "../images/rasm27.png";
-import Rasm_32 from "../images/rasm32.png";
-import Rasm_33 from "../images/rasm33.png";
-import Rasm_34 from "../images/rasm34.png";
+import Rasm_27 from "../../images/rasm27.png";
+import Rasm_32 from "../../images/rasm32.png";
+import Rasm_33 from "../../images/rasm33.png";
+import Rasm_34 from "../../images/rasm34.png";
 
 const Number = () => {
   return (

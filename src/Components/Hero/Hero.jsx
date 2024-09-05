@@ -1,13 +1,13 @@
 import React from 'react';
 import "./Hero.css";
-import Rasm_5 from "../images/rasm5.png";
-import Rasm_6 from "../images/rasm6.png";
-import Rasm_7 from "../images/rasm7.png";
+import Rasm_5 from "../../images/rasm5.png";
+import Rasm_6 from "../../images/rasm6.png";
+import Rasm_7 from "../../images/rasm7.png";
 
 const Hero = () => {
   return (
     <div className='bg-black text-center'>
-      <div className=' mt-20 flex flex-col md:flex-row items-center mx-auto max-w-[1200px] p-6 md:p-10'>
+      <div className='flex flex-col md:flex-row items-center mx-auto max-w-[1200px] p-6 md:p-10'>
         <ul className='md:mr-10 text-white'>
           <li className='flex items-center gap-5'>
             <img className='w-[40px] h-[45px] max-sm:ml-[-10px]' src={Rasm_5} alt="iPhone 14 Series" />

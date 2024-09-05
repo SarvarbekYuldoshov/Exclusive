@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Menu.css";
-import Rasm_27 from "../images/rasm27.png";
-import Rasm_29 from "../images/rasm29.png";
-import Rasm_30 from "../images/rasm30.png";
-import Rasm_31 from "../images/rasm31.png";
+import Rasm_27 from "../../images/rasm27.png";
+import Rasm_29 from "../../images/rasm29.png";
+import Rasm_30 from "../../images/rasm30.png";
+import Rasm_31 from "../../images/rasm31.png";
 
 const Menu = () => {
   return (

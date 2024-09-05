@@ -1,11 +1,11 @@
 import React from 'react';
-import Rasm_36 from "../images/rasm36.png";
-import Rasm_37 from "../images/rasm37.png";
-import Rasm_38 from "../images/rasm38.png";
-import Rasm_39 from "../images/rasm39.png";
-import Rasm_40 from "../images/rasm40.png";
-import Rasm_41 from "../images/rasm41.png";
-import Rasm_42 from "../images/rasm42.png";
+import Rasm_36 from "../../images/rasm36.png";
+import Rasm_37 from "../../images/rasm37.png";
+import Rasm_38 from "../../images/rasm38.png";
+import Rasm_39 from "../../images/rasm39.png";
+import Rasm_40 from "../../images/rasm40.png";
+import Rasm_41 from "../../images/rasm41.png";
+import Rasm_42 from "../../images/rasm42.png";
 
 const Footer = () => {
   return (
