@@ -27,7 +27,7 @@ const Navbar = () => {
                 </ul>
                 
                 {/* Hover bo'lganda tugma ko'rinadi */}
-                <button className='mt-[20px] w-[250px] h-[60px] top-[220px]  bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity'>
+                <button className='mt-[20px] w-[250px] h-[60px] top-[220px]  bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>
                   Buy Now
                 </button>
               </div>
