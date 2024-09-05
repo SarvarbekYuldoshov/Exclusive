@@ -1,30 +1,88 @@
 import React, { useState } from 'react';
 import useSharedStore from '../String/Store';
+import { Button, Form, Input, Modal, message } from 'antd';
 
 const Shopping = () => {
   const { cards, setCards } = useSharedStore();
+  const [open, setOpen] = useState(false);
+  const [form] = Form.useForm();
   const [quantities, setQuantities] = useState(
     cards.reduce((acc, item) => {
-      acc[item.id] = 1; // Initialize each item's count to 1
+      acc[item.id] = 1;
       return acc;
     }, {})
   );
 
+  // Send Telegram Message
+  const sendMessage = () => {
+    form.validateFields()
+      .then((values) => {
+        const { name, surname, number } = values;
+
+        // Replace with your actual token and chat_id
+        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";  // Use your bot token here
+        const chat_id = "6801549705";  // Replace with your actual chat ID
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}`;
+
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            "chat_id": chat_id,
+            "text": messageText,
+          }),
+        })
+        .then(res => res.json())
+        .then(res => {
+          if (res.ok) {
+            message.success("Xabar yuborildi");
+            setOpen(false);
+            form.resetFields(); // Clear form after success
+          } else {
+            console.error("Telegram API error:", res);
+            message.error("Xatolik yuz berdi, qaytadan urinib ko'ring");
+          }
+        })
+        .catch(err => {
+          console.error("Fetch error:", err);
+          message.error("Telegramga ulanishda xatolik");
+        });
+      })
+      .catch(() => {
+        message.error("Iltimos, barcha maydonlarni to'ldiring!");
+      });
+  };
+
+  // Modal handlers
+  const showModal = () => {
+    setOpen(true);
+  };
+
+  const closeModal = () => {
+    setOpen(false);
+  };
+
+  // Delete card item
   const deleteCards = (id) => {
     const updatedCards = cards.filter(item => item.id !== id);
     setCards(updatedCards);
     const updatedQuantities = { ...quantities };
-    delete updatedQuantities[id]; // Remove the quantity when deleting the item
+    delete updatedQuantities[id];
     setQuantities(updatedQuantities);
   };
 
+  // Decrease quantity
   const decrease = (id) => {
     setQuantities(prev => ({
       ...prev,
-      [id]: prev[id] > 1 ? prev[id] - 1 : 1 // Prevent going below 1
+      [id]: prev[id] > 1 ? prev[id] - 1 : 1
     }));
   };
 
+  // Increase quantity
   const increase = (id) => {
     setQuantities(prev => ({
       ...prev,
@@ -65,10 +123,35 @@ const Shopping = () => {
                 <p>{item.text}</p>
               </ul>
               <ul className='flex gap-[10px] items-center'>
-              <button onClick={() => deleteCards(item.id)} className='mt-[10px] w-[100px] h-[30px] border border-[red] hover:scale-105 transition-transform duration-300 bg-[red] text-white rounded-[3px]'>
-                Delete
-              </button>
-              <button className='mt-[10px] w-[100px] h-[30px]  border border-[#8ef330] hover:scale-105 transition-transform duration-300 bg-[#5ff026] text-white rounded-[3px]'>Submit</button>
+                <button onClick={() => deleteCards(item.id)} className='mt-[10px] w-[100px] h-[30px] border border-[red] hover:scale-105 transition-transform duration-300 bg-[#f53232] text-white rounded-[3px]'>
+                  Delete
+                </button>
+                <Button className=' mt-[10px] text-[12px] w-[100px] h-[30px] border border-[#3057f2] hover:scale-105 transition-transform duration-300 bg-[#2758f7] text-white rounded-[3px]' onClick={showModal}>Buyurtma Berish</Button>
+                <Modal open={open} footer={null} onCancel={closeModal}>
+                  <Form form={form} layout="vertical">
+                    <Form.Item
+                      name="name"
+                      rules={[{ required: true, message: 'Ismingizni kiriting' }]}
+                    >
+                      <Input className='home-input-a' placeholder='Ismingizni kiriting' />
+                    </Form.Item>
+                    <Form.Item
+                      name="surname"
+                      rules={[{ required: true, message: 'Familiyangizni kiriting' }]}
+                    >
+                      <Input className='home-input-b' placeholder='Familiyangizni kiriting' />
+                    </Form.Item>
+                    <Form.Item
+                      name="number"
+                      rules={[{ required: true, message: 'Raqamingizni kiriting' }]}
+                    >
+                      <Input className='home-input-c' placeholder='Raqamingizni kiriting' />
+                    </Form.Item>
+                    <Button onClick={sendMessage} type="primary">
+                      Yuborish
+                    </Button>
+                  </Form>
+                </Modal>
               </ul>
               <br />
               <ul className='ml-2 flex w-[190px] gap-[30px] mt-[20px] border border-black bg-[#67f127]'>
@@ -87,4 +170,3 @@ const Shopping = () => {
 };
 
 export default Shopping;
-
