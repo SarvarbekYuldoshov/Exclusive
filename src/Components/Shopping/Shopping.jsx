@@ -12,16 +12,12 @@ const Shopping = () => {
       return acc;
     }, {})
   );
-
-  // Send Telegram Message
   const sendMessage = () => {
     form.validateFields()
       .then((values) => {
         const { name, surname, number } = values;
-
-        // Replace with your actual token and chat_id
-        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";  // Use your bot token here
-        const chat_id = "6801549705";  // Replace with your actual chat ID
+        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
+        const chat_id = "6801549705";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}`;
 
@@ -40,7 +36,7 @@ const Shopping = () => {
           if (res.ok) {
             message.success("Xabar yuborildi");
             setOpen(false);
-            form.resetFields(); // Clear form after success
+            form.resetFields()
           } else {
             console.error("Telegram API error:", res);
             message.error("Xatolik yuz berdi, qaytadan urinib ko'ring");
@@ -55,8 +51,6 @@ const Shopping = () => {
         message.error("Iltimos, barcha maydonlarni to'ldiring!");
       });
   };
-
-  // Modal handlers
   const showModal = () => {
     setOpen(true);
   };
@@ -64,8 +58,6 @@ const Shopping = () => {
   const closeModal = () => {
     setOpen(false);
   };
-
-  // Delete card item
   const deleteCards = (id) => {
     const updatedCards = cards.filter(item => item.id !== id);
     setCards(updatedCards);
@@ -73,16 +65,12 @@ const Shopping = () => {
     delete updatedQuantities[id];
     setQuantities(updatedQuantities);
   };
-
-  // Decrease quantity
   const decrease = (id) => {
     setQuantities(prev => ({
       ...prev,
       [id]: prev[id] > 1 ? prev[id] - 1 : 1
     }));
   };
-
-  // Increase quantity
   const increase = (id) => {
     setQuantities(prev => ({
       ...prev,
