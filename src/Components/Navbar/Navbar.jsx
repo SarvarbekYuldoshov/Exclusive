@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { cards, setCards } = useSharedStore();
@@ -27,37 +28,20 @@ const Navbar = () => {
                 key={index}
                 className='w-[250px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group'
               >
-                <img
-                  src={item.img1}
-                  alt={item.name}
-                  className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'
-                />
-                <img
-                  src={item.img3}
-                  alt={item.name}
-                  className='w-[30px] h-[30px] absolute right-2 top-1'
-                />
-                <img
-                  src={item.img4}
-                  alt={item.name}
-                  className='w-[30px] h-[30px] absolute right-2 top-10'
-                />
-                <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
-                <ul className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
-                  <h2 className='text-lg text-gray-600'>{item.price}</h2>
-                  <img
-                    src={item.img2}
-                    alt={item.name}
-                    className='w-[140px] h-[20px]'
-                  />
-                  <p className=''>{item.text}</p>
-                </ul>
-                <button
-                  onClick={() => handleAdd(item)} 
-                  className='mt-[20px] w-[250px] h-[60px] top-[220px] bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'
-                >
-                  {adding[item.name]?"Qushilgan":"Qushish"}
-                </button>
+             <Link to={`/korzinka/${item.id}`}>
+                  <img src={item.img1}alt={item.name}className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
+                      <img src={item.img3}alt={item.name}className='w-[30px] h-[30px] absolute right-2 top-1'/>
+                      <img src={item.img4}alt={item.name}className='w-[30px] h-[30px] absolute right-2 top-10'/>
+                      <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
+                    <ul className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
+                      <h2 className='text-lg text-gray-600'>{item.price}</h2>
+                      <img src={item.img2}alt={item.name}className='w-[140px] h-[20px]'/>
+                      <p className=''>{item.text}</p>
+                    </ul>
+                      <button onClick={() => handleAdd(item)} className='mt-[20px] w-[250px] h-[60px] top-[220px] bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>
+                          {adding[item.name]?"Qushilgan":"Qushish"}
+                      </button>
+             </Link>
               </div>
             ))}
         </div>
