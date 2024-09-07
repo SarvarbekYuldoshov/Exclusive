@@ -21,9 +21,9 @@ const Korzinka = () => {
             {
                 single.length > 0 ? (
                     single.map(item => (
-                        <div key={item.id} className='relative p-4'>
-                            <img src={item.img1} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]' />
-                            <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
+                        <div key={item.id} className='relative p-4 ml-[295px]'>
+                            <img src={item.img1} alt={item.name} className='w-[300px] h-[350px] ml-[30px] max-sm:ml-[70px]' />
+                            <h1 className='text-xl text-[40px] font-bold mt-[20px] max-sm:ml-[40px]'>{item.name}</h1>
                             <ul className='flex items-center gap-[5px] mt-2 max-sm:ml-[20px]'>
                                 <h2 className='text-lg text-gray-600'>{item.price}</h2>
                                 <img src={item.img2} alt={item.name} className='w-[140px] h-[20px]' />
