@@ -15,7 +15,7 @@ const Korzinka = () => {
 
     return (
         <div className='max-w-[1200px] mx-auto p-[20px] justify-center'>
-            <h1 className='ml-[350px] text-[30px] max-sm:ml-[70px]'>
+            <h1 className='ml-[350px] text-[20px] max-sm:ml-[20px] '>
                 Siz Tanlagan mahsulot shu yerda
             </h1>
             {
