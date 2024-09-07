@@ -68,7 +68,7 @@ const Header = () => {
           <li className=''>
             <Link className='header-link-a' to="/shopping">
               <img className='max-sm:absolute bottom-3.5 left-[190px] w-7 h-7' src={Rasm_4} alt="Cart" />
-              <span className=" text-[13px] rounded-[50%] w-[15px] h-[15px] bg-[red] cart-count items-center justify text-[#f0eeee] absolute top-[55px] right-[265px]">{cards.length}</span> {/* Display cart count */}
+              <span className=" text-[13px] rounded-[50%] w-[15px] h-[15px] bg-[red] cart-count items-center justify text-[#f0eeee] absolute top-[55px] right-[265px] max-sm:top-[15px] left-[205px]">{cards.length}</span> {/* Display cart count */}
             </Link>
           </li>
         </ul>
