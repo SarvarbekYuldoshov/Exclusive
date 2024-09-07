@@ -14,21 +14,23 @@ const Korzinka = () => {
     }, [id])
 
     return (
-        <div className='max-w-[1200px] mx-auto p-[20px] justify-center'>
-            <h1 className='ml-[350px] text-[20px] max-sm:ml-[20px] '>
-                Siz Tanlagan mahsulot shu yerda
+        <div className='max-w-[1200px] mx-auto p-4 justify-center'>
+            <h1 className='text-center text-[24px] font-bold mb-6'>
+                Siz tanlagan mahsulot
             </h1>
             {
                 single.length > 0 ? (
                     single.map(item => (
-                        <div key={item.id} className='relative p-4 ml-[295px]'>
-                            <img src={item.img1} alt={item.name} className='w-[300px] h-[350px] ml-[30px] max-sm:ml-[70px]' />
-                            <h1 className='text-xl text-[40px] font-bold mt-[20px] max-sm:ml-[40px]'>{item.name}</h1>
-                            <ul className='flex items-center gap-[5px] mt-2 max-sm:ml-[20px]'>
-                                <h2 className='text-lg text-[30px] text-gray-600'>{item.price}</h2>
-                                <img src={item.img2} alt={item.name} className='w-[250px] h-[40px]' />
-                                <p className='ml-2 text-[30px] mt-[20px]'>{item.text}</p>
-                            </ul>
+                        <div key={item.id} className='flex flex-col items-center sm:flex-row sm:justify-center p-4'>
+                            <img src={item.img1} alt={item.name} className='w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] mb-4 sm:mb-0' />
+                            <div className='sm:ml-6 text-center sm:text-left'>
+                                <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
+                                <div className='flex flex-col items-center sm:items-start'>
+                                    <h2 className='text-[20px] text-gray-600 mb-2'>{item.price}</h2>
+                                    <img src={item.img2} alt={item.name} className='w-[200px] h-[40px] mb-2' />
+                                    <p className='text-[16px] text-gray-500'>{item.text}</p>
+                                </div>
+                            </div>
                         </div>
                     ))
                 ) : (
@@ -39,5 +41,6 @@ const Korzinka = () => {
     )
 }
 
-export default Korzinka
+export default Korzinka;
+
 
