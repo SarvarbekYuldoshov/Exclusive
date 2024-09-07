@@ -25,9 +25,9 @@ const Korzinka = () => {
                             <img src={item.img1} alt={item.name} className='w-[300px] h-[350px] ml-[30px] max-sm:ml-[70px]' />
                             <h1 className='text-xl text-[40px] font-bold mt-[20px] max-sm:ml-[40px]'>{item.name}</h1>
                             <ul className='flex items-center gap-[5px] mt-2 max-sm:ml-[20px]'>
-                                <h2 className='text-lg text-gray-600'>{item.price}</h2>
-                                <img src={item.img2} alt={item.name} className='w-[140px] h-[20px]' />
-                                <p className='ml-2'>{item.text}</p>
+                                <h2 className='text-lg text-[30px] text-gray-600'>{item.price}</h2>
+                                <img src={item.img2} alt={item.name} className='w-[250px] h-[40px]' />
+                                <p className='ml-2 text-[30px] mt-[20px]'>{item.text}</p>
                             </ul>
                         </div>
                     ))
