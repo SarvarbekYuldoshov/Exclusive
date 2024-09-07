@@ -17,8 +17,7 @@ const router = createBrowserRouter ([
     {
         path:"/shopping",
         element: <String/>
-    }
-    ,
+    },
     {
         path:"/korzinka/:id",
         element: <Korzinka/>

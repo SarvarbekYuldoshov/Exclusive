@@ -38,10 +38,10 @@ const Navbar = () => {
                       <img src={item.img2}alt={item.name}className='w-[140px] h-[20px]'/>
                       <p className=''>{item.text}</p>
                     </ul>
-                      <button onClick={() => handleAdd(item)} className='mt-[20px] w-[250px] h-[60px] top-[220px] bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>
-                          {adding[item.name]?"Qushilgan":"Qushish"}
-                      </button>
              </Link>
+             <button onClick={() => handleAdd(item)} className='mt-[20px] w-[250px] h-[60px] top-[220px] bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>
+                          {adding[item.name]?"Qushilgan":"Qushish"}
+            </button>
               </div>
             ))}
         </div>
