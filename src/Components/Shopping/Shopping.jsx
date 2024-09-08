@@ -100,7 +100,7 @@ const Shopping = () => {
 
               <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
               <ul className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
-                <h2 className='text-lg text-gray-600'>{item.price}</h2>
+                <h2 className='text-lg text-gray-600 ml-[20px]'>{item.price}</h2>
                 <img
                   src={item.img2}
                   alt={item.name}
@@ -109,7 +109,8 @@ const Shopping = () => {
                 <p>{item.text}</p>
               </ul>
               <ul className='flex gap-[10px] items-center'>
-                <button onClick={() => deleteCards(item.id)} className='mt-[10px] w-[100px] h-[30px] border border-[red] hover:scale-105 transition-transform duration-300 bg-[#f53232] text-white rounded-[3px]'>
+                <button onClick={() => deleteCards(item.id)} 
+                className='mt-[10px] w-[100px] h-[30px] border border-[red] hover:scale-105 transition-transform duration-300 bg-[#f53232] text-white rounded-[3px] max-sm:ml-[40px]'>
                   Delete
                 </button>
                 <Button className=' mt-[10px] text-[12px] w-[100px] h-[30px] border border-[#3057f2] hover:scale-105 transition-transform duration-300 bg-[#2758f7] text-white rounded-[3px]' onClick={() => showModal(item)}>Buyurtma Berish</Button>
@@ -118,7 +119,7 @@ const Shopping = () => {
                   footer={null} 
                   onCancel={closeModal}
                   bodyStyle={{ padding: '20px', overflow: 'hidden' }}
-                  style={{ top: 50 }} // Centering the modal vertically
+                  style={{ top: 50 }} 
                 >
                   <h2>Mahsulot: {selectedItem?.name}</h2>
                   <h3>Narxi: {selectedItem?.price}</h3>
@@ -160,7 +161,7 @@ const Shopping = () => {
                 </Modal>
               </ul>
               <br />
-              <ul className='ml-2 flex w-[190px] gap-[30px] mt-[20px] border border-black bg-[#67f127]'>
+              <ul className='ml-2 flex w-[190px] gap-[30px] mt-[20px] border border-black bg-[#67f127] max-sm:ml-[45px]'>
                 <button onClick={() => decrease(item.id)} className='w-[100px] border bg-[red] text-[white] border-[red]'>-</button>
                 <h5 className=''>{quantities[item.id]}</h5>
                 <button onClick={() => increase(item.id)} className='w-[100px] border bg-[#345ef5] text-[white] border-[#443be8]'>+</button>
@@ -168,7 +169,7 @@ const Shopping = () => {
             </div>
           ))
         ) : (
-          <p>Hech qanday mahsulot yo'q</p>
+          <p className='justify-center'>Hech qanday mahsulot yo'q</p>
         )}
       </div>
     </div>

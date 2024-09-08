@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Menu.css";
 import Rasm_27 from "../../images/rasm27.png";
+import Rasm_28 from "../../images/rasm28.png";
 import Rasm_29 from "../../images/rasm29.png";
 import Rasm_30 from "../../images/rasm30.png";
 import Rasm_31 from "../../images/rasm31.png";
@@ -22,7 +23,7 @@ const Menu = () => {
         </ul>
 
         <div className='mt-[40px] flex flex-wrap justify-between'>
-          <div className='w-[100%] lg:w-[48%] bg-black menu relative p-[20px] mb-[20px]'>
+          <div className=' w-[100%] lg:w-[48%] bg-black relative p-[20px] mb-[20px]'>
             <h1 className='text-[24px] font-semibold text-left text-[#FAFAFA]'>
               PlayStation 5
             </h1>
@@ -33,6 +34,7 @@ const Menu = () => {
               Shop Now
               <hr className='mt-[5px]' />
             </button>
+            <img className='w-[280px]' src={Rasm_28} alt="" />
           </div>
 
           <div className='w-[100%] lg:w-[48%] bg-black menu-img relative p-[20px] mb-[20px] flex items-center justify-between'>
