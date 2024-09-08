@@ -113,10 +113,10 @@ const Korzinka = () => {
                                 <p className='w-full lg:w-[400px] mb-4'>{item.text1}</p>
                                 <hr className='h-[3px] bg-black mb-4' />
                                 
-                                <div className='w-full lg:w-[200px] flex items-center border border-black bg-green-400'>
-                                    <button onClick={() => decrease(item.id)} className='w-[80px] border bg-red-500 text-white'>-</button>
+                                <div className='w-full lg:w-[200px] flex items-center border border-black bg-green-400 max-sm:'>
+                                    <button onClick={() => decrease(item.id)} className='w-[80px] border bg-red-500 text-white max-sm:ml-[65px]'>-</button>
                                     <h5 className='mx-4'>{quantities[item.id] || 1}</h5>
-                                    <button onClick={() => increase(item.id)} className='w-[80px] border bg-blue-500 text-white'>+</button>
+                                    <button onClick={() => increase(item.id)} className='w-[80px] border bg-blue-500 text-white '>+</button>
                                 </div>
                                 
                                 <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal(item)}>
