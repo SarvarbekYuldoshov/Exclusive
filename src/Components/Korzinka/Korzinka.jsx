@@ -95,8 +95,22 @@ const Korzinka = () => {
 
                     // ---------------------------------------Data-dan malumotlarni chaqilgan joyi-----------------------------
 
-                    <div key={item.id} className=' flex-col items-center sm:flex-row sm:justify-center p-4'>
-                        <div className='flex'>
+                    <div key={item.id} className='flex gap-[20px]'>
+                        <div className='w-[200px] h-[600px] border border-black'>
+                        <img className='w-[100px] h-[150px] ml-[50px] mt-[10px]'
+                           src={item.img1} 
+                           alt={item.name}/> 
+                           <p className='ml-[50px] w-[100px] h-[25x] border border-black items-center mt-2 bg-[blue] text-[white]'>{item.text3}</p>
+                            <img className='w-[150px] h-[150px] ml-[20px] mt-[10px]'
+                           src={item.img1} 
+                           alt={item.name}/> 
+                           <p className='ml-[20px] w-[150px] h-[25x] border border-black items-center mt-2 bg-[blue] text-[white]'>{item.text4}</p>
+                            <img className='w-[180px] h-[150px] ml-[8px] mt-[10px]'
+                           src={item.img1} 
+                           alt={item.name}/>  
+                           <p className='ml-[8px] w-[180px] h-[25x] border border-black items-center mt-2 bg-[blue] text-[white]'>{item.text5}</p>
+                        </div>
+                        <div className='flex items-center'>
                         <img
                            src={item.img1} 
                            alt={item.name}

@@ -21,7 +21,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution.",
         link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga bog`laning"
+        text2:"Agarda Qushimcha savolar bulsa shu joyga bog`laning",
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
     {
         id: 2,
@@ -34,7 +37,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
         ,link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" 
+        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
     {
         id: 3,
@@ -47,7 +53,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
         ,link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" 
+        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
     {
         id: 4,
@@ -60,7 +69,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
         ,link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" 
+        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
     {
         id: 5,
@@ -73,7 +85,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
         ,link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" 
+        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
     {
         id: 6,
@@ -86,7 +101,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
         ,link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" 
+        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
     {
         id: 7,
@@ -99,7 +117,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
         ,link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" 
+        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
     {
         id: 8,
@@ -112,7 +133,10 @@ const Data = [
         text:"(35)",
         text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
         ,link:"@Sirojidinovich_TDIU",
-        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" 
+        text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
+        text3:"M-Razmerda",
+        text4:"XL-Razmerda",
+        text5:"2LX-Razmerda"
     },
 ]
 export default Data;
