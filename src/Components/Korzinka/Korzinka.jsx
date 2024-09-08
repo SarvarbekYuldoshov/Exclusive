@@ -93,7 +93,7 @@ const Korzinka = () => {
                         <img 
                             src={item.img1} 
                             alt={item.name} 
-                            className='w-[250px] h-[300px] sm:w-[300px] sm:h-[350px] mb-4 sm:mb-0' 
+                            className='w-[400px] h-[400px] sm:w-[300px] sm:h-[350px] mb-4 sm:mb-0' 
                         />
                         <div className='sm:ml-6 text-center sm:text-left'>
                             <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
@@ -107,17 +107,18 @@ const Korzinka = () => {
                                 <p className='text-[16px] text-gray-500'>{item.text}</p>
                                 <p className='w-[400px]'>{item.text1}</p>
                             </div>
-                            <div className='flex items-center mt-[20px] border border-black bg-[#67f127]'>
+                            <hr className='mt-[10px]' />
+                            <div className=' w-[200px] flex items-center mt-[20px] border border-black bg-[#67f127]'>
                                 <button 
                                     onClick={() => decrease(item.id)} 
-                                    className='w-[100px] border bg-[red] text-[white] border-[red]'
+                                    className='w-[80px] border bg-[red] text-[white] border-[red]'
                                 >
                                     -
                                 </button>
-                                <h5 className='mx-4'>{quantities[item.id] || 1}</h5>
+                                <h5 className='mx-4 justify-center ml-[50px]'>{quantities[item.id] || 1}</h5>
                                 <button 
                                     onClick={() => increase(item.id)} 
-                                    className='w-[100px] border bg-[#345ef5] text-[white] border-[#443be8]'
+                                    className='w-[80px] ml-[59px] border bg-[#345ef5] text-[white] border-[#443be8]'
                                 >
                                     +
                                 </button>

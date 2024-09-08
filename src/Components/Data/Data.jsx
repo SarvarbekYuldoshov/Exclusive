@@ -29,7 +29,8 @@ const Data = [
         name: "CANON EOS DSLR Camera",
         price: "$120",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
     {
         id: 3,
@@ -39,7 +40,8 @@ const Data = [
         name: "ASUS FHD Gaming Laptop",
         price: "$230",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
     {
         id: 4,
@@ -49,7 +51,8 @@ const Data = [
         name: "Curology Product Set ",
         price: "$340",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
     {
         id: 5,
@@ -59,7 +62,8 @@ const Data = [
         name: "Kids Electric Car",
         price: "$210",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
     {
         id: 6,
@@ -69,7 +73,8 @@ const Data = [
         name: "Jr. Zoom Soccer Cleats",
         price: "$960",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
     {
         id: 7,
@@ -79,7 +84,8 @@ const Data = [
         name: "GP11 Shooter USB Gamepad",
         price: "$1100",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
     {
         id: 8,
@@ -89,7 +95,8 @@ const Data = [
         name: "Quilted Satin Jacket",
         price: "$140",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
 ]
 export default Data;
