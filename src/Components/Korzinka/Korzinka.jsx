@@ -86,7 +86,7 @@ const Korzinka = () => {
     };
 
     return (
-        <div className=' max-w-[1200px] mx-auto p-4 justify-center'>
+        <div className=' max-w-[1200px] mx-auto p-4 justify-center border border-black'>
 
             {/* ----------------------------------------map-qilingan qism------------------------------------------------------------ */}
 
@@ -95,7 +95,8 @@ const Korzinka = () => {
 
                     // ---------------------------------------Data-dan malumotlarni chaqilgan joyi-----------------------------
 
-                    <div key={item.id} className='flex flex-col items-center sm:flex-row sm:justify-center p-4'>
+                    <div key={item.id} className=' flex-col items-center sm:flex-row sm:justify-center p-4'>
+                        <div className='flex'>
                         <img
                            src={item.img1} 
                            alt={item.name}
@@ -128,7 +129,7 @@ const Korzinka = () => {
                                 </button>
                             </div>
                             <ul className='mb-[10px]'>
-                                
+
                             {/* ----------------------------------------Telegramga habar junatish joyi------------------------------------ */}
 
                             <Button 
@@ -180,12 +181,13 @@ const Korzinka = () => {
                             <a className='' href="">{item.link}</a>
                             <p className='mt-[10px]'>{item.text2}</p>
                         </div>
-
+                    </div>
                     </div>
                 ))
             ) : (
                 <p className='text-center text-lg text-gray-500'>No product found</p>
             )}
+            
         </div>
     );
 };
