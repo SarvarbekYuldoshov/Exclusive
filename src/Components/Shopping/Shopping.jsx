@@ -88,7 +88,6 @@ const Shopping = () => {
 
   return (
     <div className='max-w-[1200px] mx-auto p-[20px] justify-center'>
-      <h1 className='ml-[400px] text-[30px]'>Sizning mahsulotlaringiz shu yerda</h1>
       <div className='flex flex-wrap gap-[40px] mt-20'>
         {cards.length > 0 ? (
           cards.map((item, index) => (
@@ -114,7 +113,13 @@ const Shopping = () => {
                   Delete
                 </button>
                 <Button className=' mt-[10px] text-[12px] w-[100px] h-[30px] border border-[#3057f2] hover:scale-105 transition-transform duration-300 bg-[#2758f7] text-white rounded-[3px]' onClick={() => showModal(item)}>Buyurtma Berish</Button>
-                <Modal open={open} footer={null} onCancel={closeModal}>
+                <Modal 
+                  open={open} 
+                  footer={null} 
+                  onCancel={closeModal}
+                  bodyStyle={{ padding: '20px', overflow: 'hidden' }}
+                  style={{ top: 50 }} // Centering the modal vertically
+                >
                   <h2>Mahsulot: {selectedItem?.name}</h2>
                   <h3>Narxi: {selectedItem?.price}</h3>
                   <Form form={form} layout="vertical">
