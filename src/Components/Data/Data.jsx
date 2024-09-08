@@ -18,7 +18,8 @@ const Data = [
         name: "Breed Dry Dog Food",
         price: "$100",
         img2:Rasm_8,
-        text:"(35)"
+        text:"(35)",
+        text1:"Boxed meals, also known as pre-packaged meals, are convenient and ready-to-eat food options. They often include a variety of items such as sandwiches, salads, or snacks. Ideal for on-the-go consumption, boxed meals are popular for lunches, picnics, or travel. They offer a quick, easy, and mess-free dining solution."
     },
     {
         id: 2,
