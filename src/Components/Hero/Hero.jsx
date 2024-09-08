@@ -2,7 +2,7 @@ import React from 'react';
 import "./Hero.css";
 import Rasm_5 from "../../images/rasm5.png";
 import Rasm_6 from "../../images/rasm6.png";
-import Rasm_7 from "../../images/rasm7.png";
+import Rasm_7 from "../../images/phone.jpg";
 
 const Hero = () => {
   return (

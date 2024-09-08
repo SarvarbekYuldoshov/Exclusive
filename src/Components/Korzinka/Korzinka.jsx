@@ -86,7 +86,7 @@ const Korzinka = () => {
     };
 
     return (
-        <div className=' max-w-[1200px] mx-auto p-4 justify-center border border-black'>
+        <div className=' max-w-[1200px] mx-auto p-4 justify-center border border-black mt-[50px]'>
 
             {/* ----------------------------------------map-qilingan qism------------------------------------------------------------ */}
 
@@ -97,14 +97,16 @@ const Korzinka = () => {
 
                     <div key={item.id} className='flex gap-[20px]'>
                         <div className='w-[200px] h-[600px] border border-black'>
-                        <img className='w-[100px] h-[150px] ml-[50px] mt-[10px]'
+                        <img className='w-[100px] h-[100px] ml-[50px] mt-[10px]'
                            src={item.img1} 
                            alt={item.name}/> 
                            <p className='ml-[50px] w-[100px] h-[25x] border border-black items-center mt-2 bg-[blue] text-[white]'>{item.text3}</p>
+                           <hr className='mt-[10px] h-[3px] bg-black' />
                             <img className='w-[150px] h-[150px] ml-[20px] mt-[10px]'
                            src={item.img1} 
                            alt={item.name}/> 
                            <p className='ml-[20px] w-[150px] h-[25x] border border-black items-center mt-2 bg-[blue] text-[white]'>{item.text4}</p>
+                           <hr className='mt-[10px] h-[3px] bg-black' />
                             <img className='w-[180px] h-[150px] ml-[8px] mt-[10px]'
                            src={item.img1} 
                            alt={item.name}/>  
@@ -114,7 +116,7 @@ const Korzinka = () => {
                         <img
                            src={item.img1} 
                            alt={item.name}
-                           className='w-[400px] h-[400px] sm:w-[300px] sm:h-[350px] mb-4 sm:mb-0'/>
+                           className='w-[500px] h-[400px] sm:w-[300px] sm:h-[350px] mb-4 sm:mb-0'/>
                    <div className='sm:ml-6 text-center sm:text-left'>
                         <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
                     <div className='flex flex-col items-center sm:items-start'>
