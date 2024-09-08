@@ -15,9 +15,6 @@ const Korzinka = () => {
 
     return (
         <div className='max-w-[1200px] mx-auto p-4 justify-center'>
-            <h1 className='text-center text-[24px] font-bold mb-6'>
-                Siz tanlagan mahsulot
-            </h1>
             {
                 single.length > 0 ? (
                     single.map(item => (
@@ -34,7 +31,7 @@ const Korzinka = () => {
                         </div>
                     ))
                 ) : (
-                    <p className='text-center text-lg text-gray-500'>Mahsulot topilmadi</p>
+                    <p className='text-center text-lg text-gray-500'></p>
                 )
             }
         </div>
