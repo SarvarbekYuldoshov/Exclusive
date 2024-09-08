@@ -86,12 +86,11 @@ const Korzinka = () => {
     };
 
     return (
-        <div className='max-w-[1200px] mx-auto p-4 justify-center'>
+        <div className=' max-w-[1200px] mx-auto p-4 justify-center'>
             {single.length > 0 ? (
                 single.map(item => (
                     <div key={item.id} className='flex flex-col items-center sm:flex-row sm:justify-center p-4'>
-                        <img 
-                            src={item.img1} 
+                        <img src={item.img1} 
                             alt={item.name} 
                             className='w-[400px] h-[400px] sm:w-[300px] sm:h-[350px] mb-4 sm:mb-0' 
                         />
@@ -107,7 +106,7 @@ const Korzinka = () => {
                                 <p className='text-[16px] text-gray-500'>{item.text}</p>
                                 <p className='w-[400px]'>{item.text1}</p>
                             </div>
-                            <hr className='mt-[10px]' />
+                            <hr className='mt-[10px] h-[3px] bg-black' />
                             <div className=' w-[200px] flex items-center mt-[20px] border border-black bg-[#67f127]'>
                                 <button 
                                     onClick={() => decrease(item.id)} 
@@ -123,6 +122,7 @@ const Korzinka = () => {
                                     +
                                 </button>
                             </div>
+                            <ul className='mb-[10px]'>
                             <Button 
                                 className='mt-[10px] text-[12px] w-[100px] h-[30px] border border-[#3057f2] hover:scale-105 transition-transform duration-300 bg-[#2758f7] text-white rounded-[3px]' 
                                 onClick={() => showModal(item)}
@@ -168,7 +168,11 @@ const Korzinka = () => {
                                     </Button>
                                 </Form>
                             </Modal>
+                            </ul>
+                            <a className='' href="">{item.link}</a>
+                            <p className='mt-[10px]'>{item.text2}</p>
                         </div>
+
                     </div>
                 ))
             ) : (
@@ -177,5 +181,4 @@ const Korzinka = () => {
         </div>
     );
 };
-
 export default Korzinka;
