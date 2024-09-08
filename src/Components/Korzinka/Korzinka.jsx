@@ -89,9 +89,12 @@ const Korzinka = () => {
         <div className=' max-w-[1200px] mx-auto p-4 justify-center'>
 
             {/* ----------------------------------------map-qilingan qism------------------------------------------------------------ */}
-            
+
             {single.length > 0 ? (
                 single.map(item => (
+
+                    // ---------------------------------------Datadan malumotlarni chaqirib olingan qism---------------------------------
+                    
                     <div key={item.id} className='flex flex-col items-center sm:flex-row sm:justify-center p-4'>
                         <img src={item.img1}  alt={item.name}className='w-[400px] h-[400px] sm:w-[300px] sm:h-[350px] mb-4 sm:mb-0'/>
                     <div className='sm:ml-6 text-center sm:text-left'>
