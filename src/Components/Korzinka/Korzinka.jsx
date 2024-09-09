@@ -91,7 +91,7 @@ const Korzinka = () => {
         <>
         <Header/>
         <div className='max-w-[1200px] mx-auto p-4 justify-center mt-[50px]'>
-          <h1 className='text-[30px] flex items-center justify-center mb-[40px]'>Bu yerda sizga malumotlari kerak bulgan mahsulotlar bor</h1>
+          <h1 className='text-[30px] flex items-center justify-center mb-[40px]'>Bu yerda sizga kerakli mahsulotlar mavjud</h1>
             {/* Map qilingan qism */}
             {single.map(item => (
                 <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
