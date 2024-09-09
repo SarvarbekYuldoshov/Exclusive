@@ -36,7 +36,7 @@ const Number = () => {
             <h5 className=' mt-[10px] w-[242px] h-[30px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
             {t("number.number_text_5")}
             </h5>
-            <p className='w-[220px] mt-[10px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
+            <p className='w-[220px] mt-[15px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
             {t("number.number_text_6")}
             </p>
           </div>

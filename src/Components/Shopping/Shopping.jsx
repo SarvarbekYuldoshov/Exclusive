@@ -92,7 +92,7 @@ const Shopping = () => {
     
   <>
   <Header/>
-      <div className='max-w-[1200px] mx-auto p-[20px]  items-center justify-center'>
+      <div className='max-w-[1200px] mx-auto p-[20px]  items-center justify-center mt-[150px]'>
       <h1 className='text-[40px] flex items-center justify-center '>Siz sotib olmoqchi bulgan buyumlar</h1>
       <div className='flex flex-wrap gap-[40px] mt-20'>
         {cards.length > 0 ? (
