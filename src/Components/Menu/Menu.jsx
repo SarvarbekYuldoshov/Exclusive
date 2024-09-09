@@ -8,7 +8,7 @@ import Rasm_31 from "../../images/rasm31.png";
 
 const Menu = () => {
   return (
-    <div className=''>
+    <div id='navbar3' className=''>
       <div className='mx-auto max-w-[1200px] p-[20px]'>
         <ul className=''>
           <li className='flex items-center gap-[10px]'>

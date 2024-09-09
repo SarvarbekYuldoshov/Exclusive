@@ -9,7 +9,7 @@ import Rasm_42 from "../../images/rasm42.png";
 
 const Footer = () => {
   return (
-    <div className='bg-black p-5'>
+    <div id='navbar3' className='bg-black p-5'>
       <div className='max-w-[1200px] mx-auto flex flex-wrap gap-4 justify-between items-start'>
         
         <div>
