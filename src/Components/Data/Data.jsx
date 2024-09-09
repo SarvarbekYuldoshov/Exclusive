@@ -8,7 +8,6 @@ import Rasm_7 from "../../images/rasm25.png"
 import Rasm_8 from "../../images/rasm19.png"
 import Rasm_9 from "../../images/rasm17.png"
 import Rasm_10 from "../../images/rasm18.png"
-
 const Data = [
     {
         id: 1,

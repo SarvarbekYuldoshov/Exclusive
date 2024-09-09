@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const Hero = () => {
   const { t } = useTranslation();
   return (
-    <div className='bg-black text-center'>
+    <div className='bg-black text-center  mt-[150px]'>
       <div className='flex flex-col md:flex-row items-center mx-auto max-w-[1200px] p-6 md:p-10'>
         <ul className='md:mr-10 text-white flex-1'>
           <li className='flex items-center gap-5'>

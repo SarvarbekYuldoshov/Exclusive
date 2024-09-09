@@ -47,7 +47,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className='p-[20px] my-10 items-center flex justify-between mx-auto max-w-[1200px] max-sm:relative'>
+      <div className='w-[100%] header p-[20px] my-10 items-center flex justify-between mx-auto max-w-[1200px] max-sm:relative'>
         <Link to="/"><img src={Rasm_1} alt="Logo"/></Link>
         <Dropdown
           menu={{
