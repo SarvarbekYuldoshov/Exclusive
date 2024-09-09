@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import Rasm_26 from '../../images/rasm26.png';
 import { Button, Modal, Form, Input, message } from 'antd';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Main = () => {
+  const { t } = useTranslation();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -95,10 +97,10 @@ const Main = () => {
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-5 md:px-10">
         <div className="md:w-1/2">
           <p className="text-[#00FF66] font-poppins font-semibold text-sm md:text-base mb-4">
-            Categories
+            {t("main.main_text_1")}
           </p>
           <h1 className="text-[#FAFAFA] font-inter font-semibold text-3xl md:text-5xl leading-tight md:leading-snug mb-6">
-            Enhance Your Music Experience
+          {t("main.main_text_2")}
           </h1>
           <ul className="flex gap-4 mb-8">
             {['Days', 'Hours', 'Minutes', 'Seconds'].map((unit, index) => (
@@ -111,7 +113,7 @@ const Main = () => {
             ))}
           </ul>
           <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal({ name: 'Product Name', price: '100' })}>
-            Buy Now!
+          {t("main.main_text_3")}
           </Button>
 
           <Modal open={open} footer={null} onCancel={closeModal}>

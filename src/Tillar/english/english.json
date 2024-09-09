@@ -19,5 +19,36 @@
         "hover_text_6":"Camera",
         "hover_text_7":"HeadPhones",
         "hover_text_8":"Gaming"
+    },
+    "navbar":{
+        "navbar_text_1":"Breed Dry Dog Food",
+        "navbar_text_2":"CANON EOS DSLR Camera",
+        "navbar_text_3":"ASUS FHD Gaming Laptop",
+        "navbar_text_4":"Curology Product Set",
+        "navbar_text_5":"Kids Electric Car",
+        "navbar_text_6":"Jr. Zoom Soccer Cleats",
+        "navbar_text_7":"GP11 Shooter USB Gamepad",
+        "navbar_text_8":"Quilted Satin Jacket"
+    },
+    "main":{
+        "main_text_1":"Categories",
+        "main_text_2":"Enhance Your Music Experience",
+        "main_text_3":"Buy Now!"
+    },
+    "menu":{
+        "main_text_1":"Featured",
+        "main_text_2":"New Arrival",
+        "main_text_3":"PlayStation 5",
+        "main_text_4":"Black and White version of the PS5 coming out on sale.",
+        "main_text_5":"Shop Now",
+        "main_text_6":"Women’s Collections",
+        "main_text_7":"Featured woman collections that give you another vibe.",
+        "main_text_8":"Shop Now",
+        "main_text_9":"Shop NowSpeaker",
+        "main_text_11":"Amazon wireless speakers",
+        "main_text_12":"Shop Now",
+        "main_text_13":"Perfume",
+        "main_text_14":"GUCCI INTENSE OUD EDP",
+        "main_text_15":"Shop Now"
     }
 }
