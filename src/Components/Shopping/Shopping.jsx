@@ -169,7 +169,7 @@ const Shopping = () => {
             </div>
           ))
         ) : (
-          <p className='justify-center'>Hech qanday mahsulot yo'q</p>
+          <p className='justify-center'></p>
         )}
       </div>
     </div>

@@ -8,15 +8,20 @@ import Rasm15 from "../../images/rasm15.png";
 import { Dropdown } from 'antd';
 import { Link } from 'react-router-dom';
 import useSharedStore from '../String/Store';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const { cards } = useSharedStore(); 
+  const { t, i18n } = useTranslation();
 
+  const handleLanguageChange = (e) => {
+    i18n.changeLanguage(e.target.value);
+  };
   const items = [
     {
       key: '1',
       label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">Home</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">{t("header.header_text")}</a>
       ),
     },
     {
@@ -58,6 +63,13 @@ const Header = () => {
           <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#navbar1">Contact</a></li>
           <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#navbar2">About</a></li>
           <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#navbar3">Sign in</a></li>
+          <li className="header-item-a">
+            <select className="select" onChange={handleLanguageChange} value={i18n.language}>
+              <option value="uz">Uzbek</option>
+              <option value="ru">Russian</option>
+              <option value="en">English</option>
+            </select>
+          </li>
         </ul>
         <ul className='flex gap-5 max-sm:gap-5'>
           <div className='flex gap-20 border border-black max-lg:gap-2 max-sm:absolute top-[70px] right-[25px]'>

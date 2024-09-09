@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Rasm_26 from '../../images/rasm26.png';
+import { Button, Modal, Form, Input, message } from 'antd';
+import { useParams } from 'react-router-dom';
 
 const Main = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -9,7 +11,6 @@ const Main = () => {
     seconds: 0,
   });
 
-  // Set your target date here (e.g., New Year's Eve)
   const targetDate = new Date('2024-12-31T00:00:00');
 
   useEffect(() => {
@@ -34,6 +35,61 @@ const Main = () => {
     return () => clearInterval(timerInterval);
   }, [targetDate]);
 
+  const { id } = useParams();
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [form] = Form.useForm();
+
+  const sendMessage = () => {
+    form.validateFields()
+      .then((values) => {
+        const { name, surname, number } = values;
+        const token = "your-telegram-bot-token";
+        const chat_id = "your-chat-id";
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
+
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            chat_id: chat_id,
+            text: messageText,
+          }),
+        })
+          .then(res => res.json())
+          .then(res => {
+            if (res.ok) {
+              message.success("Xabar yuborildi");
+              setOpen(false);
+              form.resetFields();
+            } else {
+              console.error("Telegram API error:", res);
+              message.error("Xatolik yuz berdi, qaytadan urinib ko'ring");
+            }
+          })
+          .catch(err => {
+            console.error("Fetch error:", err);
+            message.error("Telegramga ulanishda xatolik");
+          });
+      })
+      .catch(() => {
+        message.error("Iltimos, barcha maydonlarni to'ldiring!");
+      });
+  };
+
+  const showModal = (item) => {
+    setSelectedItem(item);
+    setOpen(true);
+  };
+
+  const closeModal = () => {
+    setOpen(false);
+    setSelectedItem(null);
+  };
+
   return (
     <div className="bg-black py-10" id='navbar2'>
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-5 md:px-10">
@@ -45,34 +101,58 @@ const Main = () => {
             Enhance Your Music Experience
           </h1>
           <ul className="flex gap-4 mb-8">
-            <li className="flex flex-col items-center justify-center w-16 h-16 bg-white rounded-full">
-              <p className="font-poppins font-semibold text-lg text-black">
-                {timeLeft.days}
-              </p>
-              <span className="font-poppins text-xs text-black">Days</span>
-            </li>
-            <li className="flex flex-col items-center justify-center w-16 h-16 bg-white rounded-full">
-              <p className="font-poppins font-semibold text-lg text-black">
-                {timeLeft.hours}
-              </p>
-              <span className="font-poppins text-xs text-black">Hours</span>
-            </li>
-            <li className="flex flex-col items-center justify-center w-16 h-16 bg-white rounded-full">
-              <p className="font-poppins font-semibold text-lg text-black">
-                {timeLeft.minutes}
-              </p>
-              <span className="font-poppins text-xs text-black">Minutes</span>
-            </li>
-            <li className="flex flex-col items-center justify-center w-16 h-16 bg-white rounded-full">
-              <p className="font-poppins font-semibold text-lg text-black">
-                {timeLeft.seconds}
-              </p>
-              <span className="font-poppins text-xs text-black">Seconds</span>
-            </li>
+            {['Days', 'Hours', 'Minutes', 'Seconds'].map((unit, index) => (
+              <li key={unit} className="flex flex-col items-center justify-center w-16 h-16 bg-white rounded-full">
+                <p className="font-poppins font-semibold text-lg text-black">
+                  {Object.values(timeLeft)[index]}
+                </p>
+                <span className="font-poppins text-xs text-black">{unit}</span>
+              </li>
+            ))}
           </ul>
-          <button className="bg-[#00FF66] hover:bg-[#00CC55] text-[#FAFAFA] font-poppins font-medium text-base py-3 px-6 rounded transition duration-300">
+          <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal({ name: 'Product Name', price: '100' })}>
             Buy Now!
-          </button>
+          </Button>
+
+          <Modal open={open} footer={null} onCancel={closeModal}>
+            <h2>Mahsulot: {selectedItem?.name}</h2>
+            <h3>Narxi: {selectedItem?.price}</h3>
+            <Form form={form} layout="vertical">
+              <Form.Item
+                name="name"
+                rules={[
+                  { required: true, message: 'Ismingizni kiriting' },
+                  { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input placeholder='Ismingizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                name="surname"
+                rules={[
+                  { required: true, message: 'Familiyangizni kiriting' },
+                  { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input placeholder='Familiyangizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                name="number"
+                rules={[
+                  { required: true, message: 'Raqamingizni kiriting' },
+                  {
+                    pattern: /^\+998\d{9}$/,
+                    message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
+                  },
+                ]}
+              >
+                <Input placeholder='+998XXXXXXXXX' />
+              </Form.Item>
+              <Button onClick={sendMessage} type="primary">
+                Yuborish
+              </Button>
+            </Form>
+          </Modal>
         </div>
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
           <img
@@ -87,4 +167,3 @@ const Main = () => {
 };
 
 export default Main;
-
