@@ -36,19 +36,19 @@
         "main_text_3":"Buy Now!"
     },
     "menu":{
-        "main_text_1":"Featured",
-        "main_text_2":"New Arrival",
-        "main_text_3":"PlayStation 5",
-        "main_text_4":"Black and White version of the PS5 coming out on sale.",
-        "main_text_5":"Shop Now",
-        "main_text_6":"Women’s Collections",
-        "main_text_7":"Featured woman collections that give you another vibe.",
-        "main_text_8":"Shop Now",
-        "main_text_9":"Shop NowSpeaker",
-        "main_text_11":"Amazon wireless speakers",
-        "main_text_12":"Shop Now",
-        "main_text_13":"Perfume",
-        "main_text_14":"GUCCI INTENSE OUD EDP",
-        "main_text_15":"Shop Now"
+        "menu_text_1":"Featured",
+        "menu_text_2":"New Arrival",
+        "menu_text_3":"PlayStation 5",
+        "menu_text_4":"Black and White version of the PS5 coming out on sale.",
+        "menu_text_5":"Shop Now",
+        "menu_text_6":"Women’s Collections",
+        "menu_text_7":"Featured woman collections that give you another vibe.",
+        "menu_text_8":"Shop Now",
+        "menu_text_9":"Shop NowSpeaker",
+        "menu_text_11":"Amazon wireless speakers",
+        "menu_text_12":"Shop Now",
+        "menu_text_13":"Perfume",
+        "menu_text_14":"GUCCI INTENSE OUD EDP",
+        "menu_text_15":"Shop Now"
     }
 }

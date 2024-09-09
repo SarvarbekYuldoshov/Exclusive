@@ -22,8 +22,23 @@
     },
     "main": {
         "main_text_1": "Kategoriyalar",
-        "main_text_2": "Musiqa Tinglash Tajribangizni Yaxshilang"
+        "main_text_2": "Musiqa Tinglash Tajribangizni Yaxshilang",
+        "main_text_3": "Hozir Xarid Qiling!"
+    },
+    "menu": {
+        "menu_text_1": "Tavsiya etilgan",
+        "menu_text_2": "Yangi Keltirilgan",
+        "menu_text_3": "PlayStation 5",
+        "menu_text_4": "PS5 ning qora va oq versiyasi sotuvga chiqmoqda.",
+        "menu_text_5": "Hozir Xarid Qiling",
+        "menu_text_6": "Ayollar Kollektsiyalari",
+        "menu_text_7": "Sizga yangi taassurot beradigan ayollar uchun kollektsiyalar.",
+        "menu_text_8": "Hozir Xarid Qiling",
+        "menu_text_9": "Hozir Xarid Qiling",
+        "menu_text_11": "Amazon simsiz karnaylari",
+        "menu_text_12": "Hozir Xarid Qiling",
+        "menu_text_13": "Atir",
+        "menu_text_14": "GUCCI INTENSE OUD EDP",
+        "menu_text_15": "Hozir Xarid Qiling"
     }
-    
-    
 }
