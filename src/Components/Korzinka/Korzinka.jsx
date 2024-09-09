@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Data from '../Data/Data';
 import { Button, Form, Input, Modal, message } from 'antd';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const Korzinka = () => {
     const { id } = useParams();
@@ -87,8 +89,9 @@ const Korzinka = () => {
 
     return (
         <>
+        <Header/>
         <div className='max-w-[1200px] mx-auto p-4 justify-center mt-[50px]'>
-
+          <h1 className='text-[30px] flex items-center justify-center mb-[40px]'>Bu yerda sizga malumotlari kerak bulgan mahsulotlar bor</h1>
             {/* Map qilingan qism */}
             {single.map(item => (
                 <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
@@ -167,6 +170,7 @@ const Korzinka = () => {
                 </div>
             ))}
         </div>
+        <Footer/>
         </>
     );
 };
