@@ -1,0 +1,24 @@
+{
+    "header": {
+        "header_text": "Bosh sahifa",
+        "header_text_1": "Aloqa",
+        "header_text_2": "Biz haqimizda",
+        "header_text_3": "Kirish"
+    },
+    "hero": {
+        "hero_text_1": "iPhone 14 Seriyasi",
+        "hero_text_2": "10% chegirma voucher",
+        "hero_text_3": "Xarid qiling"
+    }  ,
+     "hover": {
+        "hover_text_1": "Kategoriyalar",
+        "hover_text_2": "Kategoriyalar bo'yicha ko'rish",
+        "hover_text_3": "Telefonlar",
+        "hover_text_4": "Kompyuterlar",
+        "hover_text_5": "Aqlli soatlar",
+        "hover_text_6": "Kamera",
+        "hover_text_7": "Naushniklar",
+        "hover_text_8": "O'yinlar"
+    }
+    
+}

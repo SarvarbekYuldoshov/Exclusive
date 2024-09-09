@@ -86,6 +86,7 @@ const Korzinka = () => {
     };
 
     return (
+        <>
         <div className='max-w-[1200px] mx-auto p-4 justify-center mt-[50px]'>
 
             {/* Map qilingan qism */}
@@ -166,7 +167,9 @@ const Korzinka = () => {
                 </div>
             ))}
         </div>
+        </>
     );
 };
+
 
 export default Korzinka;

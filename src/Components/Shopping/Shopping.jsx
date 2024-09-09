@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import useSharedStore from '../String/Store';
 import { Button, Form, Input, Modal, message } from 'antd';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const Shopping = () => {
   const { cards, setCards } = useSharedStore();
@@ -87,7 +89,11 @@ const Shopping = () => {
   };
 
   return (
-    <div className='max-w-[1200px] mx-auto p-[20px] justify-center'>
+    
+  <>
+  <Header/>
+      <div className='max-w-[1200px] mx-auto p-[20px]  items-center justify-center'>
+      <h1 className='text-[40px] flex items-center justify-center '>Siz sotib olmoqchi bulgan buyumlar</h1>
       <div className='flex flex-wrap gap-[40px] mt-20'>
         {cards.length > 0 ? (
           cards.map((item, index) => (
@@ -110,10 +116,10 @@ const Shopping = () => {
               </ul>
               <ul className='flex gap-[10px] items-center'>
                 <button onClick={() => deleteCards(item.id)} 
-                className='mt-[10px] w-[100px] h-[30px] border border-[red] hover:scale-105 transition-transform duration-300 bg-[#f53232] text-white rounded-[3px] max-sm:ml-[40px]'>
+                className='mt-[10px] w-[100px] h-[30px] border border-[red] hover:scale-105 transition-transform duration-300 bg-[#f3f8f8] text-black rounded-[3px] max-sm:ml-[40px]'>
                   Delete
                 </button>
-                <Button className=' mt-[10px] text-[12px] w-[100px] h-[30px] border border-[#3057f2] hover:scale-105 transition-transform duration-300 bg-[#2758f7] text-white rounded-[3px]' onClick={() => showModal(item)}>Buyurtma Berish</Button>
+                <Button className=' mt-[10px] text-[12px] w-[100px] h-[30px] border border-[#3057f2] hover:scale-105 transition-transform duration-300 bg-[#f4f4f7] text-black rounded-[3px]' onClick={() => showModal(item)}>Buyurtma Berish</Button>
                 <Modal 
                   open={open} 
                   footer={null} 
@@ -161,10 +167,10 @@ const Shopping = () => {
                 </Modal>
               </ul>
               <br />
-              <ul className='ml-2 flex w-[190px] gap-[30px] mt-[20px] border border-black bg-[#67f127] max-sm:ml-[45px]'>
-                <button onClick={() => decrease(item.id)} className='w-[100px] border bg-[red] text-[white] border-[red]'>-</button>
+              <ul className='ml-2 flex w-[190px] gap-[30px] mt-[20px] border border-black bg-[#edf4ea] max-sm:ml-[45px]'>
+                <button onClick={() => decrease(item.id)} className='w-[100px] border bg-[#000000] text-[white] border-[#233a9f]'>-</button>
                 <h5 className=''>{quantities[item.id]}</h5>
-                <button onClick={() => increase(item.id)} className='w-[100px] border bg-[#345ef5] text-[white] border-[#443be8]'>+</button>
+                <button onClick={() => increase(item.id)} className='w-[100px] border bg-[#040711] text-[white] border-[#443be8]'>+</button>
               </ul>
             </div>
           ))
@@ -173,6 +179,8 @@ const Shopping = () => {
         )}
       </div>
     </div>
+    <Footer/>
+  </>
   );
 };
 
