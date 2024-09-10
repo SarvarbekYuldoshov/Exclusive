@@ -69,9 +69,7 @@ const Header = () => {
           <Link to="/"> 
           <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#navbar2">{t("header.header_text_2")}</a></li>
           </Link>
-          <Link to="/"> 
-          <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#navbar3">{t("header.header_text_3")}</a></li>
-          </Link>
+          
           <li className="header-item-a">
             <select className="select" onChange={handleLanguageChange} value={i18n.language}>
               <option value="uz">Uzbek</option>

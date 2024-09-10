@@ -6,9 +6,9 @@ const Bollen = () => {
     <>
       <div className='bollen'>
         <div className='max-w-[1200px] mx-auto p-[20px] flex flex-col md:flex-row gap-[20px] items-center'>
-          <h1 className= 'bollen-text text-white text-center md:text-left text-lg md:text-2xl'>
-            <q className=' text-[#47e228]'>Zamonbop</q> texnikalar bozori! Tanlangan elektronika
-            textnikangizni uyingizgacha dastafka qilib beramiz mutlaqo bepulga!
+          <h1 className= 'bollen-text text-white  text-center md:text-left text-lg md:text-2xl'>
+            <q className=' text-[#47e228]'>Zamonbop</q> texnikalar bozori! Tanlangan
+            textnikangizni  dastafka qilib beramiz!
           </h1>
           <li className='list-none'>
             <a className='text-[#50ec38] text-base md:text-lg' href="#sotibolish">
