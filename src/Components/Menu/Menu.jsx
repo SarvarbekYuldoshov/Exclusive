@@ -96,7 +96,7 @@ const Menu = () => {
   const closeModal = () => setOpen(false);
 
   return (
-    <div id='navbar3' className=''>
+    <div id='navbar' className=''>
       <div className='mx-auto max-w-[1200px] p-[20px]'>
         <ul className=''>
           <li className='flex items-center gap-[10px]'>

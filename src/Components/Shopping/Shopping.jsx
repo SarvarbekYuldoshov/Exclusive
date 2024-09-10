@@ -3,6 +3,7 @@ import useSharedStore from '../String/Store';
 import { Button, Form, Input, Modal, message } from 'antd';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Bollen from '../Bollen/Bollen';
 
 const Shopping = () => {
   const { cards, setCards } = useSharedStore();
@@ -20,8 +21,8 @@ const Shopping = () => {
     form.validateFields()
       .then((values) => {
         const { name, surname, number } = values;
-        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
-        const chat_id = "6801549705";
+        const token = "your-telegram-bot-token"; // Replace with your token
+        const chat_id = "your-chat-id"; // Replace with your chat ID
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
 
@@ -31,8 +32,8 @@ const Shopping = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            "chat_id": chat_id,
-            "text": messageText,
+            chat_id: chat_id,
+            text: messageText,
           }),
         })
           .then(res => res.json())
@@ -89,98 +90,95 @@ const Shopping = () => {
   };
 
   return (
-    
-  <>
-  <Header/>
-      <div className='max-w-[1200px] mx-auto p-[20px]  items-center justify-center mt-[150px]'>
-      <h1 className='text-[40px] flex items-center justify-center '>Siz sotib olmoqchi bulgan buyumlar</h1>
-      <div className='flex flex-wrap gap-[40px] mt-20'>
-        {cards.length > 0 ? (
-          cards.map((item, index) => (
-            <div className='cards' key={index}>
-              <img
-                src={item.img1}
-                alt={item.name}
-                className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'
-              />
-
-              <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
-              <ul className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
-                <h2 className='text-lg text-gray-600 ml-[20px]'>{item.price}</h2>
+    <>
+      <Bollen />
+      <Header />
+      <div className='max-w-6xl mx-auto p-4 mt-[200px]'>
+        <h1 className='text-3xl text-center mb-10'>Siz sotib olmoqchi bulgan buyumlar</h1>
+        <div className='flex flex-wrap gap-8'>
+          {cards.length > 0 ? (
+            cards.map((item, index) => (
+              <div className='bg-white p-4 rounded-lg shadow-md flex flex-col items-center w-full sm:w-80' key={index}>
                 <img
-                  src={item.img2}
+                  src={item.img1}
                   alt={item.name}
-                  className='w-[140px] h-[20px]'
+                  className='w-full h-40 object-cover rounded-lg'
                 />
-                <p>{item.text}</p>
-              </ul>
-              <ul className='flex gap-[10px] items-center'>
-                <button onClick={() => deleteCards(item.id)} 
-                className='mt-[10px] w-[100px] h-[30px] border border-[red] hover:scale-105 transition-transform duration-300 bg-[#f3f8f8] text-black rounded-[3px] max-sm:ml-[40px]'>
-                  Delete
-                </button>
-                <Button className=' mt-[10px] text-[12px] w-[100px] h-[30px] border border-[#3057f2] hover:scale-105 transition-transform duration-300 bg-[#f4f4f7] text-black rounded-[3px]' onClick={() => showModal(item)}>Buyurtma Berish</Button>
-                <Modal 
-                  open={open} 
-                  footer={null} 
-                  onCancel={closeModal}
-                  bodyStyle={{ padding: '20px', overflow: 'hidden' }}
-                  style={{ top: 50 }} 
-                >
-                  <h2>Mahsulot: {selectedItem?.name}</h2>
-                  <h3>Narxi: {selectedItem?.price}</h3>
-                  <Form form={form} layout="vertical">
-                    <Form.Item
-                      name="name"
-                      rules={[
-                        { required: true, message: 'Ismingizni kiriting' },
-                        { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
-                      ]}
-                    >
-                      <Input className='home-input-a' placeholder='Ismingizni kiriting' />
-                    </Form.Item>
-                    <Form.Item
-                      name="surname"
-                      rules={[
-                        { required: true, message: 'Familiyangizni kiriting' },
-                        { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
-                      ]}
-                    >
-                      <Input className='home-input-b' placeholder='Familiyangizni kiriting' />
-                    </Form.Item>
-                    <Form.Item
-                      name="number"
-                      rules={[
-                        { required: true, message: 'Raqamingizni kiriting' },
-                        {
-                          pattern: /^\+998\d{9}$/,
-                          message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
-                        },
-                      ]}
-                    >
-                      <Input className='home-input-c' placeholder='+998XXXXXXXXX' />
-                    </Form.Item>
-                    <Button onClick={sendMessage} type="primary">
-                      Yuborish
-                    </Button>
-                  </Form>
-                </Modal>
-              </ul>
-              <br />
-              <ul className='ml-2 flex w-[190px] gap-[30px] mt-[20px] border border-black bg-[#edf4ea] max-sm:ml-[45px]'>
-                <button onClick={() => decrease(item.id)} className='w-[100px] border bg-[#000000] text-[white] border-[#233a9f]'>-</button>
-                <h5 className=''>{quantities[item.id]}</h5>
-                <button onClick={() => increase(item.id)} className='w-[100px] border bg-[#040711] text-[white] border-[#443be8]'>+</button>
-              </ul>
-            </div>
-          ))
-        ) : (
-          <p className='justify-center'></p>
-        )}
+                <h2 className='text-xl font-semibold mt-4'>{item.name}</h2>
+                <div className='flex items-center gap-2 mt-2'>
+                  <h3 className='text-lg text-gray-600'>{item.price}</h3>
+                  <img
+                    src={item.img2}
+                    alt={item.name}
+                    className='w-20 h-5 object-contain'
+                  />
+                  <p>{item.text}</p>
+                </div>
+                <div className='flex gap-4 mt-4'>
+                  <Button
+                    className='bg-red-500 text-white hover:bg-red-600'
+                    onClick={() => deleteCards(item.id)}
+                  >
+                    Delete
+                  </Button>
+                  <Button
+                    className='bg-blue-500 text-white hover:bg-blue-600'
+                    onClick={() => showModal(item)}
+                  >
+                    {t("main.main_text_3")}
+                  </Button>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className='text-center text-gray-500'>Hozircha hech qanday buyum yo'q.</p>
+          )}
+        </div>
       </div>
-    </div>
-    <Footer/>
-  </>
+      <Footer />
+      <Modal open={open} footer={null} onCancel={closeModal}>
+        <h1 className='text-2xl text-center mb-4'>Ma'lumotlarni to'ldiring</h1>
+        <p className='text-lg text-blue-500 text-center mb-6'>Biz siz bilan imkon qadar tez bog'lanamiz va sizning mahsulotingizni yetkazib beramiz. Xizmatimiz bepul!</p>
+        <Form form={form} layout="vertical">
+          <Form.Item
+            label="Ism"
+            name="name"
+            rules={[
+              { required: true, message: 'Ismingizni kiriting' },
+              { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+            ]}
+          >
+            <Input placeholder='Ismingizni kiriting' />
+          </Form.Item>
+          <Form.Item
+            label="Familiya"
+            name="surname"
+            rules={[
+              { required: true, message: 'Familiyangizni kiriting' },
+              { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+            ]}
+          >
+            <Input placeholder='Familiyangizni kiriting' />
+          </Form.Item>
+          <Form.Item
+            label="Telefon raqam"
+            name="number"
+            rules={[
+              { required: true, message: 'Telefon raqamingizni kiriting' },
+              {
+                pattern: /^\+998\d{9}$/,
+                message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqamdan iborat bo\'lishi kerak',
+              },
+            ]}
+          >
+            <Input placeholder='+998' />
+          </Form.Item>
+          <Button className='w-full bg-blue-500 text-white hover:bg-blue-600' onClick={sendMessage} type="primary">
+            Yuborish
+          </Button>
+        </Form>
+      </Modal>
+    </>
   );
 };
 

@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const Number = () => {
   const { t } = useTranslation();
   return (
-    <div className=''>
+    <div className='' id='Full'>
       <div className='mx-auto max-w-[1200px] p-[20px]'>
         <ul className=''>
           <li className='flex items-center gap-[10px]'>

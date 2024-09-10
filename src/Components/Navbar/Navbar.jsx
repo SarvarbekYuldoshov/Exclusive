@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div id='navbar' className='max-w-[1200px] mx-auto p-[20px]'>
+      <div  className='max-w-[1200px] mx-auto p-[20px]' id='home'>
         <div className='flex flex-wrap gap-[50px]'>
           {Data &&
             Data.map((item, index) => (
@@ -28,7 +28,7 @@ const Navbar = () => {
                 key={index}
                 className='w-[250px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group'
               >
-             <Link to={`/korzinka/${item.id}`}>
+             <Link to={`/korzinka/${item.id}`} className='ho'>
                   <img src={item.img1}alt={item.name}className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
                       <img src={item.img3}alt={item.name}className='w-[30px] h-[30px] absolute right-2 top-1'/>
                       <img src={item.img4}alt={item.name}className='w-[30px] h-[30px] absolute right-2 top-10'/>
