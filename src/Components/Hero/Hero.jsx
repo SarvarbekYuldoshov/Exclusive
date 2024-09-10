@@ -64,28 +64,24 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center mx-auto max-w-[1200px] p-6 md:p-10">
         <Swiper
           effect="coverflow"
-          grabCursor={true}
-          centeredSlides={true}
           slidesPerView="auto"
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: true,
           }}
-          pagination={true}
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src={Rasm_7} alt="Slide 1" />
+            <img className='w-[400px] h-[300px]  ml-[500px]' src={Rasm_7} alt="Slide 1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Rasm_8} alt="Slide 2" />
+            <img className='w-[400px] h-[300px] ml-[500px]' src={Rasm_8} alt="Slide 2" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Rasm_9} alt="Slide 3" />
+            <img className='w-[350px] h-[300px] ml-[500px]' src={Rasm_9} alt="Slide 3" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -129,7 +125,7 @@ const Hero = () => {
           >
             <Input className="w-[480px] h-[50px]" placeholder="Telefon raqamingizni kiriting" />
           </Form.Item>
-          <Button className="w-[480px] h-[50px]" onClick={sendMessage} type="primary">
+          <Button className="w-[480px] h-[50px] text-[white]" onClick={sendMessage} type="primary">
             Yuborish
           </Button>
         </Form>
