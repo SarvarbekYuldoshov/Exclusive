@@ -117,27 +117,31 @@ const Main = () => {
           </Button>
 
           <Modal open={open} footer={null} onCancel={closeModal}>
-            <h1>Malumotlarni tuldiring</h1>
+            <h1 className='flex items-center justify-center text-[30px]'>Malumotlarni tuldiring</h1>
+            <p className=' justify-center text-[20px] text-[blue]'>Biz siz bilan imkon qadar tez bog`lanamiz va sizning mahsulotingzi yetkazib beramiz xizmatimiz bepul?</p>
             <Form form={form} layout="vertical">
               <Form.Item
+                label="Name"
                 name="name"
                 rules={[
                   { required: true, message: 'Ismingizni kiriting' },
                   { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
                 ]}
               >
-                <Input placeholder='Ismingizni kiriting' />
+                <Input className='w-[400px] h-[50px]' placeholder='Ismingizni kiriting' />
               </Form.Item>
               <Form.Item
+               label="Surname"
                 name="surname"
                 rules={[
                   { required: true, message: 'Familiyangizni kiriting' },
                   { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
                 ]}
               >
-                <Input placeholder='Familiyangizni kiriting' />
+                <Input  className='w-[400px] h-[50px]' placeholder='Familiyangizni kiriting' />
               </Form.Item>
               <Form.Item
+                label="Number"
                 name="number"
                 rules={[
                   { required: true, message: 'Raqamingizni kiriting' },
@@ -147,9 +151,9 @@ const Main = () => {
                   },
                 ]}
               >
-                <Input placeholder='+998XXXXXXXXX' />
+                <Input className='w-[400px] h-[50px]' placeholder='+998' />
               </Form.Item>
-              <Button onClick={sendMessage} type="primary">
+              <Button className='w-[400px] h-[50px]' onClick={sendMessage} type="primary">
                 Yuborish
               </Button>
             </Form>
