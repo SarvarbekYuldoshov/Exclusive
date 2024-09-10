@@ -6,6 +6,8 @@
    
 }
 .header{
+    margin-top: 60px;
+    height: 65px;
     position: fixed;
     top: 0;
     left: 0;
