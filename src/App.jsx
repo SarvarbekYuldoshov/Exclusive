@@ -8,11 +8,13 @@ import Main from './Components/Main/Main'
 import Menu from './Components/Menu/Menu'
 import Number from './Components/Number/Number'
 import Footer from './Components/Footer/Footer'
+import Bollen from './Components/Bollen/Bollen'
 function App() {
 
   return (
     <>
      <div className='App'> 
+        <Bollen/>
         <Header/>
         <Hero/>
         <Hover/>
