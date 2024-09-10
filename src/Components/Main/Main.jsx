@@ -128,7 +128,7 @@ const Main = () => {
                   { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
                 ]}
               >
-                <Input className='w-[400px] h-[50px]' placeholder='Ismingizni kiriting' />
+                <Input className='w-[480px] h-[50px]' placeholder='Ismingizni kiriting' />
               </Form.Item>
               <Form.Item
                label="Surname"
@@ -138,7 +138,7 @@ const Main = () => {
                   { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
                 ]}
               >
-                <Input  className='w-[400px] h-[50px]' placeholder='Familiyangizni kiriting' />
+                <Input  className='w-[480px] h-[50px]' placeholder='Familiyangizni kiriting' />
               </Form.Item>
               <Form.Item
                 label="Number"
@@ -151,9 +151,9 @@ const Main = () => {
                   },
                 ]}
               >
-                <Input className='w-[400px] h-[50px]' placeholder='+998' />
+                <Input className='w-[480px] h-[50px]' placeholder='+998' />
               </Form.Item>
-              <Button className='w-[400px] h-[50px]' onClick={sendMessage} type="primary">
+              <Button className='w-[480px] h-[50px]' onClick={sendMessage} type="primary">
                 Yuborish
               </Button>
             </Form>

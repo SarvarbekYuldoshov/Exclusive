@@ -32,10 +32,95 @@ const Menu = () => {
             <p className='mt-[20px] text-[14px] font-normal text-left text-[#FAFAFA]'>
             {t("menu.menu_text_4")}
             </p>
-            <button className='mt-[20px] text-[16px] font-medium text-left text-white'>
-            {t("menu.menu_text_5")}
-              <hr className='mt-[5px]' />
-            </button>
+            <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal({ name: 'Product Name', price: '100' })}>
+          {t("main.main_text_3")}
+          </Button>
+
+          <Modal open={open} footer={null} onCancel={closeModal}>
+            <h1 className='flex items-center justify-center text-[30px]'>Malumotlarni tuldiring</h1>
+            <p className=' justify-center text-[20px] text-[blue]'>Biz siz bilan imkon qadar tez bog`lanamiz va sizning mahsulotingzi yetkazib beramiz xizmatimiz bepul?</p>
+            <Form form={form} layout="vertical">
+              <Form.Item
+                label="Name"
+                name="name"
+                rules={[
+                  { required: true, message: 'Ismingizni kiriting' },
+                  { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='Ismingizni kiriting' />
+              </Form.Item>
+              <Form.Item
+               label="Surname"
+                name="surname"
+                rules={[
+                  { required: true, message: 'Familiyangizni kiriting' },
+                  { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input  className='w-[480px] h-[50px]' placeholder='Familiyangizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                label="Number"
+                name="number"
+                rules={[
+                  { required: true, message: 'Raqamingizni kiriting' },
+                  {
+                    pattern: /^\+998\d{9}$/,
+                    message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
+                  },
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='+998' />
+              </Form.Item>
+              <Button className='w-[480px] h-[50px]' onClick={sendMessage} type="primary">
+                Yuborish
+              </Button>
+            </Form>
+          </Modal>
+
+          <Modal open={open} footer={null} onCancel={closeModal}>
+            <h1 className='flex items-center justify-center text-[30px]'>Malumotlarni tuldiring</h1>
+            <p className=' justify-center text-[20px] text-[blue]'>Biz siz bilan imkon qadar tez bog`lanamiz va sizning mahsulotingzi yetkazib beramiz xizmatimiz bepul?</p>
+            <Form form={form} layout="vertical">
+              <Form.Item
+                label="Name"
+                name="name"
+                rules={[
+                  { required: true, message: 'Ismingizni kiriting' },
+                  { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='Ismingizni kiriting' />
+              </Form.Item>
+              <Form.Item
+               label="Surname"
+                name="surname"
+                rules={[
+                  { required: true, message: 'Familiyangizni kiriting' },
+                  { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input  className='w-[480px] h-[50px]' placeholder='Familiyangizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                label="Number"
+                name="number"
+                rules={[
+                  { required: true, message: 'Raqamingizni kiriting' },
+                  {
+                    pattern: /^\+998\d{9}$/,
+                    message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
+                  },
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='+998' />
+              </Form.Item>
+              <Button className='w-[480px] h-[50px]' onClick={sendMessage} type="primary">
+                Yuborish
+              </Button>
+            </Form>
+          </Modal>
             <img className='w-[280px]' src={Rasm_28} alt="" />
           </div>
 
@@ -47,10 +132,52 @@ const Menu = () => {
               <p className='mt-[20px] text-[14px] font-normal text-left text-[#FAFAFA]'>
               {t("menu.menu_text_7")}
               </p>
-              <button className='mt-[20px] text-[16px] font-medium text-left text-white'>
-              {t("menu.menu_text_8")}
-                <hr className='mt-[5px]' />
-              </button>
+              <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal({ name: 'Product Name', price: '100' })}>
+          {t("main.main_text_3")}
+          </Button>
+
+          <Modal open={open} footer={null} onCancel={closeModal}>
+            <h1 className='flex items-center justify-center text-[30px]'>Malumotlarni tuldiring</h1>
+            <p className=' justify-center text-[20px] text-[blue]'>Biz siz bilan imkon qadar tez bog`lanamiz va sizning mahsulotingzi yetkazib beramiz xizmatimiz bepul?</p>
+            <Form form={form} layout="vertical">
+              <Form.Item
+                label="Name"
+                name="name"
+                rules={[
+                  { required: true, message: 'Ismingizni kiriting' },
+                  { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='Ismingizni kiriting' />
+              </Form.Item>
+              <Form.Item
+               label="Surname"
+                name="surname"
+                rules={[
+                  { required: true, message: 'Familiyangizni kiriting' },
+                  { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input  className='w-[480px] h-[50px]' placeholder='Familiyangizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                label="Number"
+                name="number"
+                rules={[
+                  { required: true, message: 'Raqamingizni kiriting' },
+                  {
+                    pattern: /^\+998\d{9}$/,
+                    message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
+                  },
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='+998' />
+              </Form.Item>
+              <Button className='w-[480px] h-[50px]' onClick={sendMessage} type="primary">
+                Yuborish
+              </Button>
+            </Form>
+          </Modal>
             </div>
             <img className='w-[180px]' src={Rasm_29} alt="" />
           </div>
@@ -63,10 +190,52 @@ const Menu = () => {
             <p className='mt-[20px] text-[14px] font-normal text-left text-[#FAFAFA]'>
             {t("menu.menu_text_11")}
             </p>
-            <button className='mt-[20px] text-[16px] font-medium text-left text-white'>
-            {t("menu.menu_text_12")}
-              <hr className='mt-[5px]' />
-            </button>
+            <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal({ name: 'Product Name', price: '100' })}>
+          {t("main.main_text_3")}
+          </Button>
+
+          <Modal open={open} footer={null} onCancel={closeModal}>
+            <h1 className='flex items-center justify-center text-[30px]'>Malumotlarni tuldiring</h1>
+            <p className=' justify-center text-[20px] text-[blue]'>Biz siz bilan imkon qadar tez bog`lanamiz va sizning mahsulotingzi yetkazib beramiz xizmatimiz bepul?</p>
+            <Form form={form} layout="vertical">
+              <Form.Item
+                label="Name"
+                name="name"
+                rules={[
+                  { required: true, message: 'Ismingizni kiriting' },
+                  { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='Ismingizni kiriting' />
+              </Form.Item>
+              <Form.Item
+               label="Surname"
+                name="surname"
+                rules={[
+                  { required: true, message: 'Familiyangizni kiriting' },
+                  { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input  className='w-[480px] h-[50px]' placeholder='Familiyangizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                label="Number"
+                name="number"
+                rules={[
+                  { required: true, message: 'Raqamingizni kiriting' },
+                  {
+                    pattern: /^\+998\d{9}$/,
+                    message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
+                  },
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='+998' />
+              </Form.Item>
+              <Button className='w-[480px] h-[50px]' onClick={sendMessage} type="primary">
+                Yuborish
+              </Button>
+            </Form>
+          </Modal>
           </div>
 
           <div className='w-[100%] lg:w-[48%] bg-black p-[20px] mb-[20px] relative'>
@@ -77,10 +246,52 @@ const Menu = () => {
             <p className='mt-[20px] text-[14px] font-normal text-left text-[#FAFAFA]'>
             {t("menu.menu_text_14")}
             </p>
-            <button className='mt-[20px] text-[16px] font-medium text-left text-white'>
-            {t("menu.menu_text_15")}
-              <hr className='mt-[5px]' />
-            </button>
+            <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal({ name: 'Product Name', price: '100' })}>
+          {t("main.main_text_3")}
+          </Button>
+
+          <Modal open={open} footer={null} onCancel={closeModal}>
+            <h1 className='flex items-center justify-center text-[30px]'>Malumotlarni tuldiring</h1>
+            <p className=' justify-center text-[20px] text-[blue]'>Biz siz bilan imkon qadar tez bog`lanamiz va sizning mahsulotingzi yetkazib beramiz xizmatimiz bepul?</p>
+            <Form form={form} layout="vertical">
+              <Form.Item
+                label="Name"
+                name="name"
+                rules={[
+                  { required: true, message: 'Ismingizni kiriting' },
+                  { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='Ismingizni kiriting' />
+              </Form.Item>
+              <Form.Item
+               label="Surname"
+                name="surname"
+                rules={[
+                  { required: true, message: 'Familiyangizni kiriting' },
+                  { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+                ]}
+              >
+                <Input  className='w-[480px] h-[50px]' placeholder='Familiyangizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                label="Number"
+                name="number"
+                rules={[
+                  { required: true, message: 'Raqamingizni kiriting' },
+                  {
+                    pattern: /^\+998\d{9}$/,
+                    message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
+                  },
+                ]}
+              >
+                <Input className='w-[480px] h-[50px]' placeholder='+998' />
+              </Form.Item>
+              <Button className='w-[480px] h-[50px]' onClick={sendMessage} type="primary">
+                Yuborish
+              </Button>
+            </Form>
+          </Modal>
           </div>
         </div>
       </div>
