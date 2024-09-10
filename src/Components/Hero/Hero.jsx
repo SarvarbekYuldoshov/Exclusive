@@ -4,6 +4,7 @@ import Rasm_5 from '../../images/rasm5.png';
 import Rasm_7 from '../../images/rasm7.png';
 import Rasm_8 from '../../images/rasm43.png';
 import Rasm_9 from '../../images/rasm44.png';
+
 import { useTranslation } from 'react-i18next';
 import { Form, Input, Button, Modal, message } from 'antd';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -93,7 +94,7 @@ const Hero = () => {
           className="mySwiper max-w-[350px] sm:max-w-[400px] md:max-w-[450px]"
         >
           <SwiperSlide>
-            <img className='w-full h-auto' src={Rasm_7} alt="Slide 1" />
+            <img className='w-full h-auto' src={Rasm_9} alt="Slide 1" />
           </SwiperSlide>
           <SwiperSlide>
             <img className='w-full h-auto' src={Rasm_8} alt="Slide 2" />
