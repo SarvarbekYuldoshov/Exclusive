@@ -9,6 +9,47 @@ import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+  const [form] = Form.useForm();
+
+  const sendMessage = () => {
+    form.validateFields()
+      .then((values) => {
+        const { name, surname, number } = values;
+
+        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
+        const chat_id = 6801549705;
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: +998${number}`;
+
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            chat_id,
+            text: messageText,
+          }),
+        })
+          .then(res => res.json())
+          .then(res => {
+            message.success("Yuborildi");
+            setOpen(false);
+            form.resetFields();
+          })
+          .catch(err => {
+            console.error(err);
+            message.error("Yuborishda xatolik yuz berdi");
+          });
+      })
+      .catch(() => {
+        message.error("Iltimos, barcha maydonlarni to'ldiring!");
+      });
+  };
+
+  const showModal = () => setOpen(true);
+  const closeModal = () => setOpen(false);
   return (
     <div id='navbar3' className=''>
       <div className='mx-auto max-w-[1200px] p-[20px]'>
