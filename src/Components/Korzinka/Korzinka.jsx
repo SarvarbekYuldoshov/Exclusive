@@ -98,13 +98,13 @@ const Korzinka = () => {
             {single.map(item => (
                 <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
                     <div className='w-full lg:w-[200px] h-auto lg:h-[600px]'>
-                        <li className='shadow-lg list-none'>
+                        <li className='shadow-lg list-none mt-[20px]'>
                         <img className='w-[80px] h-[80px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
                         </li>
-                        <li className='shadow-lg list-none'>
+                        <li className='shadow-lg list-none mt-[50px]'>
                         <img className='w-[120px] h-[120px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
                         </li>
-                        <li className='shadow-lg list-noneshadow-lg list-none'>
+                        <li className='shadow-lg list-noneshadow-lg list-none mt-[50px]'>
                         <img className='w-[180px] h-[150px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
                         </li>
                     </div>
@@ -161,6 +161,22 @@ const Korzinka = () => {
                                     </Button>
                                 </Form>
                             </Modal>
+                            <div className='mt-[30px]'>
+                            <ul className='flex gap-[20px] border border-black h-[60px]'>
+                                <img className='ml-2'  src={item.img4} alt={item.name}/>
+                                <li className=''>
+                                    <h1 className='mt-[10px]'>{item.text6}</h1>
+                                    <p className=''>{item.text7}</p>
+                                </li>
+                            </ul>
+                            <ul className='flex mt-[20px] gap-[20px] border border-black'>
+                                <img className='ml-2 w-[60px]'  src={item.img5} alt={item.name}/>
+                                <li className=''>
+                                    <h1 className='mt-[10px]'>{item.text8}</h1>
+                                    <p className=''>{item.text9}</p>
+                                </li>
+                            </ul>
+                        </div>
                         </div>
                     </div>
                 </div>

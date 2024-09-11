@@ -7,13 +7,15 @@ import Rasm_6 from "../../images/rasm24.png"
 import Rasm_7 from "../../images/rasm25.png"
 import Rasm_8 from "../../images/rasm19.png"
 import Rasm_9 from "../../images/rasm17.png"
-import Rasm_10 from "../../images/rasm18.png"
+import Rasm10 from "../../images/img.png"
+import Rasm11 from "../../images/img1.png"
 const Data = [
     {
         id: 1,
         img1: Rasm_1,
         img3: Rasm_9,
-        // img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "Breed Dry Dog Food",
         price: "$100",
         img2:Rasm_8,
@@ -23,13 +25,19 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga bog`laning",
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
+        
     },
     {
         id: 2,
         img1: Rasm_2,
         img3: Rasm_9,
-        img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "CANON EOS DSLR Camera",
         price: "$120",
         img2:Rasm_8,
@@ -39,13 +47,18 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
     },
     {
         id: 3,
         img1: Rasm_3,
         img3: Rasm_9,
-        img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "ASUS FHD Gaming Laptop",
         price: "$230",
         img2:Rasm_8,
@@ -55,13 +68,18 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
     },
     {
         id: 4,
         img1: Rasm_4,
         img3: Rasm_9,
-        img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "Curology Product Set ",
         price: "$340",
         img2:Rasm_8,
@@ -71,13 +89,18 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
     },
     {
         id: 5,
         img1: Rasm_5,
         img3: Rasm_9,
-        img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "Kids Electric Car",
         price: "$210",
         img2:Rasm_8,
@@ -87,13 +110,18 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
     },
     {
         id: 6,
         img1: Rasm_6,
         img3: Rasm_9,
-        img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "Jr. Zoom Soccer Cleats",
         price: "$960",
         img2:Rasm_8,
@@ -103,13 +131,18 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
     },
     {
         id: 7,
         img1: Rasm_7,
         img3: Rasm_9,
-        img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "GP11 Shooter USB Gamepad",
         price: "$1100",
         img2:Rasm_8,
@@ -119,13 +152,18 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
     },
     {
         id: 8,
         img1: Rasm_1,
         img3: Rasm_9,
-        img4: Rasm_10,
+        img4: Rasm10,
+        img5: Rasm11,
         name: "Quilted Satin Jacket",
         price: "$140",
         img2:Rasm_8,
@@ -135,7 +173,11 @@ const Data = [
         text2:"Agarda Qushimcha savolar bulsa shu joyga boglaning" ,
         text3:"M-Razmerda",
         text4:"XL-Razmerda",
-        text5:"2LX-Razmerda"
+        text5:"2LX-Razmerda",
+        text6:"Free Delivery",
+        text7:"Enter your postal code for Delivery Availability",
+        text8:"Return Delivery",
+        text9:"Free 30 Days Delivery Returns. Details"
     },
 ]
 export default Data;
