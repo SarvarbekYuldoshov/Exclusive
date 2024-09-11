@@ -100,6 +100,7 @@ const Menu = () => {
       <div className='mx-auto max-w-[1200px] p-[20px]'>
         <ul className=''>
           <li className='flex items-center gap-[10px]'>
+            <img className='w-[20px] h-[40px]' src={Rasm_27} alt="" />
             <p className='w-[130px] h-[20px] font-poppins text-[16px] font-semibold leading-[20px] text-left text-[#DB4444]'>
               {t("menu.menu_text_1")}
             </p>
@@ -111,7 +112,7 @@ const Menu = () => {
 
         <div className='mt-[40px] flex flex-wrap justify-between'>
           {/* Card 1 */}
-          <div className='w-[100%] lg:w-[48%] bg-black relative p-[20px] mb-[20px]'>
+          <div className='w-[100%] h-[500px] lg:w-[48%] bg-black relative p-[20px] mb-[20px]'>
             <h1 className='text-[24px] font-semibold text-left text-[#FAFAFA]'>
               {t("menu.menu_text_3")}
             </h1>
@@ -121,7 +122,7 @@ const Menu = () => {
             <Button className='mt-4 w-[150px] bg-[black] text-white hover:bg-blue-600' onClick={showModal}>
               {t("main.main_text_3")}
             </Button>
-            <img className='w-[280px]' src={Rasm_28} alt="" />
+            {/* <img className='w-[280px]' src={Rasm_28} alt="" /> */}
           </div>
 
           {/* Card 2 */}
