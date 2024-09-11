@@ -24,7 +24,7 @@ const Hero = () => {
         const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
         const chat_id = "6801549705";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
-        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
+        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}`;
         fetch(url, {
           method: 'POST',
           headers: {
@@ -39,8 +39,8 @@ const Hero = () => {
           .then((res) => {
             if (res.ok) {
               message.success("Ma'lumot yuborildi");
-              setOpen(false);
               form.resetFields();
+              setOpen(false);  // Modalni yopish
             } else {
               message.error("Yuborishda xatolik yuz berdi");
             }
@@ -56,7 +56,11 @@ const Hero = () => {
   };
 
   const showModal = () => setOpen(true);
-  const closeModal = () => setOpen(false);
+
+  const closeModal = () => {
+    form.resetFields(); // Formani tozalash
+    setOpen(false);
+  };
 
   return (
     <div className="bg-black text-center mt-[150px] sm:mt-[120px]" id='acount'>
@@ -143,8 +147,8 @@ const Hero = () => {
             rules={[
               { required: true, message: 'Raqamingizni kiriting' },
               {
-                pattern: /^\d{9}$/,
-                message: 'Telefon raqam 9 ta raqamdan iborat bo\'lishi kerak',
+                pattern: /^\d+$/,
+                message: 'Telefon raqam faqat raqamlardan iborat bo\'lishi kerak',
               },
             ]}
           >

@@ -18,22 +18,22 @@ const Footer = () => {
           <ul>
             <li className='mt-5'>
               <a className='text-2xl font-bold text-[#FAFAFA]' href="#main">
-                Exclusive
+                {t("footer.footer_text_1")}
               </a>
             </li>
             <li className='mt-5'>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#acount">
-                Subscribe
+              {t("footer.footer_text_2")}
               </a>
             </li>
              <li className='mt-3'>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
-                Shop
+              {t("footer.footer_text_3")}
               </a>
             </li>
             <li className='mt-3'>
               <a className='text-base text-[#FAFAFA]' href="#main">
-                Wishlist
+              {t("footer.footer_text_4")}
               </a>
             </li>
           </ul>
@@ -43,7 +43,7 @@ const Footer = () => {
           <ul>
             <li className='mt-5'>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
-                Support
+              {t("footer.footer_text_5")}
               </a>
             </li>
             <li className='mt-3'>
@@ -61,22 +61,22 @@ const Footer = () => {
           <ul>
             <li className='mt-5'>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
-                Account
+              {t("footer.footer_text_6")}
               </a>
             </li>
             <li className='mt-3'>
               <a className='text-base text-[#FAFAFA]' href="#acount">
-                My Account
+              {t("footer.footer_text_7")}
               </a>
             </li>
             <li className='mt-3'>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
-                Login / Register
+              {t("footer.footer_text_8")}
               </a>
             </li>
             <li className='mt-3'>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
-                Cart
+              {t("footer.footer_text_9")}
               </a>
             </li>
           </ul>
@@ -85,12 +85,12 @@ const Footer = () => {
           <ul>
             <li className='mt-5 text-center'>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
-                Download App
+              {t("footer.footer_text_10")}
               </a>
             </li>
             <li className='mt-3 text-center'>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
-                Save $3 with App New User Only
+              {t("footer.footer_text_11")}
               </a>
             </li>
             <ul className='flex justify-center gap-5 mt-5'>

@@ -51,27 +51,17 @@
         "number_text_7": "PULNI QAYTARISH KAFOLATI",
         "number_text_8": "Biz 30 kun ichida pulni qaytarib beramiz"
     },
-    "footer": {
-        "footer_text_1": "Eksklyuziv",
-        "footer_text_2": "Obuna bo‘ling",
-        "footer_text_3": "Birinchi buyurtmangiz uchun 10% chegirma oling",
-        "footer_text_4": "Qo‘llab-quvvatlash",
-        "footer_text_5": "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.",
-        "footer_text_6": "Eexclusive@gmail.com",
-        "footer_text_7": "+88015-88888-9999",
-        "footer_text_8": "Hisob",
-        "footer_text_9": "Kirish / Ro‘yxatdan o‘tish",
-        "footer_text_10": "Savat",
-        "footer_text_11": "Sevimlilar",
-        "footer_text_12": "Do‘kon",
-        "footer_text_13": "Tezkor Havola",
-        "footer_text_14": "Maxfiylik Siyosati",
-        "footer_text_15": "Foydalanish Shartlari",
-        "footer_text_16": "Savol-javob",
-        "footer_text_17": "Bog‘lanish",
-        "footer_text_18": "Ilovani Yuklab Oling",
-        "footer_text_19": "Faqat ilovada yangi foydalanuvchilar uchun $3 tejang"
-    }
-    
-    
+        "footer": {
+          "footer_text_1": "Eksklyuziv",
+          "footer_text_2": "Obuna bo'ling",
+          "footer_text_3": "Do'kon",
+          "footer_text_4": "Istaklar ro'yxati",
+          "footer_text_5": "Qo'llab-quvvatlash",
+          "footer_text_6": "Hisob",
+          "footer_text_7": "Mening hisobim",
+          "footer_text_8": "Kirish / Ro'yxatdan o'tish",
+          "footer_text_9": "Savatcha",
+          "footer_text_10": "Ilovani yuklab oling",
+          "footer_text_11": "Faqat yangi foydalanuvchilar uchun ilova bilan $3 tejang"
+        }
 }
