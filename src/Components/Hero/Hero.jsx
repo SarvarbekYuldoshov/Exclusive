@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Hero.css';
 import Rasm_5 from '../../images/rasm5.png';
-import Rasm_7 from '../../images/rasm7.png';
 import Rasm_8 from '../../images/rasm43.png';
 import Rasm_9 from '../../images/rasm44.png';
 
@@ -22,11 +21,10 @@ const Hero = () => {
     form.validateFields()
       .then((values) => {
         const { name, surname, number } = values;
-
-        const token = 'YOUR_BOT_TOKEN';
-        const chat_id = 'YOUR_CHAT_ID';
+        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
+        const chat_id = "6801549705";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
-        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: +998${number}`;
+        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
 
         fetch(url, {
           method: 'POST',

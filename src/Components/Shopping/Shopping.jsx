@@ -21,8 +21,8 @@ const Shopping = () => {
     form.validateFields()
       .then((values) => {
         const { name, surname, number } = values;
-        const token = "your-telegram-bot-token"; // Replace with your token
-        const chat_id = "your-chat-id"; // Replace with your chat ID
+        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
+        const chat_id = "6801549705";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
 
