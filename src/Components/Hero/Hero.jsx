@@ -25,7 +25,6 @@ const Hero = () => {
         const chat_id = "6801549705";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
-
         fetch(url, {
           method: 'POST',
           headers: {
@@ -60,7 +59,7 @@ const Hero = () => {
   const closeModal = () => setOpen(false);
 
   return (
-    <div className="bg-black text-center mt-[150px] sm:mt-[120px]">
+    <div className="bg-black text-center mt-[150px] sm:mt-[120px]" id='acount'>
       <div className="flex flex-col md:flex-row items-center mx-auto max-w-[1200px] p-6 md:p-10">
         <ul className='flex flex-col items-center md:items-start'>
           <li className='flex items-center'>

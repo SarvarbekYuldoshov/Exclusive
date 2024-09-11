@@ -15,38 +15,37 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5'>
-              <a className='text-2xl font-bold text-[#FAFAFA]' href="">
+              <a className='text-2xl font-bold text-[#FAFAFA]' href="#main">
                 Exclusive
               </a>
             </li>
             <li className='mt-5'>
-              <a className='text-xl font-medium text-[#FAFAFA]' href="">
+              <a className='text-xl font-medium text-[#FAFAFA]' href="#acount">
                 Subscribe
               </a>
             </li>
-            <p className='mt-3 text-base text-[#FAFAFA]'>
-              Get 10% off your first order
-            </p>
-            <input
-              className='w-full mt-5 p-2 bg-transparent border border-white placeholder-white text-white'
-              type="text"
-              placeholder='Enter your email'
-            />
+             <li className='mt-3'>
+              <a className='text-base text-[#FAFAFA]' href="#yaxshi">
+                Shop
+              </a>
+            </li>
+            <li className='mt-3'>
+              <a className='text-base text-[#FAFAFA]' href="#main">
+                Wishlist
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
           <ul>
             <li className='mt-5'>
-              <a className='text-xl font-medium text-[#FAFAFA]' href="">
+              <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
                 Support
               </a>
             </li>
-            <p className='mt-3 text-base w-[200px]  text-[#FAFAFA]'>
-              111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.
-            </p>
             <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
+              <a className='text-base text-[#FAFAFA]' href="#acount">
                 sarvarbekyuldoshov85@gmail.com
               </a>
             </li>
@@ -59,33 +58,23 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5'>
-              <a className='text-xl font-medium text-[#FAFAFA]' href="">
+              <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
                 Account
               </a>
             </li>
             <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
+              <a className='text-base text-[#FAFAFA]' href="#acount">
                 My Account
               </a>
             </li>
             <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
+              <a className='text-base text-[#FAFAFA]' href="#yaxshi">
                 Login / Register
               </a>
             </li>
             <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
+              <a className='text-base text-[#FAFAFA]' href="#yaxshi">
                 Cart
-              </a>
-            </li>
-            <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
-                Wishlist
-              </a>
-            </li>
-            <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
-                Shop
               </a>
             </li>
           </ul>
@@ -93,12 +82,12 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5 text-center'>
-              <a className='text-xl font-medium text-[#FAFAFA]' href="">
+              <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
                 Download App
               </a>
             </li>
             <li className='mt-3 text-center'>
-              <a className='text-base text-[#FAFAFA]' href="">
+              <a className='text-base text-[#FAFAFA]' href="#yaxshi">
                 Save $3 with App New User Only
               </a>
             </li>

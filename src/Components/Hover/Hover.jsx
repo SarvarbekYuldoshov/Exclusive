@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 const Hover = () => {
   const { t } = useTranslation();
   return (
-    <div className='bg-white'>
+    <div className='bg-white' id='yaxshi'>
       <div className='mx-auto max-w-[1200px] mt-[50px] p-4 md:p-8'>
         <ul className='flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10'>
           <li className='flex items-center gap-3'>

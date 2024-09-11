@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div  className='max-w-[1200px] mx-auto p-[20px]' id='home'>
+      <div  className='max-w-[1200px] mx-auto p-[20px]' id='main'>
         <div className='flex flex-wrap gap-[50px]'>
           {Data &&
             Data.map((item, index) => (
