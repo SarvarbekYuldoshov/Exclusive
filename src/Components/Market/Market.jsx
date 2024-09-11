@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Bollen from '../Bollen/Bollen';
 
-const Korzinka = () => {
+const Market = () => {
     const { id } = useParams();
     const [single, setSingle] = useState([]);
     const [quantities, setQuantities] = useState({});
@@ -93,20 +93,17 @@ const Korzinka = () => {
         <Bollen/>
         <Header/>
         <div className='max-w-[1200px] mx-auto p-4 justify-center mt-[50px]'>
-          <h1 className='text-[30px] flex items-center justify-center mb-[40px] mt-[150px]'>Bu yerda sizga kerakli mahsulotlar mavjud</h1>
+          <h1 className='text-[30px] flex items-center justify-center mb-[40px] mt-[150px]'>Bu yerda sizning sevimli mahsulotingiz</h1>
             {/* Map qilingan qism */}
             {single.map(item => (
                 <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
                     <div className='w-full lg:w-[200px] h-auto lg:h-[600px]'>
-                        <li className='shadow-lg list-none'>
-                        <img className='w-[80px] h-[80px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
-                        </li>
-                        <li className='shadow-lg list-none'>
-                        <img className='w-[120px] h-[120px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
-                        </li>
-                        <li className='shadow-lg list-noneshadow-lg list-none'>
+                        <img className='w-[100px] h-[100px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
+                        <hr className='mt-[10px] h-[3px] bg-black' />
+                        <img className='w-[150px] h-[150px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
+                        <hr className='mt-[10px] h-[3px] bg-black' />
                         <img className='w-[180px] h-[150px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
-                        </li>
+                        <hr className='h-[3px] bg-black mb-4' />
                     </div>
 
                     <div className='flex flex-col lg:flex-row items-center lg:items-start w-full'>
@@ -172,4 +169,5 @@ const Korzinka = () => {
 };
 
 
-export default Korzinka;
+export default Market;
+

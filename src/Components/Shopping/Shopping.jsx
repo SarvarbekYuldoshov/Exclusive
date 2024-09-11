@@ -125,7 +125,7 @@ const Shopping = () => {
                     className='bg-blue-500 text-white hover:bg-blue-600'
                     onClick={() => showModal(item)}
                   >
-                    {t("main.main_text_3")}
+                    Buyurtma berish
                   </Button>
                 </div>
               </div>

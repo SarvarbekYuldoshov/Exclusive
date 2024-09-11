@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar/Navbar"
 import App from "../App"
 import String from "../Components/String/String"
 import Korzinka from "../Components/Korzinka/Korzinka"
+import Market from "../Components/Market/Market"
 
 const router = createBrowserRouter ([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter ([
     {
         path:"/korzinka/:id",
         element: <Korzinka/>
+    }
+    ,{
+        path:"/market",
+        element:<Market/>
     }
 ])
 export default router
