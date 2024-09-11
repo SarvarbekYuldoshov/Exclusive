@@ -19,7 +19,7 @@ function App() {
         <Header/>
         <Hero/>
         <Hover/>
-        <Navbar/>
+        <Outlet/>
         <Main/>
         <Menu/>
         <Number/>

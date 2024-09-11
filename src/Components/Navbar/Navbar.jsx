@@ -35,7 +35,7 @@ const Navbar = () => {
                 className='w-[250px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group transform transition-transform duration-1000 ease-in-out hover:scale-[0.98]'
               >
                 {/* Wishlist tugmasi */}
-                <img onClick={() => handleWishlistAdd(item)} src={item.img3} alt={item.name} className='w-[30px] h-[30px] absolute right-2 top-1 cursor-pointer'/>
+                {/* <img onClick={() => handleWishlistAdd(item)} src={item.img3} alt={item.name} className='w-[30px] h-[30px] absolute right-2 top-1 cursor-pointer'/> */}
                 <Link to={`/korzinka/${item.id}`}>
                   <ul className=''>
                     <img src={item.img1} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
