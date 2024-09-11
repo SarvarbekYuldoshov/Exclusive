@@ -42,7 +42,7 @@ const Footer = () => {
                 Support
               </a>
             </li>
-            <p className='mt-3 text-base text-[#FAFAFA]'>
+            <p className='mt-3 text-base  text-[#FAFAFA]'>
               111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.
             </p>
             <li className='mt-3'>
@@ -90,37 +90,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        <div>
-          <ul>
-            <li className='mt-5'>
-              <a className='text-xl font-medium text-[#FAFAFA]' href="">
-                Quick Links
-              </a>
-            </li>
-            <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
-                Privacy Policy
-              </a>
-            </li>
-            <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
-                Terms Of Use
-              </a>
-            </li>
-            <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
-                FAQ
-              </a>
-            </li>
-            <li className='mt-3'>
-              <a className='text-base text-[#FAFAFA]' href="">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <div>
           <ul>
             <li className='mt-5 text-center'>

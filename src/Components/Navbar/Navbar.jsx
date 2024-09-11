@@ -26,9 +26,10 @@ const Navbar = () => {
             Data.map((item, index) => (
               <div
                 key={index}
-                className='w-[250px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group'
+                className='w-[250px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group transform transition-transform duration-1000 ease-in-out hover:scale-[0.98]'
               >
-             <Link to={`/korzinka/${item.id}`} className='ho'>
+             <Link to={`/korzinka/${item.id}`}>
+              <ul className=''>
                   <img src={item.img1}alt={item.name}className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
                       <img src={item.img3}alt={item.name}className='w-[30px] h-[30px] absolute right-2 top-1'/>
                       <img src={item.img4}alt={item.name}className='w-[30px] h-[30px] absolute right-2 top-10'/>
@@ -37,6 +38,7 @@ const Navbar = () => {
                       <h2 className='text-lg text-gray-600'>{item.price}</h2>
                       <img src={item.img2}alt={item.name}className='w-[140px] h-[20px]'/>
                       <p className=''>{item.text}</p>
+                    </ul>
                     </ul>
              </Link>
              <button onClick={() => handleAdd(item)} className='mt-[20px] w-[250px] h-[60px] top-[220px] bg-black text-white py-2 px-4 rounded-md hover:bg-black absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>

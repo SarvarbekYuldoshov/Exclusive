@@ -27,7 +27,7 @@ const Number = () => {
             <h5 className='mt-[10px] w-[242px] h-[40px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
             {t("number.number_text_3")}
             </h5>
-            <p className='mt-[10px] w-[240px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
+            <p className='mt-[15px] w-[240px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
             {t("number.number_text_4")}
             </p>
           </div>
@@ -36,7 +36,7 @@ const Number = () => {
             <h5 className=' mt-[10px] w-[242px] h-[30px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
             {t("number.number_text_5")}
             </h5>
-            <p className='w-[220px] mt-[15px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
+            <p className='w-[220px] mt-[25px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
             {t("number.number_text_6")}
             </p>
           </div>
@@ -45,7 +45,7 @@ const Number = () => {
             <h5 className=' mt-[10px] w-[252px] h-[40px] font-poppins text-[20px] font-semibold leading-[28px] text-center text-black'>
             {t("number.number_text_7")}
             </h5>
-            <p className=' mt-[10px] w-[220px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
+            <p className=' mt-[15px] w-[220px] h-[21px] font-poppins text-[14px] font-normal leading-[21px] text-center text-black'>
             {t("number.number_text_8")}
             </p>
           </div>
