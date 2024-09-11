@@ -42,7 +42,7 @@ const Footer = () => {
                 Support
               </a>
             </li>
-            <p className='mt-3 text-base  text-[#FAFAFA]'>
+            <p className='mt-3 text-base w-[200px]  text-[#FAFAFA]'>
               111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.
             </p>
             <li className='mt-3'>

@@ -100,7 +100,6 @@ const Menu = () => {
       <div className='mx-auto max-w-[1200px] p-[20px]'>
         <ul className=''>
           <li className='flex items-center gap-[10px]'>
-            <img className='w-[20px] h-[40px]' src={Rasm_27} alt="" />
             <p className='w-[130px] h-[20px] font-poppins text-[16px] font-semibold leading-[20px] text-left text-[#DB4444]'>
               {t("menu.menu_text_1")}
             </p>
