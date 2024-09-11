@@ -13,7 +13,7 @@ const Data = [
         id: 1,
         img1: Rasm_1,
         img3: Rasm_9,
-        img4: Rasm_10,
+        // img4: Rasm_10,
         name: "Breed Dry Dog Food",
         price: "$100",
         img2:Rasm_8,

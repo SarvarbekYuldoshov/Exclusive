@@ -93,14 +93,21 @@ const Footer = () => {
             </li>
             <ul className='flex justify-center gap-5 mt-5'>
               <li>
+                <a href="#acount">
                 <img className='w-20 h-20' src={Rasm_36} alt="App Icon 1" />
+                </a>
               </li>
               <ul>
               <li>
+              <a href="#acount">
                 <img className='w-[110px] h-[40px]' src={Rasm_37} alt="App Icon 2" />
+                </a>
               </li>
               <li>
+
+              <a href="#yaxshi">
                 <img className='w-[110px] h-[40px]' src={Rasm_38} alt="App Icon 3" />
+              </a>
               </li>
               </ul> 
             </ul>
