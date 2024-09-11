@@ -6,8 +6,10 @@ import Rasm_39 from "../../images/rasm39.png";
 import Rasm_40 from "../../images/rasm40.png";
 import Rasm_41 from "../../images/rasm41.png";
 import Rasm_42 from "../../images/rasm42.png";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div id='navbar3' className='bg-black p-5'>
       <div className='max-w-[1200px] mx-auto flex flex-wrap gap-4 justify-between items-start'>
@@ -113,17 +115,25 @@ const Footer = () => {
             </ul>
             <ul className='flex justify-center gap-5 mt-5'>
               <li>
+              <a href="#yaxshi">
                 <img src={Rasm_39} alt="Social Icon 1" />
+                </a>
               </li>
+              <a href="#main">
               <li>
                 <img src={Rasm_40} alt="Social Icon 2" />
               </li>
+              </a>
+              <a href="#yaxshi">
               <li>
                 <img src={Rasm_41} alt="Social Icon 3" />
               </li>
+              </a>
+              <a href="#acount">
               <li>
                 <img src={Rasm_42} alt="Social Icon 4" />
               </li>
+              </a>
             </ul>
           </ul>
         </div>

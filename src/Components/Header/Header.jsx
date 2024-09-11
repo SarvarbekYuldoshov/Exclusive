@@ -22,19 +22,19 @@ const Header = () => {
     {
       key: '1',
       label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">{t("header.header_text")}</a>
+        <a target="_blank" rel="noopener noreferrer" href="#home">{t("header.header_text")}</a>
       ),
     },
     {
       key: '2',
       label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">{t("header.header_text_1")}</a>
+        <a target="_blank" rel="noopener noreferrer" href="#home1">{t("header.header_text_1")}</a>
       ),
     },
     {
       key: '3',
       label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">{t("header.header_text_2")}</a>
+        <a target="_blank" rel="noopener noreferrer" href="#home2">{t("header.header_text_2")}</a>
       ),
     },
   ];
@@ -56,13 +56,13 @@ const Header = () => {
           </button>
         </Dropdown>
         <ul className="flex gap-8 max-xl:gap-5 max-lg:gap-1 max-md:hidden">  
-        <Link to="/"> <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#home">{t("header.header_text")}</a></li>
+        <Link to="/"> <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text")}</a></li>
         </Link>
         <Link to="/"> 
-          <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#navbar">{t("header.header_text_1")}</a></li>
+          <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text_1")}</a></li>
           </Link>
           <Link to="/"> 
-          <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#Full">{t("header.header_text_2")}</a></li>
+          <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text_2")}</a></li>
           </Link>
           
           <li className="header-item-a">

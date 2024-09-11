@@ -64,22 +64,14 @@
     "footer":{
         "footer_text_1":"Exclusive",
         "footer_text_2":"Subscribe",
-        "footer_text_3":"Get 10% off your first order",
-        "footer_text_4":"Support",
-        "footer_text_5":"111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.",
-        "footer_text_6":"Eexclusive@gmail.com",
-        "footer_text_7":"+88015-88888-9999",
-        "footer_text_8":"Account",
-        "footer_text_9":"Login / Register",
-        "footer_text_10":"Cart",
-        "footer_text_11":"Wishlist",
-        "footer_text_12":"Shop",
-        "footer_text_13":"Quick Link",
-        "footer_text_14":"Privacy Policy",
-        "footer_text_15":"Terms Of Use",
-        "footer_text_16":"FAQ",
-        "footer_text_17":"Contact",
-        "footer_text_18":"Download App",
-        "footer_text_19":"Save $3 with App New User Only"
+        "footer_text_3":"Shop",
+        "footer_text_4":"Wishlist",
+        "footer_text_5":"Support",
+        "footer_text_6":"Account",
+        "footer_text_7":"My Account",
+        "footer_text_8":"Login / Register",
+        "footer_text_9":"Cart",
+        "footer_text_10":"Download App",
+        "footer_text_11":"Save $3 with App New User Only"
     }
 }

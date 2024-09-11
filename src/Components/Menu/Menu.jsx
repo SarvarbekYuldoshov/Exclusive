@@ -110,7 +110,7 @@ const Menu = () => {
           </h1>
         </ul>
 
-        <div className='mt-[40px] flex flex-wrap justify-between'>
+        <div className='mt-[60px] flex flex-wrap justify-between'>
           {/* Card 1 */}
           <div className='w-[100%] lg:w-[48%] bg-black relative p-[20px] mb-[20px]'>
             <h1 className='text-[24px] font-semibold text-left text-[#FAFAFA]'>
