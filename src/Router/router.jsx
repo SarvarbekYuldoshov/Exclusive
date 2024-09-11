@@ -18,31 +18,31 @@ const router = createBrowserRouter ([
         element: <App />,
     },
     {
-        path:"/hover",
+        path:"/",
         element:<Hover/>,
         children:[
             {
-                path:"/phones",
+                path:"/",
                 element:<Phones/>
             },
             {
-                path:"/computers",
+                path:"/hover/computers",
                 element:<Computers/>
             },
             {
-                path:"/smartWatch",
+                path:"/hover/smartWatch",
                 element:<SmartWatch/>
             },
             {
-                path:"/camera",
+                path:"/hover/camera",
                 element:<Camera/>
             },
             {
-                path:"/headPhones",
+                path:"/hover/headPhones",
                 element:<HeadPhones/>
             },
             {
-                path:"/gaming",
+                path:"/hover/gaming",
                 element:<Gaming/>
             },
         ]

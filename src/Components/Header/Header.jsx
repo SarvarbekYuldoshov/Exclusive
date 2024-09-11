@@ -71,7 +71,7 @@ const Header = () => {
 
           <ul className='flex gap-5 max-sm:gap-5 relative'>
             <Link to="/market">
-            <img className='max-sm:absolute bottom-3 left-[150px]' src={Rasm_3} alt="User Icon" />
+            {/* <img className='max-sm:absolute bottom-3 left-[150px]' src={Rasm_3} alt="User Icon" /> */}
             </Link>
             <li className='relative'>
               <Link className='header-link-a' to="/shopping">

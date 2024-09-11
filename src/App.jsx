@@ -9,6 +9,7 @@ import Menu from './Components/Menu/Menu'
 import Number from './Components/Number/Number'
 import Footer from './Components/Footer/Footer'
 import Bollen from './Components/Bollen/Bollen'
+import { Outlet } from 'react-router'
 function App() {
 
   return (

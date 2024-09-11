@@ -114,7 +114,7 @@ const Korzinka = () => {
                         <div className='text-center lg:text-left lg:ml-6'>
                             <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
                             <h2 className='text-[20px] text-gray-600 mb-2'>{item.price}</h2>
-                            <img className='w-[200px] h-[40px] mb-2' src={item.img2} alt={item.name} />
+                            <img className='w-[100px] h-[20px] mb-2' src={item.img2} alt={item.name} />
                             <p className='text-[16px] text-gray-500'>{item.text}</p>
                             <p className='w-full lg:w-[400px] mb-4'>{item.text1}</p>
                             <hr className='h-[3px] bg-black mb-4' />
