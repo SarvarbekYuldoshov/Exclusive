@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
 import { Link } from 'react-router-dom';
-import Rasm_zzz
 
-Data = {
 
-}
 const SmartWatch = () => {
   const { cards, setCards, addToWishlist } = useSharedStore();
   const [error, setError] = useState('');
