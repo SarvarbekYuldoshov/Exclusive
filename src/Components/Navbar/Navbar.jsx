@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const { cards, setCards, addToWishlist } = useSharedStore();
@@ -12,19 +12,15 @@ const Navbar = () => {
     const exists = cards.find(card => card.id === item.id);
     if (exists) {
       setError('Siz bu mahsulotni olgansiz'); 
+      setAdding((add) => ({ ...add, [item.id]: true })); // Disable and turn red after adding
     } else {
       setCards([...cards, item]);
       setError('');
+      setAdding((add) => ({ ...add, [item.id]: true })); // Mark item as added
     }
-    setAdding((add)=>({...add, [item.name]:true}))
   };
 
-  const handleWishlistAdd = (item) => {
-    addToWishlist(item); // Wishlistga mahsulot qo'shish
-    setAdding((add)=>({...add, [item.name]:true}));
-  };
-
-  const navigate = useNavigate(``)
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -36,15 +32,11 @@ const Navbar = () => {
                 key={index}
                 className='w-[250px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group transform transition-transform duration-1000 ease-in-out hover:scale-[0.98]'
               >
-                {/* <Link to={`() => {
-                  
-                
-                }`}> */}
                 <div onClick={() => {
-                  navigate(`/korzinka/${item.id}`)
-                  window.scroll(0,0)
+                  navigate(`/korzinka/${item.id}`);
+                  window.scroll(0, 0);
                 }}>
-                <ul className=''>
+                  <ul className=''>
                     <img src={item.img1} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
                     <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
                     <ul className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
@@ -54,10 +46,14 @@ const Navbar = () => {
                     </ul>
                   </ul>
                 </div>
-                  
-                {/* </Link> */}
-                <button onClick={() => handleAdd(item)} className='mt-[40px] w-[250px] h-[40px] top-[220px] bg-black text-white py-2 px-4 rounded-md hover:bg-black absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'>
-                  {adding[item.name] ? "Qushilgan" : "Qushish"}
+
+                <button 
+                  onClick={() => handleAdd(item)} 
+                  className={`mt-[40px] w-[250px] h-[40px] top-[220px] py-2 px-4 rounded-md absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity max-sm:w-[338px] 
+                  ${adding[item.id] ? 'bg-red-500 cursor-not-allowed' : 'bg-black text-white hover:bg-black opacity-0 group-hover:opacity-100'}`}
+                  disabled={adding[item.id]} // Disable button if already added
+                >
+                  {adding[item.id] ? 'Qushilgan' : 'Qushish'}
                 </button>
               </div>
             ))}

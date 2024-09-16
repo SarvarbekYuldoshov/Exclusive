@@ -90,11 +90,11 @@ const Shopping = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Bollen />
       <Header />
-      <div className='max-w-6xl mx-auto p-4 mt-[350px]'>
-        <h1 className='text-3xl text-center mb-10'>Siz sotib olmoqchi bulgan buyumlar</h1>
+      <div className="flex-grow max-w-6xl mx-auto p-4 mt-[350px]">
+        <h1 className='text-3xl text-center mb-10'>Siz sotib olmoqchi bo'lgan buyumlar</h1>
         <div className='flex flex-wrap gap-8'>
           {cards.length > 0 ? (
             cards.map((item, index) => (
@@ -171,14 +171,14 @@ const Shopping = () => {
               },
             ]}
           >
-            <Input placeholder='+998' />
+            <Input placeholder='+998XXXXXXXXX' />
           </Form.Item>
           <Button className='w-full bg-blue-500 text-white hover:bg-blue-600' onClick={sendMessage} type="primary">
             Yuborish
           </Button>
         </Form>
       </Modal>
-    </>
+    </div>
   );
 };
 

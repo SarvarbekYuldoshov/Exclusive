@@ -89,91 +89,92 @@ const Korzinka = () => {
     };
 
     return (
-        <>
-        <Bollen/>
-        <Header/>
-        <div className='max-w-[1200px] mx-auto p-4 justify-center mt-[50px]'>
-          <h1 className='text-[30px] flex items-center justify-center mb-[40px] mt-[150px]'>Bu yerda sizga kerakli mahsulotlar mavjud</h1>
-            {/* Map qilingan qism */}
-            {single.map(item => (
-                <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
-                    <div className='flex flex-col lg:flex-row items-center lg:items-start w-full'>
-                        <img className='w-full lg:w-[500px] h-auto lg:h-[400px] mb-4 lg:mb-0' src={item.img1} alt={item.name} />
-                        <div className='text-center lg:text-left lg:ml-6'>
-                            <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
-                            <h2 className='text-[20px] text-gray-600 mb-2'>{item.price}</h2>
-                            <img className='w-[100px] h-[20px] mb-2' src={item.img2} alt={item.name} />
-                            <p className='text-[16px] text-gray-500'>{item.text}</p>
-                            <p className='w-full lg:w-[400px] mb-4'>{item.text1}</p>
-                            <hr className='h-[3px] bg-black mb-4' />
-                            <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal(item)}>
-                                Buyurtma Berish
-                            </Button>
-                            
-                            <Modal open={open} footer={null} onCancel={closeModal}>
-                                <h2>Mahsulot: {selectedItem?.name}</h2>
-                                <h3>Narxi: {selectedItem?.price}</h3>
-                                <Form form={form} layout="vertical">
-                                    <Form.Item
-                                        name="name"
-                                        rules={[
-                                            { required: true, message: 'Ismingizni kiriting' },
-                                            { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
-                                        ]}
-                                    >
-                                        <Input placeholder='Ismingizni kiriting' />
-                                    </Form.Item>
-                                    <Form.Item
-                                        name="surname"
-                                        rules={[
-                                            { required: true, message: 'Familiyangizni kiriting' },
-                                            { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
-                                        ]}
-                                    >
-                                        <Input placeholder='Familiyangizni kiriting' />
-                                    </Form.Item>
-                                    <Form.Item
-                                        name="number"
-                                        rules={[
-                                            { required: true, message: 'Raqamingizni kiriting' },
-                                            {
-                                                pattern: /^\+998\d{9}$/,
-                                                message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
-                                            },
-                                        ]}
-                                    >
-                                        <Input placeholder='+998XXXXXXXXX' />
-                                    </Form.Item>
-                                    <Button onClick={sendMessage} type="primary">
-                                        Yuborish
+        <div className='flex flex-col min-h-screen'>
+            <Bollen/>
+            <Header/>
+            <main className='flex-grow'>
+                <div className='max-w-[1200px] mx-auto p-4 justify-center mt-[50px]'>
+                    <h1 className='text-[30px] flex items-center justify-center mb-[40px] mt-[150px]'>Bu yerda sizga kerakli mahsulotlar mavjud</h1>
+                    {/* Map qilingan qism */}
+                    {single.map(item => (
+                        <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
+                            <div className='flex flex-col lg:flex-row items-center lg:items-start w-full'>
+                                <img className='w-full lg:w-[500px] h-auto lg:h-[400px] mb-4 lg:mb-0' src={item.img1} alt={item.name} />
+                                <div className='text-center lg:text-left lg:ml-6'>
+                                    <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
+                                    <h2 className='text-[20px] text-gray-600 mb-2'>{item.price}</h2>
+                                    <img className='w-[100px] h-[20px] mb-2' src={item.img2} alt={item.name} />
+                                    <p className='text-[16px] text-gray-500'>{item.text}</p>
+                                    <p className='w-full lg:w-[400px] mb-4'>{item.text1}</p>
+                                    <hr className='h-[3px] bg-black mb-4' />
+                                    <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal(item)}>
+                                        Buyurtma Berish
                                     </Button>
-                                </Form>
-                            </Modal>
-                            <div className='mt-[30px]'>
-                            <ul className='flex gap-[20px] border border-black h-[60px]'>
-                                <img className='ml-2'  src={item.img4} alt={item.name}/>
-                                <li className=''>
-                                    <h1 className='mt-[10px]'>{item.text6}</h1>
-                                    <p className=''>{item.text7}</p>
-                                </li>
-                            </ul>
-                            <ul className='flex mt-[20px] gap-[20px] border border-black'>
-                                <img className='ml-2 w-[60px]'  src={item.img5} alt={item.name}/>
-                                <li className=''>
-                                    <h1 className='mt-[10px]'>{item.text8}</h1>
-                                    <p className=''>{item.text9}</p>
-                                </li>
-                            </ul>
+
+                                    <Modal open={open} footer={null} onCancel={closeModal}>
+                                        <h2>Mahsulot: {selectedItem?.name}</h2>
+                                        <h3>Narxi: {selectedItem?.price}</h3>
+                                        <Form form={form} layout="vertical">
+                                            <Form.Item
+                                                name="name"
+                                                rules={[
+                                                    { required: true, message: 'Ismingizni kiriting' },
+                                                    { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
+                                                ]}
+                                            >
+                                                <Input placeholder='Ismingizni kiriting' />
+                                            </Form.Item>
+                                            <Form.Item
+                                                name="surname"
+                                                rules={[
+                                                    { required: true, message: 'Familiyangizni kiriting' },
+                                                    { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
+                                                ]}
+                                            >
+                                                <Input placeholder='Familiyangizni kiriting' />
+                                            </Form.Item>
+                                            <Form.Item
+                                                name="number"
+                                                rules={[
+                                                    { required: true, message: 'Raqamingizni kiriting' },
+                                                    {
+                                                        pattern: /^\+998\d{9}$/,
+                                                        message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqam bilan davom etishi kerak',
+                                                    },
+                                                ]}
+                                            >
+                                                <Input placeholder='+998XXXXXXXXX' />
+                                            </Form.Item>
+                                            <Button onClick={sendMessage} type="primary">
+                                                Yuborish
+                                            </Button>
+                                        </Form>
+                                    </Modal>
+                                    <div className='mt-[30px]'>
+                                        <ul className='flex gap-[20px] border border-black h-[60px]'>
+                                            <img className='ml-2' src={item.img4} alt={item.name}/>
+                                            <li className=''>
+                                                <h1 className='mt-[10px]'>{item.text6}</h1>
+                                                <p className=''>{item.text7}</p>
+                                            </li>
+                                        </ul>
+                                        <ul className='flex mt-[20px] gap-[20px] border border-black'>
+                                            <img className='ml-2 w-[60px]' src={item.img5} alt={item.name}/>
+                                            <li className=''>
+                                                <h1 className='mt-[10px]'>{item.text8}</h1>
+                                                <p className=''>{item.text9}</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
-            ))}
+            </main>
+            <Footer/>
         </div>
-        <Footer/>
-        </>
     );
 };
-
 
 export default Korzinka;

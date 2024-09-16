@@ -78,7 +78,6 @@ const Header = () => {
                 navigate(`/shopping`)
                 window.scroll(0,0)
               }}></div>
-              {/* Cart Count positioned over Cart icon */}
               <span className="text-[13px] rounded-full w-[15px] h-[15px] bg-red-600 text-white flex items-center justify-center absolute top-[-8px] right-[-8px]">
                 {cards.length}
               </span>

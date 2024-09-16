@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Hero.css';
 import Rasm_5 from '../../images/rasm5.png';
-import Rasm_8 from '../../images/rasm43.png';
-import Rasm_9 from '../../images/rasm44.png';
+import Rasm_8 from '../../images/phonr.png';
 
 import { useTranslation } from 'react-i18next';
 import { Form, Input, Button, Modal, message } from 'antd';
@@ -16,7 +15,7 @@ const Hero = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [form] = Form.useForm();
-
+  
   const sendMessage = () => {
     form.validateFields()
       .then((values) => {
@@ -24,7 +23,7 @@ const Hero = () => {
         const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
         const chat_id = "6801549705";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
-        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}`;
+        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
         fetch(url, {
           method: 'POST',
           headers: {
@@ -40,7 +39,7 @@ const Hero = () => {
             if (res.ok) {
               message.success("Ma'lumot yuborildi");
               form.resetFields();
-              setOpen(false);  // Modalni yopish
+              setOpen(false);
             } else {
               message.error("Yuborishda xatolik yuz berdi");
             }
@@ -54,29 +53,16 @@ const Hero = () => {
         message.error("Iltimos, barcha maydonlarni to'ldiring!");
       });
   };
-
+  
   const showModal = () => setOpen(true);
-
   const closeModal = () => {
-    form.resetFields(); // Formani tozalash
+    form.resetFields();
     setOpen(false);
   };
 
   return (
-    <div className="bg-black text-center mt-[150px] sm:mt-[120px]" id='acount'>
-      <div className="flex flex-col md:flex-row items-center mx-auto max-w-[1200px] p-6 md:p-10">
-        <ul className='flex flex-col items-center md:items-start'>
-          <li className='flex items-center'>
-            <img className='mt-5 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]' src={Rasm_5} alt="" />
-            <p className='text-white mt-5 w-[150px] text-sm md:text-base'>
-              {t("hero.hero_text_1")}
-            </p>
-          </li>
-          <h1 className='mt-[50px] w-full md:w-[294px] h-[120px] font-inter text-[30px] sm:text-[40px] md:text-[48px] font-semibold leading-tight md:leading-[60px] tracking-[0.04em] text-left text-white'>
-            {t("hero.hero_text_2")}
-          </h1>
-        </ul>
-        
+    <div style={{ backgroundColor: 'black', textAlign: 'center', marginTop: '150px', position: 'relative', height: '100vh' }} id="acount">
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 auto', maxWidth: '1200px', padding: '0 20px', height: '100%' }}>
         <Swiper
           effect="coverflow"
           slidesPerView="auto"
@@ -92,32 +78,76 @@ const Hero = () => {
             disableOnInteraction: false,
           }}
           modules={[Autoplay, EffectCoverflow, Pagination]}
-          className="mySwiper max-w-[350px] sm:max-w-[400px] md:max-w-[450px]"
+          style={{ width: '100%', height: '100%' }}
         >
-          <SwiperSlide>
-            <img className='w-full h-auto' src={Rasm_9} alt="Slide 1" />
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${Rasm_8})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '100%',
+              height: '100vh',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <div style={{ color: 'white', textAlign: 'center' }}>
+              <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <li style={{ display: 'flex', alignItems: 'center' }}>
+                  <img style={{ marginTop: '5px', width: '80px', height: '80px' }} src={Rasm_5} alt="icon" />
+                  <p style={{ color: 'white', marginTop: '5px', width: '150px', fontSize: '14px' }}>
+                    {t("hero.hero_text_1")}
+                  </p>
+                </li>
+                <h1 style={{ marginTop: '50px', width: '100%', fontSize: '30px', fontWeight: '600', color: 'white' }}>
+                  {t("hero.hero_text_2")}
+                </h1>
+              </ul>
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <img className='w-full h-auto' src={Rasm_8} alt="Slide 2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img className='w-full h-auto' src={Rasm_9} alt="Slide 3" />
+
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${Rasm_8})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '100%',
+              height: '100vh',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <div style={{ color: 'white', textAlign: 'center' }}>
+              <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <li style={{ display: 'flex', alignItems: 'center' }}>
+                  <img style={{ marginTop: '5px', width: '80px', height: '80px' }} src={Rasm_5} alt="icon" />
+                  <p style={{ color: 'white', marginTop: '5px', width: '150px', fontSize: '14px' }}>
+                    {t("hero.hero_text_1")}
+                  </p>
+                </li>
+                <h1 style={{ marginTop: '50px', width: '100%', fontSize: '30px', fontWeight: '600', color: 'white' }}>
+                  {t("hero.hero_text_2")}
+                </h1>
+              </ul>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
 
-      <Button 
-        className='mt-10 mb-3 sm:mt-8 w-[150px] bg-black text-white hover:bg-blue-600' 
+      <Button
+        style={{ marginTop: '10px', marginBottom: '3px', width: '150px', backgroundColor: 'black', color: 'white', hover: { backgroundColor: 'blue' } }}
         onClick={showModal}
       >
         {t("main.main_text_3")}
       </Button>
 
       <Modal open={open} footer={null} onCancel={closeModal}>
-        <h1 className="text-center text-[24px] md:text-[30px]">
+        <h1 style={{ textAlign: 'center', fontSize: '24px' }}>
           Ma'lumotlarni to'ldiring
         </h1>
-        <p className="text-center text-[18px] text-blue-500">
+        <p style={{ textAlign: 'center', fontSize: '18px', color: 'blue' }}>
           Biz siz bilan imkon qadar tez bog'lanamiz va mahsulotingizni yetkazib beramiz. Xizmatimiz bepul!
         </p>
         <Form form={form} layout="vertical">
@@ -129,7 +159,7 @@ const Hero = () => {
               { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' },
             ]}
           >
-            <Input className="w-full sm:w-[480px] h-[50px]" placeholder="Ismingizni kiriting" />
+            <Input style={{ width: '100%', height: '50px' }} placeholder="Ismingizni kiriting" />
           </Form.Item>
           <Form.Item
             label="Familiya"
@@ -139,7 +169,7 @@ const Hero = () => {
               { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' },
             ]}
           >
-            <Input className="w-full sm:w-[480px] h-[50px]" placeholder="Familiyangizni kiriting" />
+            <Input style={{ width: '100%', height: '50px' }} placeholder="Familiyangizni kiriting" />
           </Form.Item>
           <Form.Item
             label="Telefon raqam"
@@ -152,9 +182,9 @@ const Hero = () => {
               },
             ]}
           >
-            <Input className="w-full sm:w-[480px] h-[50px]" placeholder="Telefon raqamingizni kiriting" />
+            <Input style={{ width: '100%', height: '50px' }} placeholder="Telefon raqamingizni kiriting" />
           </Form.Item>
-          <Button className="w-full sm:w-[480px] h-[50px] bg-blue-500 text-white" onClick={sendMessage}>
+          <Button style={{ width: '100%', height: '50px', backgroundColor: 'blue', color: 'white' }} onClick={sendMessage}>
             Yuborish
           </Button>
         </Form>
