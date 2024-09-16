@@ -1,9 +1,7 @@
 import Rasm_1 from "../../images/rasm16.png"
 import Rasm_2 from "../../images/rasm20.png"
 import Rasm_3 from "../../images/rasm21.png"
-import Rasm_4 from "../../images/rasm22.png"
-import Rasm_5 from "../../images/rasm23.png"
-import Rasm_6 from "../../images/rasm24.png"
+import Rasm_4 from "../../images/rasm45.png"
 import Rasm_7 from "../../images/rasm25.png"
 import Rasm_8 from "../../images/rasm19.png"
 import Rasm_9 from "../../images/rasm17.png"
@@ -23,6 +21,7 @@ const Data = [
         img1: Rasm13,
         img8: Rasm14,
         img9: Rasm15,
+        img10: Rasm_4,
         name: "Breed Dry Dog Food",
         price: "$100",
         img2:Rasm_8,
@@ -44,10 +43,11 @@ const Data = [
         img3: Rasm_9,
         img4: Rasm10,
         img5: Rasm11,
-        img1: Rasm12,
+        img6: Rasm12,
         img7: Rasm13,
         img8: Rasm14,
         img9: Rasm15,
+        img1: Rasm_4,
         name: "CANON EOS DSLR Camera",
         price: "$120",
         img2:Rasm_8,

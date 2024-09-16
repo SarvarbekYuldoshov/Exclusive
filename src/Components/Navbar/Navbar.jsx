@@ -4,19 +4,16 @@ import useSharedStore from '../String/Store';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const { cards, setCards, addToWishlist } = useSharedStore();
-  const [error, setError] = useState('');
+  const { cards, setCards } = useSharedStore();
   const [adding, setAdding] = useState({});
 
   const handleAdd = (item) => {
     const exists = cards.find(card => card.id === item.id);
-    if (exists) {
-      setError('Siz bu mahsulotni olgansiz'); 
-      setAdding((add) => ({ ...add, [item.id]: true })); // Disable and turn red after adding
-    } else {
+    if (!exists) {
       setCards([...cards, item]);
-      setError('');
       setAdding((add) => ({ ...add, [item.id]: true })); // Mark item as added
+    } else {
+      setAdding((add) => ({ ...add, [item.id]: true })); // Disable and change to added state
     }
   };
 
@@ -51,7 +48,7 @@ const Navbar = () => {
                   onClick={() => handleAdd(item)} 
                   className={`mt-[40px] w-[250px] h-[40px] top-[220px] py-2 px-4 rounded-md absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity max-sm:w-[338px] 
                   ${adding[item.id] 
-                    ? 'bg-white border border-black text-black cursor-not-allowed' // White background, black border and text for "Qushilgan"
+                    ? 'bg-blue-500 text-white cursor-not-allowed' // Blue background for "Qushilgan"
                     : 'bg-black text-white hover:bg-black opacity-0 group-hover:opacity-100'}`}
                   disabled={adding[item.id]} // Disable button if already added
                 >
@@ -60,7 +57,6 @@ const Navbar = () => {
               </div>
             ))}
         </div>
-        {error && <p className='text-red-500 mt-4'>{error}</p>}
       </div>
     </div>
   );
