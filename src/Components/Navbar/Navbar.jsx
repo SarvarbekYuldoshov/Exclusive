@@ -50,7 +50,9 @@ const Navbar = () => {
                 <button 
                   onClick={() => handleAdd(item)} 
                   className={`mt-[40px] w-[250px] h-[40px] top-[220px] py-2 px-4 rounded-md absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity max-sm:w-[338px] 
-                  ${adding[item.id] ? 'bg-red-500 cursor-not-allowed' : 'bg-black text-white hover:bg-black opacity-0 group-hover:opacity-100'}`}
+                  ${adding[item.id] 
+                    ? 'bg-white border border-black text-black cursor-not-allowed' // White background, black border and text for "Qushilgan"
+                    : 'bg-black text-white hover:bg-black opacity-0 group-hover:opacity-100'}`}
                   disabled={adding[item.id]} // Disable button if already added
                 >
                   {adding[item.id] ? 'Qushilgan' : 'Qushish'}
