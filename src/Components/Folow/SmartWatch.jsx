@@ -21,7 +21,7 @@ const SmartWatch = () => {
   };
 
   const handleWishlistAdd = (item) => {
-    addToWishlist(item); // Wishlistga mahsulot qo'shish
+    addToWishlist(item); 
     setAdding((add)=>({...add, [item.name]:true}));
   };
 

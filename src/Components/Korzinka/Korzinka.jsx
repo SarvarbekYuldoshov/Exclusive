@@ -5,6 +5,7 @@ import { Button, Form, Input, Modal, message } from 'antd';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Bollen from '../Bollen/Bollen';
+import { useTranslation } from 'react-i18next';
 
 const Korzinka = () => {
     const { id } = useParams();
@@ -13,7 +14,7 @@ const Korzinka = () => {
     const [open, setOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const [form] = Form.useForm();
-
+    const { t } = useTranslation();
     useEffect(() => {
         if (id) {
             const updateCard = Data.filter((item) => item.id.toString() === id);
