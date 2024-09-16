@@ -167,13 +167,13 @@ const Hero = () => {
               alignItems: 'center',
             }}
           >
-             <div style={{ color: 'white', textAlign: 'center' }}>
+            <div style={{ color: 'white', textAlign: 'center' }}>
               <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                   <img style={{ marginTop: '5px', width: '80px', height: '80px' }} src={Rasm_5} alt="icon" />
                   <p style={{ color: 'white', marginTop: '5px', width: '150px', fontSize: '14px' }}>
                     {t("hero.hero_text_1")}
                   </p>
-                <h1 style={{ marginTop: '50px', width: '100%', fontSize: '30px', fontWeight: '600', color: 'white' }}>
+                <h1 style={{ marginTop: '50px', width: '100%', fontSize: '23px', fontWeight: '600', color: 'white' }}>
                   {t("hero.hero_text_2")}
                 </h1>
               </ul>
