@@ -14,7 +14,7 @@ const Hover = () => {
 
   const HoverItem = ({ src, label, path }) => (
     <Link to={path || "/"}>
-      <div className='w-[170px] h-[145px] border border-black flex flex-col justify-center items-center transition-transform duration-300 hover:bg-red-500 hover:scale-105 hover:text-white group max-sm:w-[140px]'>
+      <div className='w-[170px] h-[145px] border border-black flex flex-col justify-center items-center transition-transform duration-300 hover:bg-[blue] hover:scale-105 hover:text-white group max-sm:w-[140px]'>
         <img className='w-[50px] h-[50px] group-hover:filter group-hover:invert' src={src} alt={label} />
         <p className='mt-[10px] font-poppins text-[16px] group-hover:text-white'>{label}</p>
       </div>
@@ -27,7 +27,7 @@ const Hover = () => {
         <ul className='flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10'>
           <li className='flex items-center gap-3'>
             <img src={Rasm_8} alt="Categories" />
-            <p className='font-poppins text-[16px] font-semibold leading-[20px] text-[#DB4444]'>{t("hover.hover_text_1")}</p>
+            <p className='font-poppins text-[16px] font-semibold leading-[20px] text-[#e03939]'>{t("hover.hover_text_1")}</p>
           </li>
           <li>
             <h1 className='font-inter text-[28px] md:text-[36px] font-semibold leading-[36px] md:leading-[48px] tracking-wide text-black'>

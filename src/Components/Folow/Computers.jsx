@@ -3,6 +3,13 @@ import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
 import { Link } from 'react-router-dom';
 import Rasm_1 from "../../images/rasm21.png"
+import Rasm_2 from "../../images/rasm21.png"
+import Rasm_3 from "../../images/rasm21.png"
+import Rasm_4 from "../../images/rasm21.png"
+import Rasm_5 from "../../images/rasm21.png"
+import Rasm_6 from "../../images/rasm21.png"
+import Rasm_7 from "../../images/rasm21.png"
+import Rasm_8 from "../../images/rasm21.png"
 
 const Computers = () => {
   const { cards, setCards, addToWishlist } = useSharedStore();
