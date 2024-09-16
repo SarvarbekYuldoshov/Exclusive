@@ -98,7 +98,7 @@ const Hero = () => {
                   <p style={{ color: 'white', marginTop: '5px', width: '150px', fontSize: '14px' }}>
                     {t("hero.hero_text_1")}
                   </p>
-                <h1 style={{ marginTop: '50px', width: '100%', fontSize: '30px', fontWeight: '600', color: 'white' }}>
+                <h1 style={{ marginTop: '50px', width: '100%', fontSize: '23px', fontWeight: '600', color: 'white' }}>
                   {t("hero.hero_text_2")}
                 </h1>
               </ul>
