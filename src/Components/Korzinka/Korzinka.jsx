@@ -97,18 +97,6 @@ const Korzinka = () => {
             {/* Map qilingan qism */}
             {single.map(item => (
                 <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
-                    <div className='w-full lg:w-[200px] h-auto lg:h-[600px]'>
-                        <li className='shadow-lg list-none mt-[20px]'>
-                        <img className='w-[80px] h-[80px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
-                        </li>
-                        <li className='shadow-lg list-none mt-[50px]'>
-                        <img className='w-[120px] h-[120px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
-                        </li>
-                        <li className='shadow-lg list-noneshadow-lg list-none mt-[50px]'>
-                        <img className='w-[180px] h-[150px] mx-auto mt-[10px]' src={item.img1} alt={item.name} />
-                        </li>
-                    </div>
-
                     <div className='flex flex-col lg:flex-row items-center lg:items-start w-full'>
                         <img className='w-full lg:w-[500px] h-auto lg:h-[400px] mb-4 lg:mb-0' src={item.img1} alt={item.name} />
                         <div className='text-center lg:text-left lg:ml-6'>

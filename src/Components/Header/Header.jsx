@@ -1,12 +1,10 @@
 import React from 'react';
 import "./Header.css";
 import Rasm_1 from "../../images/rasm1.png";
-import Rasm_2 from "../../images/rasm2.png";
-import Rasm_3 from "../../images/rasm3.png";
 import Rasm_4 from "../../images/rasm4.png";
 import Rasm15 from "../../images/rasm15.png";
 import { Dropdown } from 'antd';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useSharedStore from '../String/Store';
 import { useTranslation } from 'react-i18next';
 
@@ -17,6 +15,8 @@ const Header = () => {
   const handleLanguageChange = (e) => {
     i18n.changeLanguage(e.target.value);
   };
+
+  const navigate = useNavigate()
 
   const items = [
     {
@@ -70,13 +70,14 @@ const Header = () => {
           </ul>
 
           <ul className='flex gap-5 max-sm:gap-5 relative'>
-            <Link to="/market">
-            {/* <img className='max-sm:absolute bottom-3 left-[150px]' src={Rasm_3} alt="User Icon" /> */}
-            </Link>
             <li className='relative'>
               <Link className='header-link-a' to="/shopping">
                 <img className='max-sm:absolute bottom-3.5 left-[190px] w-7 h-7' src={Rasm_4} alt="Cart" />
               </Link>
+              <div onClick={() => {
+                navigate(`/shopping`)
+                window.scroll(0,0)
+              }}></div>
               {/* Cart Count positioned over Cart icon */}
               <span className="text-[13px] rounded-full w-[15px] h-[15px] bg-red-600 text-white flex items-center justify-center absolute top-[-8px] right-[-8px]">
                 {cards.length}

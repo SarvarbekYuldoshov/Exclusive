@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
 import { Link } from 'react-router-dom';
-
+import Rasm_1 from "../../images/img2.png"
 const Camera = () => {
   const { cards, setCards, addToWishlist } = useSharedStore();
   const [error, setError] = useState('');
@@ -38,7 +38,7 @@ const Camera = () => {
                 {/* <img onClick={() => handleWishlistAdd(item)} src={item.img3} alt={item.name} className='w-[30px] h-[30px] absolute right-2 top-1 cursor-pointer'/> */}
                 <Link to={`/korzinka/${item.id}`}>
                   <ul className=''>
-                    <img src={item.img1} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
+                    <img src={Rasm_1} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
                     <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
                     <ul className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
                       <h2 className='text-lg text-gray-600'>{item.price}</h2>
