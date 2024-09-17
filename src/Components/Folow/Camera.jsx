@@ -3,6 +3,13 @@ import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
 import { Link } from 'react-router-dom';
 import Rasm_1 from "../../images/img2.png"
+import Rasm_1 from "../../images/image3.png"
+import Rasm_1 from "../../images/image4.png"
+import Rasm_1 from "../../images/image5.png"
+import Rasm_1 from "../../images/image6.png"
+import Rasm_1 from "../../images/image7.png"
+import Rasm_1 from "../../images/image8.png"
+
 const Camera = () => {
   const { cards, setCards, addToWishlist } = useSharedStore();
   const [error, setError] = useState('');
