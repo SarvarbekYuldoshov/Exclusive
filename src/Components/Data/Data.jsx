@@ -1,5 +1,5 @@
 import Rasm_1 from "../../images/rasm16.png"
-import Rasm_2 from "../../images/rasm20.png"
+import Rasm_16 from "../../images/col1.png"
 import Rasm_3 from "../../images/rasm21.png"
 import Rasm_4 from "../../images/rasm45.png"
 import Rasm_7 from "../../images/rasm25.png"
@@ -22,6 +22,7 @@ const Data = [
         img8: Rasm14,
         img9: Rasm15,
         img10: Rasm_4,
+        img11:Rasm_16,
         name: "Breed Dry Dog Food",
         price: "$100",
         img2:Rasm_8,
@@ -48,6 +49,7 @@ const Data = [
         img8: Rasm14,
         img9: Rasm15,
         img1: Rasm_4,
+        img11:Rasm_16,
         name: "CANON EOS DSLR Camera",
         price: "$120",
         img2:Rasm_8,
@@ -73,6 +75,7 @@ const Data = [
         img7: Rasm13,
         img8: Rasm14,
         img9: Rasm15,
+        img11:Rasm_16,
         name: "ASUS FHD Gaming Laptop",
         price: "$230",
         img2:Rasm_8,
@@ -97,6 +100,7 @@ const Data = [
         img7: Rasm13,
         img1: Rasm14,
         img9: Rasm15,
+        img11:Rasm_16,
         name: "Curology Product Set ",
         price: "$340",
         img2:Rasm_8,
@@ -120,6 +124,7 @@ const Data = [
         img1: Rasm12,
         img8: Rasm14,
         img9: Rasm15,
+        img11:Rasm_16,
         name: "Kids Electric Car",
         price: "$210",
         img2:Rasm_8,
@@ -144,6 +149,7 @@ const Data = [
         img7: Rasm13,
         img8: Rasm14,
         img1: Rasm15,
+        img11:Rasm_16,
         name: "Jr. Zoom Soccer Cleats",
         price: "$960",
         img2:Rasm_8,
@@ -169,6 +175,7 @@ const Data = [
         img7: Rasm13,
         img8: Rasm14,
         img9: Rasm15,
+        img11:Rasm_16,
         name: "GP11 Shooter USB Gamepad",
         price: "$1100",
         img2:Rasm_8,
@@ -194,6 +201,7 @@ const Data = [
         img7: Rasm13,
         img8: Rasm14,
         img1: Rasm_3,
+        img11:Rasm_16,
         name: "Quilted Satin Jacket",
         price: "$140",
         img2:Rasm_8,
