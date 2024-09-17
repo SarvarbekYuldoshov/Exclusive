@@ -7,6 +7,7 @@ import Rasm_40 from "../../images/rasm40.png";
 import Rasm_41 from "../../images/rasm41.png";
 import Rasm_42 from "../../images/rasm42.png";
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -17,24 +18,32 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5'>
+              <Link>
               <a className='text-2xl font-bold text-[#FAFAFA]' href="#main">
                 {t("footer.footer_text_1")}
               </a>
+              </Link>
             </li>
             <li className='mt-5'>
+            <Link>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#acount">
               {t("footer.footer_text_2")}
               </a>
+            </Link>
             </li>
              <li className='mt-3'>
+             <Link>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_3")}
               </a>
+              </Link>
             </li>
             <li className='mt-3'>
+            <Link>
               <a className='text-base text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_4")}
               </a>
+            </Link>
             </li>
           </ul>
         </div>
@@ -42,27 +51,35 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5'>
+            <Link>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_5")}
               </a>
+            </Link>
             </li>
             <li className='mt-3'>
+            <Link>
               <a className='text-base text-[#FAFAFA]' href="#acount">
                 sarvarbekyuldoshov85@gmail.com
               </a>
+            </Link>
             </li>
+            <Link>
             <p className='mt-3 text-base text-[#FAFAFA]'>
               +998 94 239 04 26
             </p>
+            </Link>
           </ul>
         </div>
 
         <div>
           <ul>
             <li className='mt-5'>
+            <Link>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_6")}
               </a>
+            </Link>
             </li>
             <li className='mt-3'>
               <a className='text-base text-[#FAFAFA]' href="#acount">
