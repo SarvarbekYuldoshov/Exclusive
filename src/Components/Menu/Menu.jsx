@@ -93,7 +93,10 @@ const Menu = () => {
   };
 
   const showModal = () => setOpen(true);
-  const closeModal = () => setOpen(false);
+  const closeModal = () => {
+    setOpen(false);
+    form.resetFields(); // Reset the form fields when the modal is closed
+  };
 
   return (
     <div id='navbar' className=''>
@@ -157,7 +160,8 @@ const Menu = () => {
           <div className='w-[100%] lg:w-[48%] bg-black p-[20px] mb-[20px] relative'>
             <img className='w-[180px] h-[180px] absolute top-[-20px] right-0' src={Rasm_31} alt="" />
             <h4 className='mt-[120px] text-[24px] font-semibold text-left text-[#FAFAFA]'>
-              {t("menu.menu_text_13")}
+             
+            {t("menu.menu_text_13")}
             </h4>
             <p className='mt-[20px] text-[14px] font-normal text-left text-[#FAFAFA]'>
               {t("menu.menu_text_14")}

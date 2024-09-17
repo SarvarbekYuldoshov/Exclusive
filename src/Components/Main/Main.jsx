@@ -90,6 +90,7 @@ const Main = () => {
   const closeModal = () => {
     setOpen(false);
     setSelectedItem(null);
+    form.resetFields(); // Reset form fields when closing the modal
   };
 
   return (
@@ -123,33 +124,21 @@ const Main = () => {
               <Form.Item
                 label="Ism"
                 name="name"
-                rules={[
-                  { required: true, message: 'Ismingizni kiriting' },
-                  { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
-                ]}
+                rules={[{ required: true, message: 'Ismingizni kiriting' }, { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }]}
               >
                 <Input className='w-full h-[50px]' placeholder='Ismingizni kiriting' />
               </Form.Item>
               <Form.Item
                 label="Familiya"
                 name="surname"
-                rules={[
-                  { required: true, message: 'Familiyangizni kiriting' },
-                  { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
-                ]}
+                rules={[{ required: true, message: 'Familiyangizni kiriting' }, { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }]}
               >
                 <Input className='w-full h-[50px]' placeholder='Familiyangizni kiriting' />
               </Form.Item>
               <Form.Item
                 label="Telefon raqam"
                 name="number"
-                rules={[
-                  { required: true, message: 'Telefon raqamingizni kiriting' },
-                  {
-                    pattern: /^\+998\d{9}$/,
-                    message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqamdan iborat bo\'lishi kerak',
-                  },
-                ]}
+                rules={[{ required: true, message: 'Telefon raqamingizni kiriting' }, { pattern: /^\+998\d{9}$/, message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqamdan iborat bo\'lishi kerak' }]}
               >
                 <Input className='w-full h-[50px]' placeholder='+998' />
               </Form.Item>

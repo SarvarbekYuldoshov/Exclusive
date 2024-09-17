@@ -14,8 +14,8 @@ const Korzinka = () => {
     const [open, setOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const [form] = Form.useForm();
-    const { t } = useTranslation();
-
+    const { t, i18n } = useTranslation();
+ 
     useEffect(() => {
         if (id) {
             const updateCard = Data.filter((item) => item.id.toString() === id);
@@ -95,10 +95,7 @@ const Korzinka = () => {
             <Bollen/>
             <Header/>
             <main className='flex-grow'>
-                <div className='max-w-[1200px] mx-auto p-4 flex justify-center items-center flex-col mt-[50px]'>
-                    <h1 className='text-[30px] flex items-center justify-center mb-[40px] mt-[150px]'>
-                        Bu yerda sizga kerakli mahsulotlar mavjud
-                    </h1>
+                <div className='max-w-[1200px] mx-auto p-4 flex justify-center items-center flex-col mt-[150px]'>
                     {single.map(item => (
                         <div key={item.id} className='flex flex-col lg:flex-row justify-center items-center gap-[20px] mb-[20px]'>
                             <div className='flex flex-col lg:flex-row items-center lg:items-start w-full'>
@@ -108,14 +105,14 @@ const Korzinka = () => {
                                     alt={item.name} 
                                 />
                                 <div className='text-center lg:text-left lg:ml-6'>
-                                    <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
-                                    <h2 className='text-[20px] text-gray-600 mb-2'>{item.price}</h2>
+                                    <h1 className='text-[24px] font-bold mb-2'>{i18n?.language==="uz" ?  item.name : item?.name_en}</h1>
+                                    <h2 className='text-[20px] text-gray-600 mb-2'>{i18n?.language==="uz" ?  item.text1 : item?.text1en}</h2>
                                     <img className='w-[80px] h-[20px] mb-2 mx-auto lg:mx-0' src={item.img2} alt={item.name} />
-                                    <p className='text-[16px] text-gray-500'>{item.text}</p>
-                                    <p className='w-full lg:w-[400px] mb-4'>{item.text1}</p>
+                                    <p className='text-[16px] text-gray-500'>{i18n?.language==="uz" ?  item.text6 : item?.text6en}</p>
+                                    <p className='w-full lg:w-[400px] mb-4'>{i18n?.language==="uz" ?  item.text7 : item?.text7en}</p>
                                     <hr className='h-[3px] bg-black mb-4' />
                                     <Button className='mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600' onClick={() => showModal(item)}>
-                                        Buyurtma Berish
+                                    {i18n?.language==="uz" ?  item.text10 : item?.text10en}
                                     </Button>
 
                                     <Modal open={open} footer={null} onCancel={closeModal}>
@@ -161,15 +158,15 @@ const Korzinka = () => {
                                         <ul className='flex gap-[20px] border border-black h-[60px]'>
                                             <img className='ml-2' src={item.img4} alt={item.name}/>
                                             <li>
-                                                <h1 className='mt-[10px]'>{item.text6}</h1>
-                                                <p>{item.text7}</p>
+                                                <h1 className='mt-[10px]'>{i18n?.language==="uz" ?  item.text6 : item?.text6en}</h1>
+                                                <p>{i18n?.language==="uz" ?  item.text7 : item?.text7en}</p>
                                             </li>
                                         </ul>
                                         <ul className='flex mt-[20px] gap-[20px] border border-black'>
                                             <img className='ml-2 w-[60px]' src={item.img5} alt={item.name}/>
                                             <li>
-                                                <h1 className='mt-[10px]'>{item.text8}</h1>
-                                                <p>{item.text9}</p>
+                                                <h1 className='mt-[10px]'>{i18n?.language==="uz" ?  item.text8 : item?.text8en}</h1>
+                                                <p>{i18n?.language==="uz" ?  item.text9 : item?.text9en}</p>
                                             </li>
                                         </ul>
                                     </div>

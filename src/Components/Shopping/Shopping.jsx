@@ -5,20 +5,32 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Bollen from '../Bollen/Bollen';
 
-
 const Shopping = () => {
   const { cards, setCards } = useSharedStore(); // Ensure cards have data
   const [open, setOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [form] = Form.useForm();
-  const [quantities, setQuantities] = useState({});
-   
-  
+  const [quantities, setQuantities] = useState(() => {
+    const savedQuantities = localStorage.getItem('quantities');
+    return savedQuantities ? JSON.parse(savedQuantities) : {};
+  });
+
   useEffect(() => {
-    setQuantities(cards.reduce((acc, item) => {
-      acc[item.id] = acc[item.id] || 1; 
-      return acc;
-    }, {}));
+    // Load cards from local storage
+    const savedCards = localStorage.getItem('cards');
+    if (savedCards) {
+      setCards(JSON.parse(savedCards));
+    }
+  }, [setCards]);
+
+  useEffect(() => {
+    // Save quantities to local storage
+    localStorage.setItem('quantities', JSON.stringify(quantities));
+  }, [quantities]);
+
+  useEffect(() => {
+    // Save cards to local storage
+    localStorage.setItem('cards', JSON.stringify(cards));
   }, [cards]);
 
   const sendMessage = () => {
