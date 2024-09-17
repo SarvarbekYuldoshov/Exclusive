@@ -67,6 +67,7 @@
   @media (max-width: 640px) {
     .cart-wrapper {
       right: 150px;
+      top: 15px;
       position: absolute;
       justify-content: center;
       align-items: center;

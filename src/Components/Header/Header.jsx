@@ -52,7 +52,7 @@ const Header = () => {
             placement="bottom"
           >
             <button>
-              <img className='headerImg max-md:block w-10 max-sm:absolute bottom-2 right-[25px]' src={Rasm15} alt="Menu" />
+              <img className='headerImg max-md:block w-10 max-sm:absolute bottom-2 right-[25px] top-[20px]' src={Rasm15} alt="Menu" />
             </button>
           </Dropdown>
 
