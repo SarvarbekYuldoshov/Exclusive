@@ -16,7 +16,7 @@ const Header = () => {
     i18n.changeLanguage(e.target.value);
   };
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const items = [
     {
@@ -57,9 +57,15 @@ const Header = () => {
           </Dropdown>
 
           <ul className="flex gap-8 max-xl:gap-5 max-lg:gap-1 max-md:hidden">
-            <Link to="/"> <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text")}</a></li></Link>
-            <Link to="/"> <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text_1")}</a></li></Link>
-            <Link to="/"> <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text_2")}</a></li></Link>
+            <Link to="/"> 
+              <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text")}</a></li>
+            </Link>
+            <Link to="/"> 
+              <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text_1")}</a></li>
+            </Link>
+            <Link to="/"> 
+              <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#https://www.figma.com/community/file/976509391449365569">{t("header.header_text_2")}</a></li>
+            </Link>
 
             <li className="header-item-a">
               <select className="select" onChange={handleLanguageChange} value={i18n.language}>
@@ -70,15 +76,15 @@ const Header = () => {
           </ul>
 
           <ul className='flex gap-5 max-sm:gap-5 relative'>
-            <li className='relative'>
+            <li className='cart-wrapper'>
               <Link className='header-link-a' to="/shopping">
-                <img className='max-sm:absolute bottom-3.5 left-[190px] w-7 h-7' src={Rasm_4} alt="Cart" />
+                <img className='cart-icon max-sm:w-7 max-sm:h-7' src={Rasm_4} alt="Cart" />
               </Link>
               <div onClick={() => {
-                navigate(`/shopping`)
-                window.scroll(0,0)
+                navigate(`/shopping`);
+                window.scroll(0, 0);
               }}></div>
-              <span className="text-[13px] rounded-full w-[15px] h-[15px] bg-red-600 text-white flex items-center justify-center absolute top-[-8px] right-[-8px]">
+              <span className="cart-badge">
                 {cards.length}
               </span>
             </li>

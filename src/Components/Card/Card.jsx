@@ -19,3 +19,5 @@ const card = [
         text9:"Free 30 Days Delivery Returns. Details"
   }
 ]
+
+export default card

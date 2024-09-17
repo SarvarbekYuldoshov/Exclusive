@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
 import { Link } from 'react-router-dom';
+import cardData from '../Card/Card'; // Import card data correctly
 
 const Gaming = () => {
   const { cards, setCards, addToWishlist } = useSharedStore();
@@ -28,20 +28,20 @@ const Gaming = () => {
     <div>
       <div className='max-w-[1200px] mx-auto p-[20px]' id='main'>
         <div className='flex flex-wrap gap-[50px]'>
-          {Data && Data.map((item, index) => (
+          {/* Ensure that cardData is an array of products */}
+          {cardData && cardData.map((item, index) => (
             <div
               key={index}
               className='w-[250px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group transform transition-transform duration-1000 ease-in-out hover:scale-[0.98]'
             >
-              {/* Wishlist tugmasi */}
-              {/* <img onClick={() => handleWishlistAdd(item)} src={item.img3} alt={item.name} className='w-[30px] h-[30px] absolute right-2 top-1 cursor-pointer'/> */}
+              {/* Wishlist Button */}
+              {/* <img onClick={() => handleWishlistAdd(item)} src={item.rasm3} alt={item.name} className='w-[30px] h-[30px] absolute right-2 top-1 cursor-pointer' /> */}
               <Link to={`/korzinka/${item.id}`}>
                 <div>
-                  <img src={item.img1} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
+                  <img src={item.rasm1} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]'/>
                   <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
                   <div className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
                     <h2 className='text-lg text-gray-600'>{item.price}</h2>
-                    <img src={item.img2} alt={item.name} className='w-[140px] h-[20px]' />
                     <p>{item.text}</p>
                   </div>
                 </div>
