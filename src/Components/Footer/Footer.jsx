@@ -18,7 +18,7 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5'>
-              <Link>
+              <Link to="/">
               <a className='text-2xl font-bold text-[#FAFAFA]' href="#main">
                 {t("footer.footer_text_1")}
               </a>
@@ -172,7 +172,7 @@ const Footer = () => {
               <li>
                 <img src={Rasm_42} alt="Social Icon 4" />
               </li>
-              <</Link>
+              </Link>
               </a>
             </ul>
           </ul>
