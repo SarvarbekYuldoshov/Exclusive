@@ -82,74 +82,97 @@ const Footer = () => {
             </Link>
             </li>
             <li className='mt-3'>
+            <Link>
               <a className='text-base text-[#FAFAFA]' href="#acount">
               {t("footer.footer_text_7")}
               </a>
+            </Link>
             </li>
             <li className='mt-3'>
+            <Link>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_8")}
               </a>
+            </Link>
             </li>
             <li className='mt-3'>
+            <Link>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_9")}
               </a>
+            </Link>
             </li>
           </ul>
         </div>
         <div>
           <ul>
             <li className='mt-5 text-center'>
+            <Link>
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_10")}
               </a>
+            </Link>
             </li>
             <li className='mt-3 text-center'>
+            <Link>
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_11")}
               </a>
+             </Link>
             </li>
             <ul className='flex justify-center gap-5 mt-5'>
               <li>
+              <Link>
                 <a href="#acount">
                 <img className='w-20 h-20' src={Rasm_36} alt="App Icon 1" />
                 </a>
+                </Link>
               </li>
               <ul>
               <li>
+              <Link>
               <a href="#acount">
                 <img className='w-[110px] h-[40px]' src={Rasm_37} alt="App Icon 2" />
                 </a>
+                </Link>
               </li>
               <li>
-
+              <Link>
               <a href="#yaxshi">
                 <img className='w-[110px] h-[40px]' src={Rasm_38} alt="App Icon 3" />
               </a>
+              </Link>
               </li>
               </ul> 
             </ul>
             <ul className='flex justify-center gap-5 mt-5'>
               <li>
+              <Link>
               <a href="#yaxshi">
                 <img src={Rasm_39} alt="Social Icon 1" />
                 </a>
+                </Link>
               </li>
               <a href="#main">
+              <Link>
               <li>
                 <img src={Rasm_40} alt="Social Icon 2" />
               </li>
+              </Link>
               </a>
+              <Link>
               <a href="#yaxshi">
               <li>
                 <img src={Rasm_41} alt="Social Icon 3" />
               </li>
               </a>
+              </Link>
               <a href="#acount">
+              <Link>
               <li>
                 <img src={Rasm_42} alt="Social Icon 4" />
               </li>
+              <</Link>
               </a>
             </ul>
           </ul>
