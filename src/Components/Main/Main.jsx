@@ -93,7 +93,7 @@ const Main = () => {
   };
 
   return (
-    <div className="bg-black py-10" id='sotibolish'>
+    <div className="bg-black py-10" id='sotib'>
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-5 md:px-10">
         <div className="md:w-1/2">
           <p className="text-[#00FF66] font-poppins font-semibold text-sm md:text-base mb-4">

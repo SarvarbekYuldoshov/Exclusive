@@ -18,32 +18,24 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5'>
-              <Link to="/">
               <a className='text-2xl font-bold text-[#FAFAFA]' href="#main">
                 {t("footer.footer_text_1")}
               </a>
-              </Link>
             </li>
             <li className='mt-5'>
-            <Link to="/">
               <a className='text-xl font-medium text-[#FAFAFA]' href="#acount">
               {t("footer.footer_text_2")}
               </a>
-            </Link>
             </li>
              <li className='mt-3'>
-             <Link to="/">
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_3")}
               </a>
-              </Link>
             </li>
             <li className='mt-3'>
-            <Link to="/">
               <a className='text-base text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_4")}
               </a>
-            </Link>
             </li>
           </ul>
         </div>
@@ -51,128 +43,96 @@ const Footer = () => {
         <div>
           <ul>
             <li className='mt-5'>
-            <Link to="/">
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_5")}
               </a>
-            </Link>
             </li>
             <li className='mt-3'>
-            <Link to="/">
               <a className='text-base text-[#FAFAFA]' href="#acount">
                 sarvarbekyuldoshov85@gmail.com
               </a>
-            </Link>
             </li>
-            <Link to="/">
             <p className='mt-3 text-base text-[#FAFAFA]'>
               +998 94 239 04 26
             </p>
-            </Link>
           </ul>
         </div>
 
         <div>
           <ul>
             <li className='mt-5'>
-            <Link to="/">
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_6")}
               </a>
-            </Link>
             </li>
             <li className='mt-3'>
-            <Link to="/">
               <a className='text-base text-[#FAFAFA]' href="#acount">
               {t("footer.footer_text_7")}
               </a>
-            </Link>
             </li>
             <li className='mt-3'>
-            <Link to="/">
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_8")}
               </a>
-            </Link>
             </li>
             <li className='mt-3'>
-            <Link to="/">
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_9")}
               </a>
-            </Link>
             </li>
           </ul>
         </div>
         <div>
           <ul>
             <li className='mt-5 text-center'>
-            <Link to="/">
               <a className='text-xl font-medium text-[#FAFAFA]' href="#main">
               {t("footer.footer_text_10")}
               </a>
-            </Link>
             </li>
             <li className='mt-3 text-center'>
-            <Link to="/">
               <a className='text-base text-[#FAFAFA]' href="#yaxshi">
               {t("footer.footer_text_11")}
               </a>
-             </Link>
             </li>
             <ul className='flex justify-center gap-5 mt-5'>
               <li>
-              <Link to="/">
                 <a href="#acount">
                 <img className='w-20 h-20' src={Rasm_36} alt="App Icon 1" />
                 </a>
-                </Link>
               </li>
               <ul>
               <li>
-              <Link to="/">
               <a href="#acount">
                 <img className='w-[110px] h-[40px]' src={Rasm_37} alt="App Icon 2" />
                 </a>
-                </Link>
               </li>
               <li>
-              <Link to="/">
               <a href="#yaxshi">
                 <img className='w-[110px] h-[40px]' src={Rasm_38} alt="App Icon 3" />
               </a>
-              </Link>
               </li>
               </ul> 
             </ul>
             <ul className='flex justify-center gap-5 mt-5'>
               <li>
-              <Link to="/">
               <a href="#yaxshi">
                 <img src={Rasm_39} alt="Social Icon 1" />
                 </a>
-                </Link>
               </li>
               <a href="#main">
-              <Link to="/">
               <li>
                 <img src={Rasm_40} alt="Social Icon 2" />
               </li>
-              </Link>
               </a>
-              <Link to="/">
               <a href="#yaxshi">
               <li>
                 <img src={Rasm_41} alt="Social Icon 3" />
               </li>
               </a>
-              </Link>
               <a href="#acount">
-              <Link to="/">
               <li>
                 <img src={Rasm_42} alt="Social Icon 4" />
               </li>
-              </Link>
               </a>
             </ul>
           </ul>

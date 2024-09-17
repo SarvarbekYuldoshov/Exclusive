@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <>
       <div className='header'>
-        <div className='p-[20px] items-center flex justify-between mx-auto max-w-[1200px] max-sm:relative'>
+        <div  className='p-[20px] items-center flex justify-between mx-auto max-w-[1200px] max-sm:relative'>
           <Link to="/"><img src={Rasm_1} alt="Logo" /></Link>
           <Dropdown
             className='w-[200px]'
@@ -57,17 +57,13 @@ const Header = () => {
           </Dropdown>
 
           <ul className="flex gap-8 max-xl:gap-5 max-lg:gap-1 max-md:hidden">
-            <Link to="/"> 
-              <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#acount">{t("header.header_text")}</a></li>
-            </Link>
-            <Link to="/"> 
-              <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#acount">{t("header.header_text_1")}</a></li>
-            </Link>
-            <Link to="/"> 
-              <li><a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#acount">{t("header.header_text_2")}</a></li>
-            </Link>
-
-            <li className="header-item-a">
+              <li>
+                <a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#sotib">{t("header.header_text")}</a></li>
+              <li>
+                <a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#acount">{t("header.header_text_1")}</a></li>
+              <li>
+                <a className="text-base text-gray-800 hover:text-blue-600 hover:underline transition-colors duration-300 ease-in-out px-4 py-2 max-xl:text-[15px] max-lg:text-[13px]" href="#navbar3">{t("header.header_text_2")}</a></li>
+              <li className="header-item-a">
               <select className="select" onChange={handleLanguageChange} value={i18n.language}>
                 <option value="uz">Uzbek</option>
                 <option value="en">English</option>

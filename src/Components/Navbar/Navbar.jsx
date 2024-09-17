@@ -50,7 +50,7 @@ const Navbar = () => {
                   ${adding[item.id] 
                     ? 'bg-blue-500 text-white cursor-not-allowed' // Blue background for "Qushilgan"
                     : 'bg-black text-white hover:bg-black opacity-0 group-hover:opacity-100'}`}
-                  disabled={adding[item.id]} // Disable button if already added
+                  disabled={adding[item.id]} 
                 >
                   {adding[item.id] ? 'Qushilgan' : 'Qushish'}
                 </button>
