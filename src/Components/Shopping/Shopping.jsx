@@ -10,17 +10,14 @@ const Shopping = () => {
   const [open, setOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [form] = Form.useForm();
-  const [quantities, setQuantities] = useState(
-    cards.reduce((acc, item) => {
-      acc[item.id] = 1; // Initialize quantities for each card
-      return acc;
-    }, {})
-  );
+  const [quantities, setQuantities] = useState({});
 
+  // Initialize quantities when cards change
   useEffect(() => {
-    if (!cards.length) {
-      console.error('Card data is empty. Ensure that card data is being fetched or passed correctly.');
-    }
+    setQuantities(cards.reduce((acc, item) => {
+      acc[item.id] = acc[item.id] || 1; // Initialize quantities for each card
+      return acc;
+    }, {}));
   }, [cards]);
 
   const sendMessage = () => {
@@ -76,9 +73,11 @@ const Shopping = () => {
   const deleteCards = (id) => {
     const updatedCards = cards.filter(item => item.id !== id);
     setCards(updatedCards);
-    const updatedQuantities = { ...quantities };
-    delete updatedQuantities[id];
-    setQuantities(updatedQuantities);
+    setQuantities(prev => {
+      const updatedQuantities = { ...prev };
+      delete updatedQuantities[id];
+      return updatedQuantities;
+    });
   };
 
   const decrease = (id) => {
@@ -103,8 +102,8 @@ const Shopping = () => {
         <h1 className='text-3xl text-center mb-10'>Siz sotib olmoqchi bo'lgan buyumlar</h1>
         <div className='flex flex-wrap gap-8'>
           {cards.length > 0 ? (
-            cards.map((item, index) => (
-              <div className='bg-white p-4 rounded-lg shadow-md flex flex-col items-center w-full sm:w-80' key={index}>
+            cards.map((item) => (
+              <div className='bg-white p-4 rounded-lg shadow-md flex flex-col items-center w-full sm:w-80' key={item.id}>
                 <img
                   src={item.img1}  // Ensure correct image property
                   alt={item.name}
@@ -134,6 +133,11 @@ const Shopping = () => {
                     Buyurtma berish
                   </Button>
                 </div>
+                <div className='mt-4 flex items-center'>
+                  <Button onClick={() => decrease(item.id)}>-</Button>
+                  <span className='mx-2'>{quantities[item.id] || 0}</span>
+                  <Button onClick={() => increase(item.id)}>+</Button>
+                </div>
               </div>
             ))
           ) : (
@@ -149,33 +153,21 @@ const Shopping = () => {
           <Form.Item
             label="Ism"
             name="name"
-            rules={[
-              { required: true, message: 'Ismingizni kiriting' },
-              { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }
-            ]}
+            rules={[{ required: true, message: 'Ismingizni kiriting' }, { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }]}
           >
             <Input placeholder='Ismingizni kiriting' />
           </Form.Item>
           <Form.Item
             label="Familiya"
             name="surname"
-            rules={[
-              { required: true, message: 'Familiyangizni kiriting' },
-              { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }
-            ]}
+            rules={[{ required: true, message: 'Familiyangizni kiriting' }, { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }]}
           >
             <Input placeholder='Familiyangizni kiriting' />
           </Form.Item>
           <Form.Item
             label="Telefon raqam"
             name="number"
-            rules={[
-              { required: true, message: 'Telefon raqamingizni kiriting' },
-              {
-                pattern: /^\+998\d{9}$/,
-                message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqamdan iborat bo\'lishi kerak',
-              },
-            ]}
+            rules={[{ required: true, message: 'Telefon raqamingizni kiriting' }, { pattern: /^\+998\d{9}$/, message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqamdan iborat bo\'lishi kerak' }]}
           >
             <Input placeholder='+998XXXXXXXXX' />
           </Form.Item>
