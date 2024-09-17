@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <div id='navbar3' className='bg-black p-5'>
-      <div className='max-w-[1200px] mx-auto flex flex-wrap gap-4 justify-between items-start'>
+    <div id='navbar3' className='bg-black p-5 mt-[50px]'>
+      <div className='max-w-[1200px] mx-auto flex flex-wrap gap-4 justify-between items-start '>
         
         <div>
           <ul>

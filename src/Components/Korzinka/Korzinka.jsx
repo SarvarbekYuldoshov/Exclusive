@@ -15,6 +15,7 @@ const Korzinka = () => {
     const [selectedItem, setSelectedItem] = useState(null);
     const [form] = Form.useForm();
     const { t } = useTranslation();
+
     useEffect(() => {
         if (id) {
             const updateCard = Data.filter((item) => item.id.toString() === id);
@@ -94,17 +95,22 @@ const Korzinka = () => {
             <Bollen/>
             <Header/>
             <main className='flex-grow'>
-                <div className='max-w-[1200px] mx-auto p-4 justify-center mt-[50px]'>
-                    <h1 className='text-[30px] flex items-center justify-center mb-[40px] mt-[150px]'>Bu yerda sizga kerakli mahsulotlar mavjud</h1>
-                    {/* Map qilingan qism */}
+                <div className='max-w-[1200px] mx-auto p-4 flex justify-center items-center flex-col mt-[50px]'>
+                    <h1 className='text-[30px] flex items-center justify-center mb-[40px] mt-[150px]'>
+                        Bu yerda sizga kerakli mahsulotlar mavjud
+                    </h1>
                     {single.map(item => (
-                        <div key={item.id} className='flex flex-col lg:flex-row gap-[20px] mb-[20px]'>
+                        <div key={item.id} className='flex flex-col lg:flex-row justify-center items-center gap-[20px] mb-[20px]'>
                             <div className='flex flex-col lg:flex-row items-center lg:items-start w-full'>
-                                <img className='w-full lg:w-[500px] h-auto lg:h-[400px] mb-4 lg:mb-0' src={item.img1} alt={item.name} />
+                                <img 
+                                    className='w-full lg:w-[250px] h-auto lg:h-[350px] object-cover mb-4 lg:mb-0 mx-auto' 
+                                    src={item.img1} 
+                                    alt={item.name} 
+                                />
                                 <div className='text-center lg:text-left lg:ml-6'>
                                     <h1 className='text-[24px] font-bold mb-2'>{item.name}</h1>
                                     <h2 className='text-[20px] text-gray-600 mb-2'>{item.price}</h2>
-                                    <img className='w-[100px] h-[20px] mb-2' src={item.img2} alt={item.name} />
+                                    <img className='w-[80px] h-[20px] mb-2 mx-auto lg:mx-0' src={item.img2} alt={item.name} />
                                     <p className='text-[16px] text-gray-500'>{item.text}</p>
                                     <p className='w-full lg:w-[400px] mb-4'>{item.text1}</p>
                                     <hr className='h-[3px] bg-black mb-4' />
@@ -154,16 +160,16 @@ const Korzinka = () => {
                                     <div className='mt-[30px]'>
                                         <ul className='flex gap-[20px] border border-black h-[60px]'>
                                             <img className='ml-2' src={item.img4} alt={item.name}/>
-                                            <li className=''>
+                                            <li>
                                                 <h1 className='mt-[10px]'>{item.text6}</h1>
-                                                <p className=''>{item.text7}</p>
+                                                <p>{item.text7}</p>
                                             </li>
                                         </ul>
                                         <ul className='flex mt-[20px] gap-[20px] border border-black'>
                                             <img className='ml-2 w-[60px]' src={item.img5} alt={item.name}/>
-                                            <li className=''>
+                                            <li>
                                                 <h1 className='mt-[10px]'>{item.text8}</h1>
-                                                <p className=''>{item.text9}</p>
+                                                <p>{item.text9}</p>
                                             </li>
                                         </ul>
                                     </div>
