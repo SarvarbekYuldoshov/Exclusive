@@ -6,15 +6,15 @@
    
 }
 .header{
-    margin-top: 60px;
-    height: 65px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 8px  rgb(148, 146, 146);
-    background-color: white;
-    z-index: 999;
+  margin-top: 60px;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 8px  rgb(148, 146, 146);
+  background-color: white;
+  z-index: 999;
 }
 .header .cart-wrapper {
     position: relative;
