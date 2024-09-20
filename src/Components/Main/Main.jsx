@@ -90,7 +90,7 @@ const Main = () => {
   const closeModal = () => {
     setOpen(false);
     setSelectedItem(null);
-    form.resetFields(); // Reset form fields when closing the modal
+    form.resetFields(); 
   };
 
   return (
