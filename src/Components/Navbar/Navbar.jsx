@@ -11,9 +11,9 @@ const Navbar = () => {
     const exists = cards.find(card => card.id === item.id);
     if (!exists) {
       setCards([...cards, item]);
-      setAdding((add) => ({ ...add, [item.id]: true })); // Mark item as added
+      setAdding((add) => ({ ...add, [item.id]: true })); 
     } else {
-      setAdding((add) => ({ ...add, [item.id]: true })); // Disable and change to added state
+      setAdding((add) => ({ ...add, [item.id]: true }));
     }
   };
 
@@ -48,7 +48,7 @@ const Navbar = () => {
                   onClick={() => handleAdd(item)} 
                   className={`mt-[40px] w-[250px] h-[40px] top-[220px] py-2 px-4 rounded-md absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-opacity max-sm:w-[338px] 
                   ${adding[item.id] 
-                    ? 'bg-blue-500 text-white cursor-not-allowed' // Blue background for "Qushilgan"
+                    ? 'bg-blue-500 text-white cursor-not-allowed' 
                     : 'bg-black text-white hover:bg-black opacity-0 group-hover:opacity-100'}`}
                   disabled={adding[item.id]} 
                 >
