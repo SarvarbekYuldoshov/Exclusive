@@ -15,7 +15,6 @@ const Korzinka = () => {
     const [selectedItem, setSelectedItem] = useState(null);
     const [form] = Form.useForm();
     const { t, i18n } = useTranslation();
- 
     useEffect(() => {
         if (id) {
             const updateCard = Data.filter((item) => item.id.toString() === id);
@@ -76,7 +75,7 @@ const Korzinka = () => {
                     });
             })
             .catch(() => {
-                message.error("Iltimos, barcha maydonlarni to'ldiring!");
+                message.error("Iltimos, barcha joyni  to'ldiring!");
             });
     };
 

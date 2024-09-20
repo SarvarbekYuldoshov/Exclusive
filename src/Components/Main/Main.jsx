@@ -140,7 +140,7 @@ const Main = () => {
                 name="number"
                 rules={[{ required: true, message: 'Telefon raqamingizni kiriting' }, { pattern: /^\+998\d{9}$/, message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqamdan iborat bo\'lishi kerak' }]}
               >
-                <Input className='w-full h-[50px]' placeholder='+998' />
+                <Input className='w-full h-[50px]' placeholder='+998 ' />
               </Form.Item>
               <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
                 Yuborish
@@ -148,7 +148,7 @@ const Main = () => {
             </Form>
           </Modal>
         </div>
-        <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+        <div className="md:w-1/2 mb-10 md: flex justify-center">
           <img
             className="w-full h-auto max-w-sm md:max-w-md lg:max-w-lg"
             src={Rasm_26}
