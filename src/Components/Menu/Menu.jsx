@@ -163,7 +163,7 @@ const Menu = () => {
              
             {t("menu.menu_text_13")}
             </h4>
-            <p className='mt-[20px] text-[14px] font-normal text-left text-[#FAFAFA]'>
+            <p className='mt-[20px] text-[15px] font-normal text-left text-[#FAFAFA]'>
               {t("menu.menu_text_14")}
             </p>
             <Button className='mt-4 w-[150px] bg-[black] text-white hover:bg-blue-600' onClick={showModal}>
