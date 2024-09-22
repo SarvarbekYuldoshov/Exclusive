@@ -4,7 +4,7 @@ import Rasm_1 from "../../images/rasm1.png";
 import Rasm_4 from "../../images/rasm4.png";
 import Rasm15 from "../../images/rasm15.png";
 import { Dropdown } from 'antd';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import useSharedStore from '../String/Store';
 import { useTranslation } from 'react-i18next';
 
@@ -43,7 +43,7 @@ const Header = () => {
     <>
       <div className='header'>
         <div className='p-[20px] items-center flex justify-between mx-auto max-w-[1200px] max-sm:relative'>
-          <img src={Rasm_1} alt="" />
+          <NavLink to="/"><img src={Rasm_1} alt="" /></NavLink>
           <Dropdown
             className='w-[200px]'
             menu={{ items }}
