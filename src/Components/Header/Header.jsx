@@ -43,6 +43,7 @@ const Header = () => {
     <>
       <div className='header'>
         <div className='p-[20px] items-center flex justify-between mx-auto max-w-[1200px] max-sm:relative'>
+          <img src={Rasm_1} alt="" />
           <Dropdown
             className='w-[200px]'
             menu={{ items }}
