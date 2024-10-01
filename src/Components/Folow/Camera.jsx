@@ -93,7 +93,7 @@ const Camera = () => {
               className='w-[251px] h-[301px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group transform transition-transform duration-1000 ease-in-out hover:scale-[0.98]'
             >
                <Link to={`/korzinka/${item.id}`}>
-              <img src={item.img} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]' />
+              <img src={item.img} alt={item.name} className='w-[140px] h-[151px] ml-[30px] max-sm:ml-[70px]' />
               <h1 className='text-xl font-bold mt-2 max-sm:ml-[40px]'>{item.name}</h1>
               <ul className='flex h-[40px] items-center gap-[5px] max-sm:ml-[20px]'>
                 <h2 className='text-lg text-gray-600'>{item.price}</h2>
