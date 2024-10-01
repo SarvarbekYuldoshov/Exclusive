@@ -90,7 +90,7 @@ const Camera = () => {
            
             <div
               key={index}
-              className='w-[251px] h-[300px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group transform transition-transform duration-1000 ease-in-out hover:scale-[0.98]'
+              className='w-[251px] h-[301px] p-4 bg-white shadow-md rounded-lg relative max-sm:w-[340px] group transform transition-transform duration-1000 ease-in-out hover:scale-[0.98]'
             >
                <Link to={`/korzinka/${item.id}`}>
               <img src={item.img} alt={item.name} className='w-[140px] h-[150px] ml-[30px] max-sm:ml-[70px]' />
