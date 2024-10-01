@@ -12,7 +12,7 @@ const Bollen = () => {
           </h1>
           <li className='list-none'>
             <a className='text-[#50ec38] text-base md:text-lg' href="#sotibolish">
-              <q>Buyurtma berish uchun?!</q>
+              <q>Buyurtma berish uchun?</q>
             </a>
           </li>
         </div>
