@@ -103,7 +103,7 @@ const Camera = () => {
               {/* Qo'shish tugmasi */}
               <button
                 onClick={() => handleAdd(item)}
-                className='mt-[40px] w-[250px] h-[40px] top-[220px] bg-black text-white py-2 px-4 rounded-md hover:bg-black absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'
+                className='mt-[40px] w-[250px] h-[40px] top-[221px] bg-black text-white py-2 px-4 rounded-md hover:bg-black absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity max-sm:w-[338px]'
               >
                 {adding[item.name] ? "Qushilgan" : "Qushish"}
               </button>
