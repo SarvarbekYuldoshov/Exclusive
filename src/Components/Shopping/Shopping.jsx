@@ -27,7 +27,6 @@ const Shopping = () => {
   }, [quantities]);
 
   useEffect(() => {
-    // Save cards to local storage
     localStorage.setItem('cards', JSON.stringify(cards));
   }, [cards]);
 
