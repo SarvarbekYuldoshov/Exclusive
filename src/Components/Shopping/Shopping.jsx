@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 import Bollen from '../Bollen/Bollen';
 
 const Shopping = () => {
-  const { cards, setCards } = useSharedStore(); // Ensure cards have data
+  const { cards, setCards } = useSharedStore();
   const [open, setOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [form] = Form.useForm();
