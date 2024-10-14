@@ -16,7 +16,6 @@ const Shopping = () => {
   });
 
   useEffect(() => {
-    // Load cards from local storage
     const savedCards = localStorage.getItem('cards');
     if (savedCards) {
       setCards(JSON.parse(savedCards));
