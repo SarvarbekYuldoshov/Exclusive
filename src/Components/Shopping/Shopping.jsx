@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import useSharedStore from '../String/Store'; // Assuming you store card data here
+import useSharedStore from '../String/Store';
 import { Button, Form, Input, Modal, message } from 'antd';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
