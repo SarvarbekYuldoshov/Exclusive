@@ -182,7 +182,7 @@ const Shopping = () => {
             <Input placeholder='+998XXXXXXXXX' />
           </Form.Item>
           <Button className='w-full bg-blue-500 text-white hover:bg-blue-600' onClick={sendMessage} type="primary">
-            Yuborish
+            Yuborish ?
           </Button>
         </Form>
       </Modal>
