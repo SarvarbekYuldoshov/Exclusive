@@ -27,6 +27,7 @@ const router = createBrowserRouter ([
                 path:"/phones",
                 element:<Phones/>
             },
+            // --------------------3------------------------------------------------------
             {
                 path:"/computers",
                 element:<Computers/>
