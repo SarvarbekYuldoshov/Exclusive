@@ -70,5 +70,6 @@ const router = createBrowserRouter ([
         path:"/market",
         element:<Market/>
     }
+    // ----------------------------------------------------------------------------------------
 ])
 export default router
