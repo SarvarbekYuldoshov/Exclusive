@@ -36,6 +36,9 @@ const Hover = () => {
           </li>
         </ul>
         <div className='hover-active grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-10 items-center mt-[30px] md:mt-[50px] mb-[40px] max-sm:gap-10'>
+         
+         {/* --------------------------------------------------------Hover Item ------------------------------------------------ */}
+
           <HoverItem 
             src={Rasm_9}
             label={t("hover.hover_text_3")}
