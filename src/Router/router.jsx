@@ -42,6 +42,7 @@ const router = createBrowserRouter ([
                 path:"/camera",
                 element:<Camera/>
             },
+            // -------------------------------6---------------------------------------------
             {
                 path:"/headPhones",
                 element:<HeadPhones/>
