@@ -37,6 +37,7 @@ const router = createBrowserRouter ([
                 path:"/smartWatch",
                 element:<SmartWatch/>
             },
+            // ------------------------------5----------------------------------------------
             {
                 path:"/camera",
                 element:<Camera/>
