@@ -17,6 +17,7 @@ const router = createBrowserRouter ([
         path: "/",
         element: <App />,
         children:[
+            // --------------------Pastgi qism -----------------------------------------
             {
                 path:"/",
                 element:<Navbar/>
