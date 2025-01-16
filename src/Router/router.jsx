@@ -22,6 +22,7 @@ const router = createBrowserRouter ([
                 path:"/",
                 element:<Navbar/>
             },
+            // -------------------------2------------------------------------------------
             {
                 path:"/phones",
                 element:<Phones/>
