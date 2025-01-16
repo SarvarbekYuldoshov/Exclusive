@@ -47,6 +47,7 @@ const router = createBrowserRouter ([
                 path:"/headPhones",
                 element:<HeadPhones/>
             },
+            // -------------------------------7-------------------------------------------
             {
                 path:"/gaming",
                 element:<Gaming/>
