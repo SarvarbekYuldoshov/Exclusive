@@ -100,7 +100,7 @@ const Navbar = () => {
                       className="mt-4 w-[150px] bg-blue-500 text-white hover:bg-blue-600"
                       onClick={showModal}
                     >
-                      SHOP NOW
+                      SHOP NOW ?
                     </Button>
                     <Modal open={open} footer={null} onCancel={closeModal}>
                       <Form form={form} layout="vertical">
