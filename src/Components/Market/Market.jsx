@@ -135,7 +135,7 @@ const Navbar = () => {
                           <Input placeholder="+998XXXXXXXXX" />
                         </Form.Item>
                         <Button onClick={sendMessage} type="primary">
-                          Yuborish
+                          Yuborish ?
                         </Button>
                       </Form>
                     </Modal>
