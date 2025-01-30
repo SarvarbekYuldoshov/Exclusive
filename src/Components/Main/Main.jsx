@@ -143,7 +143,7 @@ const Main = () => {
                 <Input className='w-full h-[50px]' placeholder='+998 ' />
               </Form.Item>
               <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-                Yuborish
+                Yuborish ?
               </Button>
             </Form>
           </Modal>
