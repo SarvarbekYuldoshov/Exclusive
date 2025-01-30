@@ -3,7 +3,7 @@ import Market from '../Market/Market'
 
 const marketlar = () => {
   return (
-    <div className='nsgnsg'>
+    <div className='market'>
       <Market/>
     </div>
   )
