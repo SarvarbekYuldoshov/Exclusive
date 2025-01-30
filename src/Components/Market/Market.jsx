@@ -4,8 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Button, Form, Input, Modal, message } from 'antd';
-import Rasm_4 from '../images/rasm4.png';
-import './Navbar.css';
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -31,7 +30,7 @@ const Navbar = () => {
             text: messageText,
           }),
         })
-          .then((res) => res.json())
+          .then((res) => res.json()) 
           .then((res) => {
             if (res.ok) {
               message.success('Xabar yuborildi');
