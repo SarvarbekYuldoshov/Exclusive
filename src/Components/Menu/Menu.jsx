@@ -24,7 +24,7 @@ const CustomModal = ({ visible, onClose, form, sendMessage }) => {
             { min: 5, message: "Ism 5 ta belgidan kam bo'lmasligi kerak" }
           ]}
         >
-          <Input className='w-full h-[50px] md:w-[480px]' placeholder='Ismingizni kiriting' />
+          <Input className='w-full h-[51px] md:w-[480px]' placeholder='Ismingizni kiriting' />
         </Form.Item>
         <Form.Item
           label="Surname"
