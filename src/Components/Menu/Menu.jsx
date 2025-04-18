@@ -34,7 +34,7 @@ const CustomModal = ({ visible, onClose, form, sendMessage }) => {
             { min: 5, message: "Familiya 5 ta belgidan kam bo'lmasligi kerak" }
           ]}
         >
-          <Input className='w-full h-[50px] md:w-[480px]' placeholder='Familiyangizni kiriting' />
+          <Input className='w-full h-[51xpx] md:w-[480px]' placeholder='Familiyangizni kiriting' />
         </Form.Item>
         <Form.Item
           label="Number"
